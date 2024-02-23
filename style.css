@@ -59,6 +59,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+:root {
+	--blue: #0e3e66;
+	--purple: #9eb7e5;
+	--dark-green: #053f23;
+	--green: #70ee9c;
+	--black: #000; 
+}
+
 /* Document
 	 ========================================================================== */
 
