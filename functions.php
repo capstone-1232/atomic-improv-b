@@ -143,11 +143,14 @@ function atomic_improv_scripts() {
 
 	wp_enqueue_script( 'atomic-improv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css', array(), '5.3.3');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'atomic_improv_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
