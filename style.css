@@ -59,6 +59,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+	--blue: #0e3e66;
+	--purple: #9eb7e5;
+	--dark-green: #053f23;
+	--green: #70ee9c;
+	--black: #000;
+	--heading-font: "Bebas Neue", sans-serif;
+	--body-font: "Nunito Sans", sans-serif;
+}
+
 /* Document
 	 ========================================================================== */
 
@@ -415,10 +429,13 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: var(--heading-font);
+	font-weight: 600;
 }
 
 p {
 	margin-bottom: 1.5em;
+	font-family: var(--body-font);
 }
 
 dfn,
