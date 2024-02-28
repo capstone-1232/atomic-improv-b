@@ -1029,6 +1029,14 @@ section button {
 	list-style-type: none;
 }
 
+.menu-toggle{
+	
+}
+
+header {
+	background-color: darkgrey;
+}
+
 footer {
 	background-color: var(--black);
 	color: #fff;

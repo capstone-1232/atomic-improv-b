@@ -25,7 +25,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'atomic-improv' ); ?></a>
 
-	<header id="masthead" class="site-header d-flex justify-content-between">
+	<header id="masthead" class="site-header d-flex justify-content-between align-items-center">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
