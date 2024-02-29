@@ -1025,6 +1025,15 @@ section button {
 	font-size: 1.2rem;
 }
 
+.donovan-headshot {
+	background: rgba(0, 0, 0, 0.9) url('img/Donovan-Workun-Headshot.jpg') center / cover no-repeat;
+	color: #fff;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .footer-navigation ul {
 	list-style-type: none;
 }
