@@ -19,8 +19,10 @@ get_header();
     </div>
     
     <div>
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo eligendi numquam iusto voluptas animi, omnis alias ullam facere delectus consequatur, nulla eum eveniet atque dolorem. Debitis soluta est dolorum.</p>
+        <!-- <img src="" alt=""> -->
+        <p>With over thirty years of professional side-splitting jokes and impeccable talent to make anyone laugh, Atomic Improv’s interactive and hilarious shows are a perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv never fails to impress.</p>
+        <p>When you’re with Atomic Improv, you’re not just watching a show…</p>
+        <span>You're a part of it!</span>
         <button>Book A Show</button>
     </div>
 </section>
@@ -30,40 +32,50 @@ get_header();
     <div>
         <h3>Corporate Events</h3>
         <img src="" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, ad harum? Eos qui expedita iure aliquid omnis dicta enim libero provident sunt voluptatibus necessitatibus reiciendis, quae voluptatum ratione quam officiis!</p>
+        <p>When you’re looking to host a memorable corporate event – look no further than Atomic Improv!</p>
     </div>
+    <div class="divider"></div>
     <div>
         <h3>Power of Yes!</h3>
         <img src="" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci maxime nihil mollitia recusandae doloribus in unde, impedit corporis quis vitae, deleniti molestias magni suscipit laborum eos ducimus labore nobis voluptas?</p>
+        <p>Take an innovative approach to team building and communication with “The Power of Yes”.</p>
     </div>
+    <div class="divider"></div>
     <div>
         <h3>Improv Classes for Kids</h3>
         <img src="" alt="">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero culpa officia, nesciunt quasi maxime eos sapiente eligendi porro vel id reiciendis ipsum sed ad dolor quidem tempora. Beatae, quae nam.</p>
+        <p>Get your kids off the screen and onto the stage!</p>
     </div>
 </section>
 
 <section>
     <h2>Who is this comedic genius?</h2>
-    <video src=""></video>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis earum quos recusandae sint et minus nam corporis nostrum magni eligendi saepe reiciendis nihil impedit ad cumque, maxime expedita repellat voluptate.</p>
+    <!-- <video src=""></video> -->
+    <p>Three-time world Improv Champ Donovan Workun is an absolute comedic genius. Starring in multiple movies, TV shows and radio programs, this is one legendary comedian you don’t want to miss.</p>
+    <p>But that just leaves the question...</p>
+    <p>Who is he? Come find out more!</p>
     <button>Learn more</button>
 
+    <h3>Checkout his Social Media</h3>
     <div>
-        ---Soial Links Here---
+        <a href="https://www.facebook.com/donovan.workun">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="https://www.instagram.com/atomicimprov/">Instagram</a>
     </div>
 </section>
 
 <section>
     <h2>What do people say about him?</h2>
     <div>
-        <h3>Testimonial #1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem quibusdam dolor delectus laborum totam fugiat soluta animi dolores. Cum saepe iste corrupti minima aliquam delectus animi unde deleniti eum.</p>
+        <p><span>“An absolute gut-buster...</span> 
+        <span>A festival of belly-laughs!”</span></p>
+        <span>-Edmonton Journal</span>
     </div>
     <div>
-        <h3>Testimonial #2</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi consequatur, error libero ad natus fugiat, hic quo fuga corporis possimus unde deserunt, aut ratione cupiditate officia! Totam nihil officiis est!</p>
+        <p><span>"Workun deserves an</span>
+        <span>Improv Oscar"</span></p>
+        <span>-Edie Ranvier,</span>
+        <span>The Reviews Hub</span>
     </div>
 </section>
 
@@ -96,8 +108,14 @@ get_header();
                     echo wp_get_attachment_image($image, $size);
                 }; ?>
                 <p><?= $event_description ?></p>
-                <p><?= $event_date_time?></p>
-                <p><?= $event_location?></p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                    <p><?= $event_date_time?></p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                    <p><?= $event_location?></p>
+                </div>
                 <button> <a href="<?= $event_ticket_link ?>">Get Tickets</a></button>
 
 
@@ -105,14 +123,11 @@ get_header();
             endwhile;
             wp_reset_postdata(); // Reset the post data?>
         <?php else :
-            echo '<p>No upcoming events found.</p>';
+            echo '<p>No upcoming events for now.</p>';
         endif;
     ?>
 
-    <h2>Upcoming Events</h2>
-    <img src="" alt="">
-
-</section> <!-- This will be dynamic content. Create loop here! -->
+</section>
 
 <?php
 get_footer();
