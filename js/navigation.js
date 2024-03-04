@@ -35,7 +35,6 @@
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', (event) => {
-		console.log('clicked')
 		if (checkbox.checked) {
 			siteNavigation.classList.add('toggled');
 		} else {
