@@ -1008,6 +1008,28 @@ textarea {
 	width: 100%;
 } 
 
+.donovan-meet-the-visionary {
+    background: rgba(0, 0, 0, 0.9) url('img/donovan-meet-the-visionary.png') center center / cover no-repeat;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    height: 400px; 
+}
+
+.hot-boy-summer {
+    background: rgba(0, 0, 0, 0.9) url('img/hot-boy-summer.jpg') center center / cover no-repeat;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+    height: 400px; 
+}
+
+
+
 nav a {
 	text-decoration: none;
 	color: #fff;
@@ -1023,15 +1045,6 @@ section button {
 	border: none;
 	font-family: var(--heading-font);
 	font-size: 1.2rem;
-}
-
-.donovan-headshot {
-	background: rgba(0, 0, 0, 0.9) url('img/Donovan-Workun-Headshot.jpg') center / cover no-repeat;
-	color: #fff;
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .footer-navigation ul {
