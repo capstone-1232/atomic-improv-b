@@ -10,16 +10,14 @@ get_header();
 
 <section class="hero">
     <div>
-        <h1>
-            <span>"We make the</span>
-            <span>evening</span>
+        <h2>
+            <span>"We make the evening</span>
             <span>all about you"</span>
-        </h1>
+        </h2>
         <span>-Donovan Workun</span>
     </div>
     
     <div>
-        <!-- <img src="" alt=""> -->
         <p>With over thirty years of professional side-splitting jokes and impeccable talent to make anyone laugh, Atomic Improv’s interactive and hilarious shows are a perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv never fails to impress.</p>
         <p>When you’re with Atomic Improv, you’re not just watching a show…</p>
         <span>You're a part of it!</span>
@@ -31,21 +29,21 @@ get_header();
     <h2>What does he do?</h2>
     <div>
         <h3>Corporate Events</h3>
-        <img src="" alt="">
+        <img src="<?= get_template_directory_uri();?>/img/corporate-events.png" alt="Donovan with his partner, Chris, posing in a comedy show.">
         <p>When you’re looking to host a memorable corporate event – look no further than Atomic Improv!</p>
     </div>
     <div class="divider"></div>
     <div>
         <h3>Power of Yes!</h3>
-        <img src="" alt="">
+        <img src="<?= get_template_directory_uri()?>/img/poy.png" alt="Power of yes logo">
         <p>Take an innovative approach to team building and communication with “The Power of Yes”.</p>
     </div>
-    <div class="divider"></div>
     <div>
-        <h3>Improv Classes for Kids</h3>
-        <img src="" alt="">
-        <p>Get your kids off the screen and onto the stage!</p>
+        <h3>Who's that funny santa guy?</h3>
+        <img src="<?= get_template_directory_uri()?>/img/santa-guy.png" alt="Donovan Dressed as a Santa, sitting on a wide chair with two black dogs in his lap and laughing.">
+        <p>Naughty or nice, we will be telling you twice - come see Donovan this xmas as Santa Claus!</p>
     </div>
+    <div class="divider"></div>
     <a href="<?= esc_url(get_permalink(8));?>">Discover More</a>
 </section>
 

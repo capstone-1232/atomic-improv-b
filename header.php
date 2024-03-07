@@ -45,9 +45,12 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+		<h1>Atomic Improv</h1>
+
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<label class="hamburger-icon"><input type="checkbox"></label>
+				<span></span>
+				<span></span>
 			</button>
 			<?php
 			wp_nav_menu(
