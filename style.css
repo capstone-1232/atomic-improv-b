@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -71,7 +71,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--black: #000;
 	--heading-font: "Bebas Neue", sans-serif;
 	--body-font: "Nunito Sans", sans-serif;
-}
+} */
 
 /* Document
 	 ========================================================================== */
@@ -429,13 +429,13 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: var(--heading-font);
-	font-weight: 600;
+	/* font-family: var(--heading-font);
+	font-weight: 600; */
 }
 
 p {
 	margin-bottom: 1.5em;
-	font-family: var(--body-font);
+	/* font-family: var(--body-font); */
 }
 
 dfn,
@@ -768,10 +768,10 @@ textarea {
 	display: block;
 }
 
-.post,
+/* .post,
 .page {
 	margin: 0 0 1.5em;
-}
+} */
 
 .updated:not(.published) {
 	display: none;
@@ -988,7 +988,6 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
-
 .hero {
 	background: rgba(0, 0, 0, 0.9) url('img/hero-bg.jpg') center / cover no-repeat;
 	color: #fff;
@@ -1036,32 +1035,40 @@ nav a {
 	font-family: var(--heading-font);
 }
 
-nav a:visited{
-	color: #fff;
+.hamburger-icon::before,
+.hamburger-icon::after,
+.hamburger-icon input {
+	content: "";
+	width: 1.375rem;
+	height: 3px;
+	background-color: #000;
+	border-radius: 100px;
+	transform-origin: right center;
+	transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out;
 }
 
-section button {
-	background-color: var(--purple);
-	border: none;
-	font-family: var(--heading-font);
-	font-size: 1.2rem;
+.hamburger-icon input {
+	appearance: none;
+	width: 1rem;
+	margin: 0;
 }
 
-.footer-navigation ul {
-	list-style-type: none;
+.hamburger-icon:has(input:checked)::before {
+	rotate: -45deg;
 }
 
-.menu-toggle{
-	
+.hamburger-icon:has(input:checked)::after {
+	rotate: 45deg;
 }
 
-header {
-	background-color: darkgrey;
+.hamburger-icon input:checked {
+	opacity: 0;
+	width: 0;
 }
 
-footer {
-	background-color: var(--black);
-	color: #fff;
-	padding: 1rem;
-	font-family: var(--heading-font);
+.hamburger-icon {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: flex-end;
 }
