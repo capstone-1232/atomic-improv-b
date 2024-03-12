@@ -31,15 +31,10 @@
 		menu.classList.add( 'nav-menu' );
 	}
 
-	const checkbox = document.querySelector('input[type=checkbox]');
 
 	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
 	button.addEventListener( 'click', (event) => {
-		if (checkbox.checked) {
-			siteNavigation.classList.add('toggled');
-		} else {
-			siteNavigation.classList.remove('toggled');
-		}
+		siteNavigation.classList.toggle('toggled')
 
 		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
 			button.setAttribute( 'aria-expanded', 'false' );
