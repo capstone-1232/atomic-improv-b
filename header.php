@@ -15,6 +15,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Atomic Improv’s interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv is always a hit.">
+	<meta name="keywords" content="">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -45,9 +47,12 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+		<h1>Atomic Improv</h1>
+
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<label class="hamburger-icon"><input type="checkbox"></label>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Show Menu">
+				<span></span>
+				<span></span>
 			</button>
 			<?php
 			wp_nav_menu(
