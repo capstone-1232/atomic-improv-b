@@ -15,6 +15,8 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Atomic Improv’s interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv is always a hit.">
+	<meta name="keywords" content="">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -23,7 +25,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'atomic-improv' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary" tabindex="0"><?php esc_html_e( 'Skip to content', 'atomic-improv' ); ?></a>
 
 	<header id="masthead" class="site-header d-flex justify-content-between align-items-center">
 		<div class="site-branding">
@@ -45,11 +47,12 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+		<h1>Atomic Improv</h1>
+
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-				</svg>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Show Menu">
+				<span></span>
+				<span></span>
 			</button>
 			<?php
 			wp_nav_menu(

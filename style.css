@@ -59,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
@@ -71,7 +71,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--black: #000;
 	--heading-font: "Bebas Neue", sans-serif;
 	--body-font: "Nunito Sans", sans-serif;
-}
+} */
 
 /* Document
 	 ========================================================================== */
@@ -429,13 +429,13 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: var(--heading-font);
-	font-weight: 600;
+	/* font-family: var(--heading-font);
+	font-weight: 600; */
 }
 
 p {
 	margin-bottom: 1.5em;
-	font-family: var(--body-font);
+	/* font-family: var(--body-font); */
 }
 
 dfn,
@@ -768,10 +768,10 @@ textarea {
 	display: block;
 }
 
-.post,
+/* .post,
 .page {
 	margin: 0 0 1.5em;
-}
+} */
 
 .updated:not(.published) {
 	display: none;
@@ -989,6 +989,7 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+
 .hero {
 	background: rgba(0, 0, 0, 0.9) url('img/hero-bg.jpg') center / cover no-repeat;
 	color: #fff;
@@ -1064,3 +1065,5 @@ footer {
 	padding: 1rem;
 	font-family: var(--heading-font);
 }
+
+

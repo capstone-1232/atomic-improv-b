@@ -21,7 +21,7 @@
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
+						'menu_id'        => 'footer-menu',
 					)
 				);
 				?>
@@ -30,7 +30,7 @@
 
 		<div class="site-info">
 			<span>Copyright &copy; <?= date('Y');?> Atomic Improv</span>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'atomic-improv' ) ); ?>">
+			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'atomic-improv' ) ); ?>"> -->
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				// printf( esc_html__( 'Proudly powered by %s', 'atomic-improv' ), 'WordPress' );
