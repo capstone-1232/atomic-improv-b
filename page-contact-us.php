@@ -8,42 +8,40 @@ get_header();
 
 ?>
 
-<h1>Contact Donovan</h1>
+<h1 style="text-align:center; padding: 2rem 0;">Contact Donovan</h1>
 
-<section>
-<h2>Hire this amazing Improv Artist</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quisquam eaque quibusdam ipsa deserunt blanditiis, harum totam rerum modi libero esse qui, nesciunt dicta odio eveniet explicabo maiores, porro voluptates?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quisquam eaque quibusdam ipsa deserunt blanditiis, harum totam rerum modi libero esse qui, nesciunt dicta odio eveniet explicabo maiores, porro voluptates?</p>
+<section style="padding-top: 0; padding-right: 4rem; padding-bottom: 4rem; padding-left: 4rem;">
+    <h2 style="text-align:center; padding-bottom: 2rem;">Hire This Amazing Improv Artist</h2>
+    <div>
+        <p style="padding-top: 2rem">This guy is pretty great. You absolutely wouldn’t want to miss out on hiring him for your next event, would you?</p>
+
+        Fill out the form below, and you can hash out the details of your next event with Donovan!</p>
+    </div>
 </section>
 
-<form action="" method="post">
-        <div style="display: flex;">
-            <div style="flex: 1;">
-            <label for="first_name">First Name:</label><br>
-                <input type="text" id="first_name" name="first_name" style="border-radius: 20px;"><br>
-            </div>
-            <div style="flex: 1; margin-left: 10px;">
-                <label for="last_name">Last Name:</label><br>
-                <input type="text" id="last_name" name="last_name" style="border-radius: 20px;"><br>
-            </div>
-        </div>
+<section>
+<h2 style="text-align:center; padding: 2rem 0;">Send Donovan a message</h2>
+<form action="" method="post" style="text-align: center;">
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" style="border-radius: 20px;"><br>
+    <label for="name" style="display: inline-block; text-align: left; width: 80%;">Name</label><br>
+    <input type="text" id="name" name="name" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
 
-        <label for="contact">Contact:</label><br>
-        <input type="text" id="contact" name="contact" style="border-radius: 20px;"><br>
+    <label for="email" style="display: inline-block; text-align: left; width: 80%;">Email</label><br>
+    <input type="email" id="email" name="email" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
 
-        <label for="date">Date:</label><br>
-        <input type="date" id="date" name="date" style="border-radius: 20px;"><br>
+    <label for="date" style="display: inline-block; text-align: left; width: 80%;">Requested date(s)</label><br>
+    <input type="date" id="date" name="date" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
 
-        <label for="message">Add Message:</label><br>
-        <textarea id="message" name="message" style="border-radius: 20px;"></textarea><br>
+    <label for="message" style="display: inline-block; text-align: left; width: 80%;">Add a message</label><br>
+    <textarea id="message" name="message" style="border-radius: 20px; padding: 10px; width: 80%; height: 150px;"></textarea><br>
 
-        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-            <input type="submit" value="Submit" style="border-radius: 20px; padding: 10px 20px; background-color: #007bff; color: #fff; border: none;">
-        </div>
-    </form>
+    <p>test</p>
+
+    <div style="margin-top: 20px; margin-bottom: 20px;">
+        <input type="submit" value="Submit" style="border-radius: 20px; padding: 10px 20px; background-color: #70EE9C; color: #000000; border: none;">
+    </div>
+</form>
+</section>
 
 <?php
 get_footer();
