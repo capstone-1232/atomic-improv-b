@@ -990,3 +990,14 @@ textarea {
 }
 
 /* Custom Styles----------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+	--light-blue: #9EB7E5;
+	--dark-blue: #0e3e66;
+	--dark-green: #053f23;
+	--light-green: #70ee9c;
+	--bebas: "Bebas Neue" sans-serif;
+	--nunito: "Nunito Sans" sans-serif;
+}
