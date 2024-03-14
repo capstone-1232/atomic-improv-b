@@ -19,6 +19,11 @@
 	<meta name="keywords" content="">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+	</style>
+	<script src="<?= get_template_directory_uri()?>/js/main.js" defer></script>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -51,8 +56,8 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Show Menu">
-				<span></span>
-				<span></span>
+				<span class="line-1"></span>
+				<span class="line-2"></span>
 			</button>
 			<?php
 			wp_nav_menu(
