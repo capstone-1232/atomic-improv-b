@@ -1,46 +1,95 @@
 <?php
-
 // This is the template for displaying the custom landing page
-
 // @package atomic-improv
-
 get_header();
-
 ?>
 
-<h1 style="text-align:center; padding: 2rem 0;">Contact Donovan</h1>
+<style>
+/* Contact Form Styles */
+.contact-styled {
+    background: #0E3E66; /* Background color */
+    padding: 20px; /* Padding for the form */
+    border-radius: 10px; /* Border radius for the form */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF; /* Text color */
+}
+
+.contact-styled h3 {
+    color: #FFFFFF; /* Heading text color */
+}
+
+.contact-styled .nf-field-label {
+    color: #FFFFFF; /* Label text color */
+    text-transform: capitalize;
+}
+
+.contact-styled .nf-form-content input[type="text"],
+.contact-styled .nf-form-content input[type="email"],
+.contact-styled .nf-form-content input[type="date"],
+.contact-styled .nf-form-content textarea {
+    color: #FFFFFF; /* Text color for input fields */
+    border-radius: 5px; /* Border radius for input fields */
+    background-color: #FFFFFF; /* Background color for input fields */
+    border: 1px solid #000000; /* Black border for input fields */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.contact-styled .nf-form-content input[type="submit"] {
+    display: block; /* Ensure button takes full width */
+    margin: 0 auto; /* Center the button horizontally */
+    background: #9EB7E5; /* Button background color */
+    color: #000000; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Border radius for button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-weight: bold; /* Make button text bold */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+
+.contact-styled .nf-form-content input[type="submit"]:hover {
+    background: #70EE9C; /* Button background color on hover */
+    color: #000000; /* Button text color on hover */
+}
+
+.contact-styled .nf-error.field-wrap .nf-field-element:after {
+    background: #e74c3c; /* Error message background color */
+}
+
+.contact-styled .nf-form-fields-required {
+    margin-bottom: 10px; /* Add margin below required fields */
+}
+
+.contact-styled .nf-error .nf-error-msg {
+    color: #e74c3c; /* Error message text color */
+}
+
+.contact-styled .nf-error-msg,
+.ninja-forms-req-symbol {
+    color: #e74c3c; /* Required symbol text color */
+}
+
+.contact-styled .nf-pass.field-wrap .nf-field-element:after {
+    color: #2ecc71; /* Password strength color */
+    content: "\f164";
+}
+/* End Contact Form Styles */
+</style>
+
+<h1 style="text-align:center; padding: 2rem 0; color: #0E3E66;">Contact Donovan</h1>
 
 <section style="padding-top: 0; padding-right: 4rem; padding-bottom: 4rem; padding-left: 4rem;">
-    <h2 style="text-align:center; padding-bottom: 2rem;">Hire This Amazing Improv Artist</h2>
+    <h2 style="text-align:center; padding-bottom: 2rem; color: #0E3E66">Hire This Amazing Improv Artist</h2>
     <div>
-        <p style="padding-top: 2rem">This guy is pretty great. You absolutely wouldn’t want to miss out on hiring him for your next event, would you?</p>
-
-        Fill out the form below, and you can hash out the details of your next event with Donovan!</p>
+        <p style="padding-top: 2rem; color: #053F23">This guy is pretty great. You absolutely wouldn’t want to miss out on hiring him for your next event, would you?</p>
+        <p>Fill out the form below, and you can hash out the details of your next event with Donovan!</p>
     </div>
 </section>
 
-<section>
-<h2 style="text-align:center; padding: 2rem 0;">Send Donovan a message</h2>
-<form action="" method="post" style="text-align: center;">
-
-    <label for="name" style="display: inline-block; text-align: left; width: 80%;">Name</label><br>
-    <input type="text" id="name" name="name" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
-
-    <label for="email" style="display: inline-block; text-align: left; width: 80%;">Email</label><br>
-    <input type="email" id="email" name="email" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
-
-    <label for="date" style="display: inline-block; text-align: left; width: 80%;">Requested date(s)</label><br>
-    <input type="date" id="date" name="date" style="border-radius: 20px; padding: 10px; width: 80%;"><br>
-
-    <label for="message" style="display: inline-block; text-align: left; width: 80%;">Add a message</label><br>
-    <textarea id="message" name="message" style="border-radius: 20px; padding: 10px; width: 80%; height: 150px;"></textarea><br>
-
-    <p>test</p>
-
-    <div style="margin-top: 20px; margin-bottom: 20px;">
-        <input type="submit" value="Submit" style="border-radius: 20px; padding: 10px 20px; background-color: #70EE9C; color: #000000; border: none;">
-    </div>
-</form>
+<section class="contact-styled">
+    <h2 style="text-align:center; padding: 2rem 0; color: #FFFFFF;">Send Donovan a message</h2>
+    <?php echo do_shortcode('[ninja_form id=1]'); ?>
 </section>
 
 <?php
