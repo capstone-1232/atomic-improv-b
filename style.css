@@ -1012,6 +1012,10 @@ p {
 	font-weight: 500;
 }
 
+body * {
+	border: 1px solid red;
+}
+
 /* Nav Menu and header Styles -------------------*/
 
 .site-header {
@@ -1145,13 +1149,17 @@ a[role=button] {
 	filter: drop-shadow(7px 7px var(--dark));
 }
 
+a[role=button]:active {
+	filter: drop-shadow(0);
+}
+
 .home-hero .tagline a {
 	margin-bottom: 1rem;
 }
 
 .info-blurb {
 	color: var(--dark);
-	padding: 0 1rem;
+	padding: 0 1.5rem;
 	font-family: var(--nunito);
 	font-weight: 500;
 	margin: 1.5rem 0;
@@ -1205,15 +1213,16 @@ a[role=button] {
 	padding: 2rem 1.5rem;
 	font-family: var(--bebas);
 	color: var(--dark-blue);
-	font-weight: 400;
 }
 
 .home-about h2 {
 	font-size: 2rem;
+	font-weight: 400;
 }
 
 .home-about h3 {
 	font-size: 1.5rem;
+	font-weight: 400;
 }
 
 .home-about p {
@@ -1243,6 +1252,7 @@ a[role=button] {
 .home-testimonials h2 {
 	font-size: 2rem;
 	margin-top: unset;
+	font-weight: 400;
 }
 
 .home-testimonials .testimonial-card {
@@ -1265,4 +1275,91 @@ a[role=button] {
 	margin-left: auto;
 	display: block;
 	width: fit-content;
+	font-family: var(--nunito);
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+.upcoming-events {
+	font-family: var(--bebas);
+	color: var(--dark-blue);
+	padding: 2rem 1.5rem;
+}
+
+.upcoming-events h2 {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-top: unset;
+}
+
+.upcoming-events h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.upcoming-events .event-info {
+	display: flex;
+	align-items: center;
+}
+
+.upcoming-events .event-info svg {
+	width: 1.5rem;
+}
+
+.upcoming-events .event-info p {
+	margin: 1rem 1rem;
+}
+
+.upcoming-events a:nth-of-type(1) {
+	margin-bottom: 1rem;
+}
+
+footer {
+	background-color: var(--grey);
+	color: var(--light);
+	font-family: var(--nunito);
+}
+
+.footer-container {
+	display: grid;
+	grid-template-areas: 
+	"a c"
+	"b c"
+	"b d";
+	grid-template-rows: 50px 1fr;
+}
+
+.footer-container .custom-logo-link {
+	grid-area: a;
+}
+
+.footer-container .footer-socials {
+	grid-area: b;
+}
+
+.footer-container .footer-nav-container {
+	grid-area: c;
+}
+
+.footer-container .site-info {
+	grid-area: d;
+}
+
+footer .footer-socials svg,
+footer .footer-socials svg path{
+	fill: var(--light);
+	width: 2rem;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+.menu-menu-2-container ul {
+	list-style-type: none;
+	padding: unset;
+}
+
+.menu-menu-2-container #footer-menu {
+	margin: unset;
 }
