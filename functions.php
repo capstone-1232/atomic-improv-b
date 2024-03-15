@@ -50,6 +50,7 @@ function atomic_improv_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'atomic-improv' ),
+			'menu-2' => esc_html__('Secondary', 'atomic-improv')
 		)
 	);
 
