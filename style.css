@@ -1326,15 +1326,19 @@ footer {
 	"a c"
 	"b c"
 	"b d";
-	grid-template-rows: 50px 1fr;
+	grid-template-rows: 100px 250px 100px;
+	grid-template-columns: 1fr 2fr;
 }
 
 .footer-container .custom-logo-link {
 	grid-area: a;
+	padding: 1rem;
 }
 
 .footer-container .footer-socials {
 	grid-area: b;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-container .footer-nav-container {
@@ -1345,19 +1349,42 @@ footer {
 	grid-area: d;
 }
 
+.footer-navigation {
+	height: 100%;
+}
+
+.footer-socials a {
+	padding: 1rem;
+}
+
 footer .footer-socials svg,
 footer .footer-socials svg path{
 	fill: var(--light);
-	width: 2rem;
+	width: 3rem;
 }
 
 footer a {
 	text-decoration: none;
 }
 
+.menu-menu-2-container {
+	text-align: right;
+	height: 100%;
+}
+
 .menu-menu-2-container ul {
 	list-style-type: none;
 	padding: unset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.menu-menu-2-container a {
+	padding: 1rem;
+	font-family: var(--bebas);
+	font-size: 1.5rem;
 }
 
 .menu-menu-2-container #footer-menu {
