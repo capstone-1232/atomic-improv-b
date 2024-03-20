@@ -8,7 +8,7 @@ get_header();
 
 <section style="padding-top: 0; padding-right: 4rem; padding-bottom: 4rem; padding-left: 4rem; background-color: #0E3E66;">
     <h2 style="text-align:center; padding-bottom: 2rem; color: #FFFFFF; padding-top: 2rem;">Meet the Visionary</h2>
-    <img class="donovan-meet-the-visionary" style="display: block; margin: 0 auto;">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-meet-the-visionary.png" alt="Donovan giving a speech" style="display: block; margin: 0 auto; border-radius: 8px; border: 2px solid white; padding-bottom: 2rem;">
     <div>
         <p style="padding-top: 2rem; color: #FFFFFF;">A world renowned Improviser, and a founding member of Atomic Improv, Donovan has over 30 years of comedy under his belt. He’s toured all over Canada, the US, and Europe, never ceasing to amaze and astound audiences with his wit and his motley variety of characters.</p>
     </div>
@@ -22,11 +22,12 @@ get_header();
     <p style="padding-top: 0; padding-right: 4rem; padding-left: 4rem; color: #FFFFFF;">In 2012, he was also selected as a feature performer for the Canada Olympic House during the London Olympics. He continues to share his talents worldwide, having delivered over hundreds of corporate Improv Workshops across the world. Donovan is a side-splitting genius that you do not want to miss out on. </p>
 </section>
 
-<section>
+<section style="padding: 2rem;">
     <h2 style="text-align:center; padding-bottom: 2rem;">The visionary in action</h2>
-    <div style="position: relative; overflow: hidden;">
-        <?php echo do_shortcode('[slick-slider]'); ?>
-    </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/the-visionary-in-action.png" alt="Donovan with a hat" style="display: block; margin: 0 auto 1rem; border-radius: 10px; border: 2px solid black; padding: 1rem;">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/hot-boy-summer.png" alt="Hot boy summer" style="display: block; margin: 0 auto 1rem; border-radius: 10px; border: 2px solid black; padding: 1rem;">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/the-visionary-in-action-3.png" alt="Fire pit comedy tour" style="display: block; margin: 0 auto 1rem; border-radius: 10px; border: 2px solid black; padding: 1rem;">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/the-visionary-in-action-4.png" alt="Donovan on CTV" style="display: block; margin: 0 auto 1rem; border-radius: 10px; border: 2px solid black; padding: 1rem;">
 </section>
 
 <section style="background-color: #0E3E66;">

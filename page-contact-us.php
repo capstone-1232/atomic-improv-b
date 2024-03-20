@@ -27,11 +27,18 @@ get_header();
 .contact-styled .nf-form-content input[type="email"],
 .contact-styled .nf-form-content input[type="date"],
 .contact-styled .nf-form-content textarea {
-    color: #FFFFFF; /* Text color for input fields */
+    color: #000000; /* Text color for input fields */
     border-radius: 5px; /* Border radius for input fields */
     background-color: #FFFFFF; /* Background color for input fields */
     border: 1px solid #000000; /* Black border for input fields */
     padding: 10px; /* Adjust padding as needed */
+}
+
+.contact-styled .nf-form-content input[type="text"]::placeholder,
+.contact-styled .nf-form-content input[type="email"]::placeholder,
+.contact-styled .nf-form-content input[type="date"]::placeholder,
+.contact-styled .nf-form-content textarea::placeholder {
+    color: #000000; /* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type="submit"] {
