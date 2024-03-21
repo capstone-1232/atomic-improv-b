@@ -1,3 +1,13 @@
+$light-blue: #9EB7E5;
+$dark-blue: #0e3e66;
+$dark-green: #053f23;
+$light-green: #70ee9c;
+$grey: #212121;
+$dark: #000;
+$light: #fff;
+$bebas: "Bebas Neue", sans-serif;
+$nunito: "Nunito Sans", sans-serif;
+
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
@@ -194,7 +204,7 @@ h6 {
 }
 p {
 	margin-bottom: 1.5em;
-	font-family: var(--nunito);
+	font-family: $nunito;
 	font-weight: 500;
 }
 dfn,
@@ -355,6 +365,7 @@ select {
 		width: 100%;
 		overflow: hidden;
 		display: flex;
+		flex-direction: column;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -379,10 +390,10 @@ select {
 		text-decoration: none;
 	}
 	.menu-menu-1-container {
-		background-color: var(--grey);
+		background-color: $grey;
 		position: absolute;
-		top: 60px;
-		color: var(--light);
+		top: 50px;
+		color: $light;
 		font-size: 1.5rem;
 		right: 0;
 		height: 0;
@@ -592,33 +603,22 @@ select {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
-:root {
-	--light-blue: #9EB7E5;
-	--dark-blue: #0e3e66;
-	--dark-green: #053f23;
-	--light-green: #70ee9c;
-	--grey: #212121;
-	--dark: #000;
-	--light: #fff;
-	--bebas: "Bebas Neue", sans-serif;
-	--nunito: "Nunito Sans", sans-serif;
-}
 
 p {
-	font-family: var(--nunito);
+	font-family: $nunito;
 	font-weight: 500;
 	font-size: clamp(1rem, 0.847rem + 0.765vw, 1.5rem);
 }
 
 .site-header {
 	display: flex;
-	background-color: var(--grey);
-	font-family: var(--bebas);
-	color: var(--light);
+	background-color: $grey;
+	font-family: $bebas;
+	color: $light;
 	justify-content: space-between;
 	align-items: center;
 	h1 {
-		-webkit-text-stroke: 0.5px var(--dark);
+		-webkit-text-stroke: 0.5px $dark;
 		font-size: 2rem;
 		margin: 0.5rem 0;
 	}
@@ -637,7 +637,7 @@ p {
 	margin-right: 1rem;
 	span {
 		width: 1.5rem;
-		background-color: var(--dark);
+		background-color: $dark;
 		height: 1.5px;
 		display: block;
 		border-radius: 9999px;
@@ -665,7 +665,7 @@ p {
 
 	ul {
 		li {
-			border-bottom: 2px solid var(--light);
+			border-bottom: 2px solid $light;
 			display: block;
 			width: 100%;
 		}
@@ -680,11 +680,11 @@ p {
 }
 .home-hero {
 	background: url('../img/hero-bg-cropped.webp') top/170% no-repeat;
-	color: var(--light);
+	color: $light;
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
 	h2 {
-		font-family: var(--bebas);
+		font-family: $bebas;
 		font-size: 2.5rem;
 		display: flex;
 		flex-direction: column;
@@ -706,17 +706,17 @@ p {
 	}
 }
 a[role=button] {
-	background-color: var(--light-blue);
+	background-color: $light-blue;
 	padding: 0.5rem 2rem;
 	text-decoration: none;
-	font-family: var(--bebas);
-	color: var(--dark);
+	font-family: $bebas;
+	color: $dark;
 	display: block;
 	border-radius: 0.5rem;
 	font-size: 1rem;
 	width: fit-content;
 	margin-left: auto;
-	filter: drop-shadow(7px 7px var(--dark));
+	filter: drop-shadow(7px 7px $dark);
 	transition: background-color 0.2s ease-in-out;
 }
 a[role=button]:active,
@@ -725,12 +725,12 @@ a[role=button]:focus {
 	transform: translate(7px, 7px);
 }
 a[role=button]:hover {
-	background-color: var(--light-green);
+	background-color: $light-green;
 }
 .info-blurb {
-	color: var(--dark);
+	color: $dark;
 	padding: 0 1.5rem;
-	font-family: var(--nunito);
+	font-family: $nunito;
 	font-weight: 500;
 	margin: 1.5rem 0;
 	* {
@@ -738,20 +738,20 @@ a[role=button]:hover {
 	}
 }
 .home-services {
-	background-color: var(--dark-blue);
-	color: var(--light);
+	background-color: $dark-blue;
+	color: $light;
 	border-radius: 1.5rem;
 	padding: 2rem 1.5rem;
 	h2 {
 		font-size: 2rem;
-		-webkit-text-stroke: 0.75px var(--dark);
+		-webkit-text-stroke: 0.75px $dark;
 		margin-top: unset;
 	}
 	h3 {
 		font-size: 1.5rem;
 	}
 	p {
-		font-family: var(--nunito);
+		font-family: $nunito;
 		font-weight: 400;
 	}
 	a {
@@ -760,20 +760,20 @@ a[role=button]:hover {
 }
 .home-services h2,
 .home-services h3 {
-	font-family: var(--bebas);
+	font-family: $bebas;
 	font-weight: 400;
 }
 .divider {
 	width: 80%;
 	height: 3px;
-	background-color: var(--light);
+	background-color: $light;
 	margin: auto;
 	border-radius: 9999px;
 }
 .home-about {
 	padding: 2rem 1.5rem;
-	font-family: var(--bebas);
-	color: var(--dark-blue);
+	font-family: $bebas;
+	color: $dark-blue;
 	h2 {
 		font-size: 2rem;
 		font-weight: 400;
@@ -783,7 +783,7 @@ a[role=button]:hover {
 		font-weight: 400;
 	}
 	p {
-		color: var(--dark);
+		color: $dark;
 		margin-top: unset;
 		margin-bottom: 1rem;
 	}
@@ -796,10 +796,10 @@ a[role=button]:hover {
 	grid-template-columns: 25% 25%;
 }
 .home-testimonials {
-	background-color: var(--dark-blue);
+	background-color: $dark-blue;
 	border-radius: 1.5rem;
-	color: var(--light);
-	font-family: var(--bebas);
+	color: $light;
+	font-family: $bebas;
 	font-weight: 400;
 	padding: 2rem 1.5rem;
 	h2 {
@@ -808,8 +808,8 @@ a[role=button]:hover {
 		font-weight: 400;
 	}
 	.testimonial-card {
-		background-color: var(--light);
-		color: var(--dark-blue);
+		background-color: $light;
+		color: $dark-blue;
 		border-radius: 1rem;
 		padding: 1rem;
 		p {
@@ -823,15 +823,15 @@ a[role=button]:hover {
 			margin-left: auto;
 			display: block;
 			width: fit-content;
-			font-family: var(--nunito);
+			font-family: $nunito;
 			font-style: italic;
 			font-size: 0.8rem;
 		}
 	}
 }
 .upcoming-events {
-	font-family: var(--bebas);
-	color: var(--dark-blue);
+	font-family: $bebas;
+	color: $dark-blue;
 	padding: 2rem 1.5rem;
 	h2 {
 		font-size: 2rem;
@@ -859,9 +859,9 @@ a[role=button]:hover {
 	}
 }
 footer {
-	background-color: var(--grey);
-	color: var(--light);
-	font-family: var(--nunito);
+	background-color: $grey;
+	color: $light;
+	font-family: $nunito;
 
 	a {
 		text-decoration: none;
@@ -909,7 +909,7 @@ footer {
 }
 footer .footer-socials svg,
 footer .footer-socials svg path {
-	fill: var(--light);
+	fill: $light;
 	width: 3rem;
 }
 .menu-menu-2-container {
@@ -925,7 +925,7 @@ footer .footer-socials svg path {
 	}
 	a {
 		padding: 1rem;
-		font-family: var(--bebas);
+		font-family: $bebas;
 		font-size: 1.5rem;
 	}
 	#footer-menu {

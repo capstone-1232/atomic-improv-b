@@ -232,7 +232,7 @@ h6 {
 
 p {
   margin-bottom: 1.5em;
-  font-family: var(--nunito);
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -419,6 +419,7 @@ select {
   width: 100%;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -443,10 +444,10 @@ select {
   text-decoration: none;
 }
 .main-navigation .menu-menu-1-container {
-  background-color: var(--grey);
+  background-color: #212121;
   position: absolute;
-  top: 60px;
-  color: var(--light);
+  top: 50px;
+  color: #fff;
   font-size: 1.5rem;
   right: 0;
   height: 0;
@@ -679,34 +680,22 @@ select {
   margin-bottom: 1.5em;
 }
 
-:root {
-  --light-blue: #9EB7E5;
-  --dark-blue: #0e3e66;
-  --dark-green: #053f23;
-  --light-green: #70ee9c;
-  --grey: #212121;
-  --dark: #000;
-  --light: #fff;
-  --bebas: "Bebas Neue", sans-serif;
-  --nunito: "Nunito Sans", sans-serif;
-}
-
 p {
-  font-family: var(--nunito);
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-size: clamp(1rem, 0.847rem + 0.765vw, 1.5rem);
 }
 
 .site-header {
   display: flex;
-  background-color: var(--grey);
-  font-family: var(--bebas);
-  color: var(--light);
+  background-color: #212121;
+  font-family: "Bebas Neue", sans-serif;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
 }
 .site-header h1 {
-  -webkit-text-stroke: 0.5px var(--dark);
+  -webkit-text-stroke: 0.5px #000;
   font-size: 2rem;
   margin: 0.5rem 0;
 }
@@ -727,7 +716,7 @@ p {
 }
 .menu-toggle span {
   width: 1.5rem;
-  background-color: var(--dark);
+  background-color: #000;
   height: 1.5px;
   display: block;
   border-radius: 9999px;
@@ -758,7 +747,7 @@ p {
   z-index: 9999;
 }
 .menu-menu-1-container ul li {
-  border-bottom: 2px solid var(--light);
+  border-bottom: 2px solid #fff;
   display: block;
   width: 100%;
 }
@@ -772,12 +761,12 @@ p {
 
 .home-hero {
   background: url("../img/hero-bg-cropped.webp") top/170% no-repeat;
-  color: var(--light);
+  color: #fff;
   padding: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
 }
 .home-hero h2 {
-  font-family: var(--bebas);
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -797,18 +786,18 @@ p {
 }
 
 a[role=button] {
-  background-color: var(--light-blue);
+  background-color: #9EB7E5;
   padding: 0.5rem 2rem;
   text-decoration: none;
-  font-family: var(--bebas);
-  color: var(--dark);
+  font-family: "Bebas Neue", sans-serif;
+  color: #000;
   display: block;
   border-radius: 0.5rem;
   font-size: 1rem;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
-  filter: drop-shadow(7px 7px var(--dark));
+  filter: drop-shadow(7px 7px #000);
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -819,13 +808,13 @@ a[role=button]:focus {
 }
 
 a[role=button]:hover {
-  background-color: var(--light-green);
+  background-color: #70ee9c;
 }
 
 .info-blurb {
-  color: var(--dark);
+  color: #000;
   padding: 0 1.5rem;
-  font-family: var(--nunito);
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   margin: 1.5rem 0;
 }
@@ -834,21 +823,21 @@ a[role=button]:hover {
 }
 
 .home-services {
-  background-color: var(--dark-blue);
-  color: var(--light);
+  background-color: #0e3e66;
+  color: #fff;
   border-radius: 1.5rem;
   padding: 2rem 1.5rem;
 }
 .home-services h2 {
   font-size: 2rem;
-  -webkit-text-stroke: 0.75px var(--dark);
+  -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
 }
 .home-services h3 {
   font-size: 1.5rem;
 }
 .home-services p {
-  font-family: var(--nunito);
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
 }
 .home-services a {
@@ -857,22 +846,22 @@ a[role=button]:hover {
 
 .home-services h2,
 .home-services h3 {
-  font-family: var(--bebas);
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
 }
 
 .divider {
   width: 80%;
   height: 3px;
-  background-color: var(--light);
+  background-color: #fff;
   margin: auto;
   border-radius: 9999px;
 }
 
 .home-about {
   padding: 2rem 1.5rem;
-  font-family: var(--bebas);
-  color: var(--dark-blue);
+  font-family: "Bebas Neue", sans-serif;
+  color: #0e3e66;
 }
 .home-about h2 {
   font-size: 2rem;
@@ -883,7 +872,7 @@ a[role=button]:hover {
   font-weight: 400;
 }
 .home-about p {
-  color: var(--dark);
+  color: #000;
   margin-top: unset;
   margin-bottom: 1rem;
 }
@@ -897,10 +886,10 @@ a[role=button]:hover {
 }
 
 .home-testimonials {
-  background-color: var(--dark-blue);
+  background-color: #0e3e66;
   border-radius: 1.5rem;
-  color: var(--light);
-  font-family: var(--bebas);
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   padding: 2rem 1.5rem;
 }
@@ -910,8 +899,8 @@ a[role=button]:hover {
   font-weight: 400;
 }
 .home-testimonials .testimonial-card {
-  background-color: var(--light);
-  color: var(--dark-blue);
+  background-color: #fff;
+  color: #0e3e66;
   border-radius: 1rem;
   padding: 1rem;
 }
@@ -927,14 +916,14 @@ a[role=button]:hover {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: var(--nunito);
+  font-family: "Nunito Sans", sans-serif;
   font-style: italic;
   font-size: 0.8rem;
 }
 
 .upcoming-events {
-  font-family: var(--bebas);
-  color: var(--dark-blue);
+  font-family: "Bebas Neue", sans-serif;
+  color: #0e3e66;
   padding: 2rem 1.5rem;
 }
 .upcoming-events h2 {
@@ -961,9 +950,9 @@ a[role=button]:hover {
 }
 
 footer {
-  background-color: var(--grey);
-  color: var(--light);
-  font-family: var(--nunito);
+  background-color: #212121;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
 }
 footer a {
   text-decoration: none;
@@ -1009,7 +998,7 @@ footer .site-info span {
 
 footer .footer-socials svg,
 footer .footer-socials svg path {
-  fill: var(--light);
+  fill: #fff;
   width: 3rem;
 }
 
@@ -1027,7 +1016,7 @@ footer .footer-socials svg path {
 }
 .menu-menu-2-container a {
   padding: 1rem;
-  font-family: var(--bebas);
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
 }
 .menu-menu-2-container #footer-menu {
