@@ -1,69 +1,74 @@
-.hire-artist-section
-    padding-top: 0
-    padding-right: 4rem
-    padding-bottom: 4rem
-    padding-left: 4rem
 
-    .hire-artist-heading
-        text-align: center
-        padding-bottom: 2rem
-        color: #0E3E66
+$primary-color-about: #0E3E66;
+$secondary-color-about: #FFFFFF;
+$accent-color-about: #000000;
 
-    .hire-artist-content
-        padding-top: 2rem
 
-        .hire-artist-paragraph
-            color: #053F23
-
-.contact-heading {
-  text-align: center;
-  padding: 2rem 0;
-  color: #0E3E66;
+@mixin border-radius-about($radius) {
+    border-radius: $radius;
+    overflow: hidden;
 }
 
-.meet-donovan-section {
-  text-align: center;
+
+.about-heading {
+    padding: 2rem 0;
+    padding-left: 2rem;
+    color: $primary-color-about;
+
+ 
+    @media screen and (min-width: 1400px) {
+        background: linear-gradient(to bottom, black, gray, white);
+    }
+
+
+    @media screen and (min-width: 1400px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; 
+    }
 }
 
-.meet-donovan-section h2 {
-  margin-bottom: 1rem;
+.flex-container {
+    background-color: $primary-color-about;
+    color: $secondary-color-about;
+
+    // Flexbox layout for smaller screens
+    display: flex; 
+    flex-direction: column; 
+
+    // Media query for larger screens
+    @media screen and (min-width: 1400px) {
+        flex-direction: row;
+    }
 }
 
-.meet-donovan-section img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+.column1 {
+    background-color: $primary-color-about; 
+    color: $secondary-color-about; 
+    padding: 20px; 
+
+    // Apply border-radius mixin
+    @include border-radius-about(10px);
 }
 
-.meet-donovan-section p {
-  margin-bottom: 1rem;
+.column2 {
+    color: $accent-color-about; 
+    padding: 20px; 
+    margin-top: 20px; 
+    display: inline-block;
+
+    // Media query for smaller screens
+    @media screen and (max-width: 1400px) {
+        color: $secondary-color-about;
+    }
 }
 
-.image-gallery-section {
-  padding: 2rem;
-  background-color: #0E3E66;
-}
-
-.image-gallery-section h2 {
-  text-align: center;
-  padding-bottom: 2rem;
-}
-
-.image-gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.image-wrapper {
-  margin: 0 auto 1rem;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 2px solid #000000;
-}
-
-.image-wrapper img {
-  display: block;
-  width: 100%;
-  border-radius: inherit;
+.column2 p {
+    padding: 10px; 
+    margin: 10px 0;
+    // Media query for larger screens
+    @media screen and (min-width: 1400px) {
+        background-color: $secondary-color-about; 
+    }
 }
