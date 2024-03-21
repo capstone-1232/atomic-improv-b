@@ -84,12 +84,12 @@ get_header();
 /* End Contact Form Styles */
 </style>
 
-<h1 style="text-align:center; padding: 2rem 0; color: #0E3E66;">Contact Donovan</h1>
+<h1 class="contact-heading">Contact Donovan</h1>
 
-<section style="padding-top: 0; padding-right: 4rem; padding-bottom: 4rem; padding-left: 4rem;">
-    <h2 style="text-align:center; padding-bottom: 2rem; color: #0E3E66">Hire This Amazing Improv Artist</h2>
-    <div>
-        <p style="padding-top: 2rem; color: #053F23">This guy is pretty great. You absolutely wouldn’t want to miss out on hiring him for your next event, would you?</p>
+<section class="hire-artist-section">
+    <h2 class="hire-artist-heading">Hire This Amazing Improv Artist</h2>
+    <div class="hire-artist-content">
+        <p class="hire-artist-paragraph">This guy is pretty great. You absolutely wouldn’t want to miss out on hiring him for your next event, would you?</p>
         <p>Fill out the form below, and you can hash out the details of your next event with Donovan!</p>
     </div>
 </section>
