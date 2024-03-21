@@ -8,42 +8,33 @@ get_header();
 
 ?>
 
-<div>
-    <h1>Services</h1>
+<div class="services-hero">
+    <h2>What do we do?</h2>
 </div>
 
 <div>
-    <section >
-        <h2>Corporate Events</h2>
-        <img src="<?= get_template_directory_uri()?>/img/corporate-events.webp" alt="Donovan with his partner, Chris, posing while a comedy show.">
-        <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
-        <p>The award winning production has performed thousands  of times across North America and Europe to rave reviews and sold out  crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
-        <a href="#" aria-label="Book Corporate Event">Book Corporate Event</a>
-    </section>
-
-    <section >
+    <section class="services-poy">
         <h2>The Power of Yes</h2>
-        <img src="<?= get_template_directory_uri()?>/img/poy.webp" alt="Power of yes logo.">
+        <img src="<?= get_template_directory_uri() ?>/img/poy.webp" alt="Power of yes logo.">
+        <img src="<?= get_template_directory_uri()?>/img/corporate-events.webp" alt="Donovan with his partner, Chris, posing while a comedy show.">
         <div>
             <h3>What is it?</h3>
             <img src="<?= get_template_directory_uri() ?>/img/donovan-graham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
             <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches you the creative techniques of improv and how to apply them to improve your business, work, and life.</p>
-            <span class="divider"></span>
+            <a href="#" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>
         </div>
-
+        <span class="divider"></span>
         <div>
-            <h3>Why should you say "Yes" to the Powe of Yes?</h3>
+            <h3>Why should you say "Yes" to the Power of Yes?</h3>
             <img src="<?= get_template_directory_uri()?>/img/donovan-graham-2.webp" alt="Donovan and Graham shaking hands.">
             <p>Improv training is a proven skill-building resource with many positive applications. In fact, a recent Forbes article reports that more Fortune 500 companies are using improv to inspire creativity, communication, and productivity in their workforce.</p>
             <p>Each Power of Yes! workshop focuses on researched business principles and can be customized to meet your organization's needs. Power of Yes! will enhance your staff's ability to work as a team in an effective manner and confidently communicate with clients and each other.</p>
-            <span class="divider"></span>
         </div>
-
+        <span class="divider"></span>
         <div>
             <h3>Still not sure if the power of yes is the power for you?</h3>
             <p>We get it. Actions speak louder than words, and we’d love to show you some of our testimonies about how The Power of Yes! has helped people just like you.</p>
         </div>
-
         <div>
             <div>
                 <p>“In these past 2 months since the workshop, we are already seeing changes  in the way our team communicates internally and externally. I would recommend this workshop for all teams, big or small!”</p>
@@ -54,16 +45,21 @@ get_header();
                 <span>-MacEwan</span>
             </div>
         </div>
-
-        <a href="#" aria-label="Book Power of Yes">Book Power of Yes</a>
+        <div>
+            <h3>Also Starring the Talented Graham Neil!</h3>
+            <img src="" alt="">
+            <p>Combining quick wit, with business savvy, Graham Neil is a genius when it comes to corporate and educational workshops, especially when it comes to supporting the front-line workers through the “Power of Yes!”. </p>
+            <p>With a Bachelor of Journalism, well-known as an international award-winning Senior Reporter at CTV Edmonton with over 25 years of broadcast experience on CNN and CTV National News, Graham Neil is a reliable partner of Donovan’s in his “Power of Yes!” workshops.</p>
+        </div>
     </section>
 
     <section >
         <h2>The Funny Santa Guy</h2>
         <img src="<?= get_template_directory_uri() ?>/img/santa-donovan.webp" alt="Donovan Workun dressed as santa claus sitting on a chair.">
-        <p>Ho-ho-holy smokes, is that Donovan Workun guest starring as Santa Claus?! You’d better believe it!</p>
-        <p>Coming to a location near you this winter, Donovan’s bringing holiday cheer and joy to you and your community. When you call on this jovial Santa for your event, you’re guaranteed Christmas cheer for the whole family. From pet-friendly photo shoots to an overall festive spirit, Donovan never fails to impress and bring good cheer to your community.</p>
-        <a href="#" aria-label="Book the Santa Guy">Book the Santa Guy</a>
+        <p>Ho-ho-holy smokes, who’s that funny Santa guy?! Let ThatFunnySanta bring his trademark merriment and mearth as a special treat for your holiday cheer!</p>
+        <img src="" alt="">
+        <p>"I don’t know if there is anyone else but "ThatFunnySanta" who could bring such magic to our children", says Janice Krissa, co-founder of the FreeStore for Ukrainian Newcomers. "In a few short hours, he made hundreds of children and adults feel important and special and was able to turn a difficult time into a magical visit and memories that will last a lifetime."</p>
+        <img src="" alt="">
     </section>
 
 </div>

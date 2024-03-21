@@ -1011,9 +1011,9 @@ p {
 	font-weight: 500;
 }
 
-body * {
+/* body * {
 	border: 1px solid red;
-}
+} */
 
 /* Nav Menu and header Styles -------------------*/
 
@@ -1039,8 +1039,8 @@ body * {
 
 .menu-toggle{
 	border-radius: 9999px;
-	height: 2.25rem;
-	width: 2.25rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1053,9 +1053,10 @@ body * {
 	background-color: var(--dark);
 	height: 1.5px;
 	display: block;
-	border-radius: 100%;
+	border-radius: 9999px;
 	transition: all 0.3s ease-in-out;
 	transform-origin: center;
+	border: 0;
 }
 
 .line-1 {
@@ -1146,10 +1147,17 @@ a[role=button] {
 	width: fit-content;
 	margin-left: auto;
 	filter: drop-shadow(7px 7px var(--dark));
+	transition: background-color 0.2s ease-in-out;
 }
 
-a[role=button]:active {
-	filter: drop-shadow(0);
+a[role=button]:active,
+a[role=button]:focus {
+	filter: unset;
+	transform: translate(7px, 7px);
+}
+
+a[role=button]:hover {
+	background-color: var(--light-green);
 }
 
 .home-hero .tagline a {
@@ -1837,6 +1845,7 @@ footer a {
 
 
 
+
 @media screen and (min-width: 1240px) {
     .about-heading {
         background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
@@ -1974,3 +1983,14 @@ footer a {
         margin: 0; 
     }
 }
+=======
+footer .site-info {
+	text-align: right;
+}
+
+footer .site-info span {
+	width: 100%;
+	display: block;
+	margin-top: 2rem;
+}
+
