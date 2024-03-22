@@ -7,6 +7,11 @@ $dark: #000;
 $light: #fff;
 $bebas: "Bebas Neue", sans-serif;
 $nunito: "Nunito Sans", sans-serif;
+$pclamp: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
+$h2clamp: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
+$h3clamp: clamp(2rem, 0.571rem + 3.81vw, 4rem);
+$h4clamp: clamp(1.5rem, 1.056rem + 2.222vw, 3rem);
+$smallclamp: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
 
 html {
 	line-height: 1.15;
@@ -708,27 +713,10 @@ select {
 	margin-bottom: 1.5em;
 }
 
-:root {
-	--light-blue: #9EB7E5;
-	--dark-blue: #0e3e66;
-	--dark-green: #053f23;
-	--light-green: #70ee9c;
-	--grey: #212121;
-	--dark: #000;
-	--light: #fff;
-	--bebas: "Bebas Neue", sans-serif;
-	--nunito: "Nunito Sans", sans-serif;
-	--pclamp: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
-	--h2clamp: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
-	--h3clamp: clamp(2rem, 0.571rem + 3.81vw, 4rem);
-	--h4clamp: clamp(1.5rem, 1.056rem + 2.222vw, 3rem);
-	--smallclamp: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
-}
-
 p {
 	font-family: $nunito;
 	font-weight: 500;
-	font-size: var(--pclamp)
+	font-size: $pclamp
 }
 
 .site-header {
@@ -818,8 +806,8 @@ p {
 	border-radius: 0 0 1.5rem 1.5rem;
 
 	h2 {
-		font-family: var(--bebas);
-		font-size: var(--h2clamp);
+		font-family: $bebas;
+		font-size: $h2clamp;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -886,13 +874,13 @@ a[role=button]:hover {
 	padding: 2rem 1.5rem;
 
 	h2 {
-		font-size: var(--h2clamp);
-		-webkit-text-stroke: 0.75px var(--dark);
+		font-size: $h2clamp;
+		-webkit-text-stroke: 0.75px $dark;
 		margin-top: unset;
 	}
 
 	h3 {
-		font-size: var(--h3clamp);
+		font-size: $h3clamp;
 	}
 
 	p {
@@ -924,12 +912,12 @@ a[role=button]:hover {
 	font-family: $bebas;
 	color: $dark-blue;
 	h2 {
-		font-size: var(--h2clamp);
+		font-size: $h2clamp;
 		font-weight: 400;
 	}
 
 	h3 {
-		font-size: var(--h3clamp);
+		font-size: $h3clamp;
 		font-weight: 400;
 	}
 
@@ -958,7 +946,7 @@ a[role=button]:hover {
 	padding: 2rem 1.5rem;
 
 	h2 {
-		font-size: var(--h2clamp);
+		font-size: $h2clamp;
 		margin-top: unset;
 		font-weight: 400;
 	}
@@ -995,13 +983,13 @@ a[role=button]:hover {
 	padding: 2rem 1.5rem;
 
 	h2 {
-		font-size: var(--h2clamp);
+		font-size: $h2clamp;
 		font-weight: 400;
 		margin-top: unset;
 	}
 
 	h3 {
-		font-size: var(--h3clamp);
+		font-size: $h3clamp;
 		font-weight: 400;
 	}
 
@@ -1114,5 +1102,5 @@ footer .footer-socials svg path {
 }
 
 .small {
-	font-size: var(--smallclamp);
+	font-size: $smallclamp;
 }
