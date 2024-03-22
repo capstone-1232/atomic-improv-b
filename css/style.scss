@@ -719,6 +719,24 @@ p {
 	font-size: $pclamp
 }
 
+h2 {
+	font-size: $h2clamp;
+	font-family: $bebas;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: $h3clamp;
+	font-family: $bebas;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: $h4clamp;
+	font-family: $bebas;
+	font-weight: 400;
+}
+
 .site-header {
 	display: flex;
 	background-color: $grey;
@@ -1103,4 +1121,25 @@ footer .footer-socials svg path {
 
 .small {
 	font-size: $smallclamp;
+}
+
+.services-hero {
+	padding: 0 2rem;
+	color: $dark-blue;
+}
+
+.services-corporate {
+
+	h3 {
+		padding: 0 2rem;
+		color: $bebas;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		padding: 0 2rem;
+	}
 }
