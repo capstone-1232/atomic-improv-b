@@ -1151,6 +1151,11 @@ footer .footer-socials svg path {
     }
 }
 
+.about-book-button {
+    margin: 2rem;
+}
+
+
 .about-heading {
     padding: 2rem 0;
     padding-left: 2rem;
@@ -1187,10 +1192,14 @@ footer .footer-socials svg path {
 }
 
 .image-gallery-section h2,
-.contact-heading,
-.meet-donovan-section h2 {
+.contact-heading {
     text-align: center;
     color: #FFFFFF;
+}
+
+.meet-donovan-section h2 {
+	padding-left: 2rem;
+	color: #FFFFFF;
 }
 
 .image-gallery-container {

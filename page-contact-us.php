@@ -15,7 +15,7 @@ get_header();
 </section>
 
 <section class="contact-styled">
-<h2 class="send-message-heading">SEND DONOVAN A MESSAGE</h2>
+<h2 class="send-message-heading">SEND US A MESSAGE</h2>
     <?php echo do_shortcode('[ninja_form id=1]'); ?>
 </section>
 
