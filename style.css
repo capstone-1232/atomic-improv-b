@@ -1888,7 +1888,8 @@ footer a {
 }
 
 .image-gallery-section h2,
-.contact-heading{
+.contact-heading,
+.meet-donovan-section h2 {
     text-align: center;
     color: #FFFFFF;
 }
@@ -1927,28 +1928,7 @@ footer a {
 }
 
 .meet-donovan-section h2 {
-	padding-left: 2rem;
     color: #000000; 
-}
-
-.chris-borger-about h2 {
-	padding-left: 2rem;
-}
-
-.chris-borger-about p {
-	text-align: center;
-}
-
-.meet-donovan-section p {
-	text-align: center;
-}
-
-.image-gallery-section h3 {
-	padding-left: 2rem;
-}
-
-.about-book-button {
-    margin: 20px;
 }
 
 .flex-container {
@@ -2003,7 +1983,7 @@ footer a {
         margin: 0; 
     }
 }
-
+=======
 footer .site-info {
 	text-align: right;
 }
