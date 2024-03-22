@@ -4,8 +4,6 @@
 get_header();
 ?>
 
-
-
 <h1 class="contact-heading">Contact Donovan</h1>
 
 <section class="hire-artist-section">
