@@ -14,7 +14,7 @@ get_header();
             <span>"We make the evening</span>
             <span>all about you"</span>
         </h2>
-        <span>-Donovan Workun</span>
+        <span class="small">-Donovan Workun</span>
         <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button">Book a Show!</a>
     </div>
 </section>
