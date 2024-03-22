@@ -13,6 +13,11 @@ get_header();
 </div>
 
 <div>
+    <section class="services-corporate">
+        <h2>Corporate Events</h2>
+        <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
+        <p>The award winning production has performed thousands of times across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
+    </section>
     <section class="services-poy">
         <h2>The Power of Yes</h2>
         <img src="<?= get_template_directory_uri() ?>/img/poy.webp" alt="Power of yes logo.">
