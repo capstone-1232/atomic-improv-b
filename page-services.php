@@ -13,9 +13,12 @@ get_header();
     </div>
 
     <section class="services-corporate">
-        <h3>Corporate Events</h3>
+        <h3>Corporate Shows</h3>
         <img src="<?= get_template_directory_uri() ?>/img/corporate-events.webp"
         alt="Donovan with his partner, Chris, posing while a comedy show.">
+        <!-- <picture>
+            <source srcset="<?= get_template_directory_uri()?>/img/sm/" media="">
+        </picture> -->
         <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
         <p>The award winning production has performed thousands of times across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
     </section>
@@ -23,7 +26,13 @@ get_header();
         <div class="poy-part-1">
             <h3>The Power of Yes</h3>
             <div>
-                <img src="<?= get_template_directory_uri() ?>/img/donovan-graham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/powerofyesgraham.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/powerofyesgraham.webp" media="(max-width: 800px)">
+
+                    <img src="<?= get_template_directory_uri() ?>/img/donovan-graham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
+                </picture>
                 <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches you the creative techniques of improv and how to apply them to improve your business, work, and life.</p>
                 <a href="#" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>
             </div>
@@ -58,7 +67,7 @@ get_header();
         </div>
     </section>
 
-    <section >
+    <section class="services-santa">
         <h3>The Funny Santa Guy</h3>
         <img src="<?= get_template_directory_uri() ?>/img/santa-donovan.webp" alt="Donovan Workun dressed as santa claus sitting on a chair.">
         <p>Ho-ho-holy smokes, who’s that funny Santa guy?! Let ThatFunnySanta bring his trademark merriment and mearth as a special treat for your holiday cheer!</p>

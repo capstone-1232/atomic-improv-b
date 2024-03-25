@@ -2,11 +2,11 @@
 
 const siteNavigation = document.querySelector("#site-navigation")
 
-const menuToggle = siteNavigation.querySelector(".menu-toggle")
+const menuToggle = document.querySelector(".menu-toggle")
 
-const menuButtonLine1 = siteNavigation.querySelector("span:nth-child(1)")
+const menuButtonLine1 = document.querySelector(".line-1")
 
-const menuButtonLine2 = siteNavigation.querySelector("span:nth-child(2)")
+const menuButtonLine2 = document.querySelector(".line-2")
 
 const menuOpenDiv = document.querySelector('.menu-menu-1-container')
 
@@ -38,3 +38,18 @@ document.addEventListener('click', function (event) {
     }
     
 })
+
+// Lenis smooth scroll
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+    console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
