@@ -1132,7 +1132,7 @@ footer .footer-socials svg path {
 
 	h3 {
 		padding: 0 2rem;
-		color: $bebas;
+		color: $dark-blue;
 	}
 
 	img {
@@ -1141,6 +1141,71 @@ footer .footer-socials svg path {
 
 	p {
 		padding: 0 2rem;
+	}
+}
+
+.services-poy {
+	color: $light;
+
+	img {
+		width: 100%;
+	}
+
+	h3, h4 {
+		margin: 1rem 2rem;
+	}
+
+	p {
+		margin: 1rem 2rem 2rem;
+	}
+
+	a[role=button] {
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.poy-part-1, .poy-part-2 {
+		background-color: $dark-blue;
+		padding: 1rem 0;
+		border-radius: 15px;
+	}
+
+	.testimonials {
+		color: $dark;
+		padding: 2rem;
+
+		.card-1 {
+			margin-bottom: 2rem;
+		}
+		
+		.card-1, .card-2 {
+			border: 1px solid $dark;
+			border-radius: 10px;
+			padding: 1rem;
+			height: 15.625rem;
+			position: sticky;
+			top: 0;
+			background-color: $light;
+			p {
+				margin: unset;
+				margin-bottom: 1rem;
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
+.services-santa {
+	h3 {
+		margin: 2rem 2rem 1rem;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	p {
+		margin: 1rem 2rem;
 	}
 }
 
