@@ -1114,7 +1114,7 @@ footer .footer-socials svg path {
   margin: 1rem 2rem;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .about-heading {
     background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
   }
@@ -1358,4 +1358,22 @@ footer .footer-socials svg path {
 .contact-styled .nf-pass.field-wrap .nf-field-element:after {
   color: #2ecc71; /* Password strength color */
   content: "\f164";
+}
+
+@media screen and (min-width: 1399px) {
+  .contact-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+  }
+}
+.meet-donovan-section {
+  text-align: center;
+}
+
+@media screen and (min-width: 1399px) {
+  .chris-borger-about p {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */

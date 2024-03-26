@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<h1 class="contact-heading">Contact Donovan</h1>
+<h2 class="contact-heading">Contact Donovan!</h2>
 
 <section class="hire-artist-section">
     <h2 class="hire-artist-heading">Hire This Amazing Improv Artist</h2>
@@ -16,7 +16,7 @@ get_header();
 
 <section class="contact-styled">
 <h2 class="send-message-heading">SEND US A MESSAGE</h2>
-    <?php echo do_shortcode('[ninja_form id=1]'); ?>
+    <?php echo do_shortcode('[ninja_form id=1 html_id_prefix="contact_form_"]'); ?>
 </section>
 
 <?php
