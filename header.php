@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Atomic Improv’s interactive, custom and hilarious shows are the perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv is always a hit.">
-	<meta name="keywords" content="">
+	<meta name="keywords" content="Improv, Comedy, Atomic Improv, Funny, Comedic, Laughter, Events, Event, Humor, Performance, Comedy Show, Edmonton Improv, Edmonton Comedy, Edmonton, Donovan Workun, Chris Borger, Atomic Improv Company, Atomic Improv Co., Comedy Troupe">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<style>
