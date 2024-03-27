@@ -1256,9 +1256,9 @@ footer .footer-socials svg path {
     border: 2px solid #FFFFFF;
 }
 
-.image-gallery-section h2,
+.image-gallery-section h3,
 .contact-heading {
-    text-align: center;
+    padding-left: 2rem;
     color: #FFFFFF;
 }
 
@@ -1467,7 +1467,7 @@ footer .footer-socials svg path {
     }
 }
 
-.meet-donovan-section {
+.meet-donovan-section p{
 	text-align: center;
   }
 
@@ -1479,6 +1479,14 @@ footer .footer-socials svg path {
 	  border-radius: 8px;
 	}
   }
+
+.chris-borger-about h2 {
+	padding-left: 2rem;
+}
+
+.chris-borger-about p {
+	text-align: center;
+}
 
   @media (min-width: 1399px) {
     .image-gallery-container .image-wrapper {
