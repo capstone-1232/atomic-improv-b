@@ -33,8 +33,7 @@ get_header();
     <div class="divider"></div>
     <div class="home-santa">
         <h3>That Funny Santa!</h3>
-        <img src="<?= get_template_directory_uri() ?>/img/santa-guy.png"
-            alt="Donovan Dressed as a Santa, sitting on a wide chair with two black dogs in his lap and laughing.">
+        <img src="<?= get_template_directory_uri() ?>/img/santa-guy.png" alt="Donovan Dressed as a Santa, sitting on a wide chair with two black dogs in his lap and laughing.">
         <p>Christmas is a magical time of year and there is nothing more special than bringing to your event!</p>
         <p>Let ThatFunnySanta bring his trademark merriment and mirth as a special treat to your holiday cheer!</p>
         <a href="<?= esc_url(get_permalink(8)); ?>" aria-label="Discover More" role="button">Discover More</a>
@@ -51,8 +50,7 @@ get_header();
 
     <div class="socials">
         <h3>Check out the Social Media!</h3>
-        <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp"
-            alt="Donovan wants you to check out the Social Media.">
+        <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
         <div class="social-links">
             <a href="https://www.instagram.com/atomicimprov/" aria-label="Instagram Link">
                 <svg viewBox="0 0 24 24" fill="none">
@@ -98,7 +96,7 @@ get_header();
 </section>
 
 <section class="home-testimonials">
-    <h2>What do people say about him?</h2>
+    <h2>What do people say about Us?</h2>
     <div class="testimonial-card">
         <p><span>“An absolute gut-buster...<br>A festival of belly-laughs!”</span></p>
         <span>-Edmonton Journal</span>
@@ -112,7 +110,7 @@ get_header();
 </section>
 
 <section class="upcoming-events">
-    <h2>Upcoming Events</h2>
+    <h2>Catch Atomic Improv at:</h2>
     <?php
     $args = array(
         'post_type' => 'upcoming_events',

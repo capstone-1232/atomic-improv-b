@@ -944,13 +944,16 @@ a[role=button]:hover {
 }
 
 .home-about {
-	padding: 2rem 0;
+	padding: 2rem 0 0;
 	font-family: $bebas;
-	color: $dark-blue;
+	color: $light;
+	background-color: $dark-blue;
+	margin-top: 2rem;
 
 	h2 {
 		font-size: $h2clamp;
 		font-weight: 400;
+		margin: 0 2rem;
 	}
 
 	h3 {
@@ -959,13 +962,17 @@ a[role=button]:hover {
 	}
 
 	p {
-		color: $dark;
-		margin-top: unset;
-		margin-bottom: 1rem;
+		margin: 0 2rem 1rem;
 	}
 
-	a {
+	a[role=button] {
 		margin-top: 1.5rem;
+		margin-right: 2rem;
+		margin: 1rem 2rem 2rem auto;
+	}
+
+	.socials {
+		background-color: $light;
 	}
 }
 

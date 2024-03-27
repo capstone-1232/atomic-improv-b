@@ -889,25 +889,31 @@ a[role=button]:hover {
 }
 
 .home-about {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   font-family: "Bebas Neue", sans-serif;
-  color: #0e3e66;
+  color: #fff;
+  background-color: #0e3e66;
+  margin-top: 2rem;
 }
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
+  margin: 0 2rem;
 }
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
 }
 .home-about p {
-  color: #000;
-  margin-top: unset;
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem;
 }
-.home-about a {
+.home-about a[role=button] {
   margin-top: 1.5rem;
+  margin-right: 2rem;
+  margin: 1rem 2rem 2rem auto;
+}
+.home-about .socials {
+  background-color: #fff;
 }
 
 .social-links {
