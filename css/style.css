@@ -778,7 +778,7 @@ h4 {
 }
 
 .home-hero {
-  background: url("../img/hero-bg-cropped.webp") top/170% no-repeat;
+  background: url("../img/sm/whoweare1.webp") top/190% no-repeat;
   color: #fff;
   padding: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
@@ -844,40 +844,52 @@ a[role=button]:hover {
   background-color: #0e3e66;
   color: #fff;
   border-radius: 1.5rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 0 0;
 }
 .home-services h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
+  margin: 0 2rem;
 }
 .home-services h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
+  margin: 1rem 2rem;
 }
 .home-services p {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
+  margin: 2rem;
 }
 .home-services a {
   margin-top: 2rem;
 }
-
-.home-services h2,
-.home-services h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+.home-services img {
+  width: 100%;
+}
+.home-services .home-santa {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #0e3e66;
+  padding-top: 1rem;
+}
+.home-services .home-santa p {
+  color: #000;
+}
+.home-services .home-santa a {
+  margin-right: 2rem;
 }
 
 .divider {
   width: 80%;
   height: 3px;
   background-color: #fff;
-  margin: auto;
+  margin: 2rem auto;
   border-radius: 9999px;
 }
 
 .home-about {
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   font-family: "Bebas Neue", sans-serif;
   color: #0e3e66;
 }

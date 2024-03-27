@@ -19,29 +19,26 @@ get_header();
 </section>
 
 <div class="info-blurb">
-    <p>The Atomic Improv Co. is Canada’s Premier two man Improv troupe that has been creating comedy on the spot based
-        entirely on audience suggestions since 1990.</p>
-    <p>Their unique and customized comedy show is the perfect for any size and type of event. From corporate retreats
-        and workshops at parties, they can take your event from “Hum Drum” to hilarious at Atomic speeds!</p>
+    <p>The Atomic Improv Co. is Canada’s Premier two man Improv troupe that has been creating comedy on the spot based entirely on audience suggestions since 1990.</p>
+    <p>Their unique and customized comedy show is the perfect for any size and type of event. From corporate retreats and workshops at parties, they can take your event from “Hum Drum” to hilarious at Atomic speeds!</p>
 </div>
 
 <section class="home-services">
     <h2>Beyond the Improv!</h2>
-    <div>
+    <div class="home-poy">
         <h3>Power of Yes!</h3>
         <img src="<?= get_template_directory_uri() ?>/img/poy.png" alt="Power of yes logo">
         <p>Take an innovative approach to team building and communication with “The Power of Yes”.</p>
     </div>
     <div class="divider"></div>
-    <div>
+    <div class="home-santa">
         <h3>That Funny Santa!</h3>
         <img src="<?= get_template_directory_uri() ?>/img/santa-guy.png"
             alt="Donovan Dressed as a Santa, sitting on a wide chair with two black dogs in his lap and laughing.">
         <p>Christmas is a magical time of year and there is nothing more special than bringing to your event!</p>
         <p>Let ThatFunnySanta bring his trademark merriment and mirth as a special treat to your holiday cheer!</p>
-    </div>
-
-    <a href="<?= esc_url(get_permalink(8)); ?>" aria-label="Discover More" role="button">Discover More</a>
+        <a href="<?= esc_url(get_permalink(8)); ?>" aria-label="Discover More" role="button">Discover More</a>
+    </div>    
 </section>
 
 <section class="home-about">

@@ -819,7 +819,7 @@ h4 {
 }
 
 .home-hero {
-	background: url('../img/hero-bg-cropped.webp') top/170% no-repeat;
+	background: url('../img/sm/whoweare1.webp') top/190% no-repeat;
 	color: $light;
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
@@ -890,44 +890,61 @@ a[role=button]:hover {
 	background-color: $dark-blue;
 	color: $light;
 	border-radius: 1.5rem;
-	padding: 2rem 1.5rem;
+	padding: 2rem 0 0 0;
 
 	h2 {
 		font-size: $h2clamp;
 		-webkit-text-stroke: 0.75px $dark;
 		margin-top: unset;
+		margin: 0 2rem;
 	}
 
 	h3 {
 		font-size: $h3clamp;
+		margin: 1rem 2rem;
+
 	}
 
 	p {
 		font-family: $nunito;
 		font-weight: 400;
+		margin: 2rem;
 	}
 
 	a {
 		margin-top: 2rem;
 	}
-}
 
-.home-services h2,
-.home-services h3 {
-	font-family: $bebas;
-	font-weight: 400;
+	img {
+		width: 100%;
+	}
+
+	.home-santa {
+		background-color: $light;
+		border-radius: 20px;
+		color: $dark-blue;
+		padding-top: 1rem;
+
+		p {
+			color: $dark;
+		}
+
+		a {
+			margin-right: 2rem;
+		}
+	}
 }
 
 .divider {
 	width: 80%;
 	height: 3px;
 	background-color: $light;
-	margin: auto;
+	margin: 2rem auto;
 	border-radius: 9999px;
 }
 
 .home-about {
-	padding: 2rem 1.5rem;
+	padding: 2rem 0;
 	font-family: $bebas;
 	color: $dark-blue;
 
