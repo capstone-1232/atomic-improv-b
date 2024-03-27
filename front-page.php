@@ -98,25 +98,16 @@ get_header();
 </section>
 
 <section class="home-testimonials">
-    <h2>What do people say about them?</h2>
+    <h2>What do people say about him?</h2>
     <div class="testimonial-card">
-        <p><span>“An absolute gut-buster...</span>
-            <span>A festival of belly-laughs!”</span>
-        </p>
+        <p><span>“An absolute gut-buster...<br>A festival of belly-laughs!”</span></p>
         <span>-Edmonton Journal</span>
     </div>
     <div class="testimonial-card">
-        <p><span>"Workun deserves an</span>
-            <span>Improv Oscar"</span>
-        </p>
-        <span>-Edie Ranvier,</span>
-        <span>The Reviews Hub</span>
-    </div>
-    <div class="testimonial-card">
-        <p><span>Donovan Workun is a force of nature, a wild man, an imaginative imp. In other words, everything you’d
-                want in someone about to entertain you. Just sit back and enjoy.</span>
-        </p>
-        <span>Colin Mochrie</span>
+        <p><span>"Workun deserves an
+            <br>Improv Oscar"</span></p>
+        <span>-Edie Ranvier,<br>
+        The Reviews Hub</span>
     </div>
 </section>
 
