@@ -941,12 +941,14 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   padding: 2rem 1.5rem;
+
 }
 
 .home-testimonials h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   margin-top: unset;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .home-testimonials .testimonial-card {
@@ -961,9 +963,15 @@ a[role=button]:hover {
   margin-bottom: 0.5rem;
 }
 
-.home-testimonials .testimonial-card:nth-of-type(1) {
+.home-testimonials .testimonial-card:nth-of-type(1),
+.home-testimonials .testimonial-card:nth-of-type(2) {
   margin-bottom: 1rem;
 }
+
+  {
+  margin-bottom: 1rem;
+}
+
 
 .home-testimonials .testimonial-card>span {
   margin-left: auto;
