@@ -113,8 +113,7 @@ get_header();
                 want in someone about to entertain you. Just sit back and enjoy.</span>
         </p>
         <span>Colin Mochrie</span>
-        <span>The Reviews Hub</span>
-    </div>
+        </div>
 </section>
 
 <section class="upcoming-events">
