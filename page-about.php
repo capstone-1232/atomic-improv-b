@@ -10,7 +10,13 @@ get_header();
     <div class="column1">
         <h3>ATOMIC IMPROV AT ITS FINEST!</h3>
         <div class="image-about">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-and-chris.png" alt="Donovan with Chris">
+        <picture>
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/whoweare1.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/whoweare1md.webp" media="(max-width: 800px)">
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-and-chris.png" alt="Donovan Workun posing ">
+                </picture>
         </div>
     </div>
     <div class="column2">
@@ -34,29 +40,11 @@ get_header();
     <p>Donovan was also the first Improviser to headline at Montreal’s Just For Laughs and has shared the stage with names such as Wayne Brady, Colin Mochrie, Mike Myers, and two people whom he’s always greatly looked up to and respected - Dave Thomas and Joe Flaherty. Beyond that, Donovan has also been a performer and write for several seasons of CBC’s radio program: The Irrelevant Show. Donovan is a side-splitting genius that you do not want to miss out on.</p>
 </section>
 
-<section class="image-gallery-section">
-    <h3>WHAT HE'S BEEN A PART OF!</h3>
-    <div class="image-gallery-container">
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/the-visionary-in-action.webp" alt="Donovan with a hat">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/hot-boy-summer.webp" alt="Hot Boy Summer">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/the-irrelevant-show.png" alt="The Irrelevant Show">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/canadian-comedy-awards.png" alt="Canadian Comedy Awards">
-        </div>
-    </div>
-</section>
-
 <section class="chris-borger-about">
     <h2>MEET CHRIS BORGER</h2>
     <p>Donovan’s not just a one man show, you know. He has a very talented partner that joins him for his Improv acts!</p>
 
-    <img src="<?php echo get_template_directory_uri(); ?>/img/chris-borger-white-background.webp" alt="Donovan with Chris Borger">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/meetchris.webp" alt="Chris Borger showing off his funny style">
 
     <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv, White Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number. He has produced online video content for CBC Comedy, and Oilers Nation, and educational videos for the University of Alberta. </p>
 

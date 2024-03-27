@@ -15,7 +15,7 @@ get_header();
 </section>
 
 <section class="contact-styled">
-<h2 class="send-message-heading">SEND US A MESSAGE</h2>
+<h3 class="send-message-heading">SEND US A MESSAGE</h3>
     <?php echo do_shortcode('[ninja_form id=1 html_id_prefix="contact_form_"]'); ?>
 </section>
 
