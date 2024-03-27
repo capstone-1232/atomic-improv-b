@@ -44,12 +44,10 @@ a {
   background-color: transparent;
   color: #4169e1;
 }
-
 a:visited {
   color: #800080;
   color: unset;
 }
-
 a:focus {
   outline: thin dotted;
 }
@@ -58,7 +56,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -289,8 +287,8 @@ ol {
   list-style: decimal;
 }
 
-li>ul,
-li>ol {
+li > ul,
+li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -409,7 +407,6 @@ select {
   display: block;
   position: relative;
 }
-
 .main-navigation ul {
   height: 0;
   list-style: none;
@@ -424,7 +421,6 @@ select {
   display: flex;
   flex-direction: column;
 }
-
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -433,25 +429,20 @@ select {
   left: -999em;
   z-index: 99999;
 }
-
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-
 .main-navigation ul ul a {
   width: 200px;
 }
-
 .main-navigation li {
   position: relative;
 }
-
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
-
 .main-navigation .menu-menu-1-container {
   background-color: #212121;
   position: absolute;
@@ -464,14 +455,14 @@ select {
   transition: height 0.5s ease-in-out;
 }
 
-.main-navigation ul ul li:hover>ul,
-.main-navigation ul ul li.focus>ul {
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
   display: block;
   left: auto;
 }
 
-.main-navigation ul li:hover>ul,
-.main-navigation ul li.focus>ul {
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
   left: auto;
 }
 
@@ -485,7 +476,6 @@ select {
     display: none;
   }
 }
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -541,7 +531,6 @@ select {
 .widget {
   margin: 0 0 1.5em;
 }
-
 .widget select {
   max-width: 100%;
 }
@@ -563,13 +552,11 @@ select {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
-
 .wp-caption img[class*=wp-image-] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
@@ -639,7 +626,7 @@ select {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -648,14 +635,13 @@ select {
   width: 1px;
   word-wrap: normal !important;
 }
-
 .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
   -webkit-clip-path: none;
-  clip-path: none;
+          clip-path: none;
   color: #21759b;
   display: block;
   font-size: 0.875rem;
@@ -726,7 +712,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
-
 .site-header h1 {
   -webkit-text-stroke: 0.5px #000;
   font-size: 2rem;
@@ -747,7 +732,6 @@ h4 {
   align-items: center;
   margin-right: 1rem;
 }
-
 .menu-toggle span {
   width: 1.5rem;
   background-color: #000;
@@ -780,29 +764,25 @@ h4 {
 .menu-menu-1-container {
   z-index: 9999;
 }
-
 .menu-menu-1-container ul li {
   border-bottom: 2px solid #fff;
   display: block;
   width: 100%;
 }
-
 .menu-menu-1-container.menu-open {
   height: 100vh;
 }
-
 .menu-menu-1-container a {
   width: 100%;
   padding: 1rem;
 }
 
 .home-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('../img/sm/whoweare1.webp') top/190% no-repeat;
+  background: url("../img/sm/whoweare1.webp") top/190% no-repeat;
   color: #fff;
   padding: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
 }
-
 .home-hero h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
@@ -813,14 +793,12 @@ h4 {
   margin-top: 17rem;
   margin-bottom: unset;
 }
-
-.home-hero .tagline>span {
+.home-hero .tagline > span {
   display: block;
   text-align: right;
   font-style: italic;
   margin-bottom: 1.25rem;
 }
-
 .home-hero .tagline a {
   margin-bottom: 1rem;
 }
@@ -858,7 +836,6 @@ a[role=button]:hover {
   font-weight: 500;
   margin: 1.5rem 0;
 }
-
 .info-blurb * {
   margin: 0.7rem 0;
 }
@@ -867,64 +844,68 @@ a[role=button]:hover {
   background-color: #0e3e66;
   color: #fff;
   border-radius: 1.5rem;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 0 0;
 }
-
 .home-services h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
+  margin: 0 2rem;
 }
-
 .home-services h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
+  margin: 1rem 2rem;
 }
-
 .home-services p {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
+  margin: 2rem;
 }
-
 .home-services a {
   margin-top: 2rem;
 }
-
-.home-services h2,
-.home-services h3 {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
+.home-services img {
+  width: 100%;
+}
+.home-services .home-santa {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #0e3e66;
+  padding-top: 1rem;
+}
+.home-services .home-santa p {
+  color: #000;
+}
+.home-services .home-santa a {
+  margin-right: 2rem;
 }
 
 .divider {
   width: 80%;
   height: 3px;
   background-color: #fff;
-  margin: auto;
+  margin: 2rem auto;
   border-radius: 9999px;
 }
 
 .home-about {
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   font-family: "Bebas Neue", sans-serif;
   color: #0e3e66;
 }
-
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
 }
-
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
 }
-
 .home-about p {
   color: #000;
   margin-top: unset;
   margin-bottom: 1rem;
 }
-
 .home-about a {
   margin-top: 1.5rem;
 }
@@ -941,39 +922,28 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   padding: 2rem 1.5rem;
-
 }
-
 .home-testimonials h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   margin-top: unset;
   font-weight: 400;
   margin-bottom: 1rem;
 }
-
 .home-testimonials .testimonial-card {
   background-color: #fff;
   color: #0e3e66;
   border-radius: 1rem;
   padding: 1rem;
 }
-
 .home-testimonials .testimonial-card p {
   margin-top: unset;
   margin-bottom: 0.5rem;
 }
-
 .home-testimonials .testimonial-card:nth-of-type(1),
-.home-testimonials .testimonial-card:nth-of-type(2) {
+.home-testimonials .testimonial-card :nth-of-type(2) {
   margin-bottom: 1rem;
 }
-
-  {
-  margin-bottom: 1rem;
-}
-
-
-.home-testimonials .testimonial-card>span {
+.home-testimonials .testimonial-card > span {
   margin-left: auto;
   display: block;
   width: -moz-fit-content;
@@ -988,31 +958,25 @@ a[role=button]:hover {
   color: #0e3e66;
   padding: 2rem 1.5rem;
 }
-
 .upcoming-events h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
   margin-top: unset;
 }
-
 .upcoming-events h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
 }
-
 .upcoming-events .event-info {
   display: flex;
   align-items: center;
 }
-
 .upcoming-events .event-info svg {
   width: 1.5rem;
 }
-
 .upcoming-events .event-info p {
   margin: 1rem 1rem;
 }
-
 .upcoming-events a:nth-of-type(1) {
   margin-bottom: 1rem;
 }
@@ -1022,15 +986,12 @@ footer {
   color: #fff;
   font-family: "Nunito Sans", sans-serif;
 }
-
 footer a {
   text-decoration: none;
 }
-
 footer .site-info {
   text-align: right;
 }
-
 footer .site-info span {
   width: 100%;
   display: block;
@@ -1043,22 +1004,18 @@ footer .site-info span {
   grid-template-rows: 100px 250px 100px;
   grid-template-columns: 1fr 2fr;
 }
-
 .footer-container .custom-logo-link {
   grid-area: a;
   padding: 1rem;
 }
-
 .footer-container .footer-socials {
   grid-area: b;
   display: flex;
   flex-direction: column;
 }
-
 .footer-container .footer-nav-container {
   grid-area: c;
 }
-
 .footer-container .site-info {
   grid-area: d;
 }
@@ -1081,7 +1038,6 @@ footer .footer-socials svg path {
   text-align: right;
   height: 100%;
 }
-
 .menu-menu-2-container ul {
   list-style-type: none;
   padding: unset;
@@ -1090,13 +1046,11 @@ footer .footer-socials svg path {
   justify-content: space-evenly;
   height: 100%;
 }
-
 .menu-menu-2-container a {
   padding: 1rem;
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
 }
-
 .menu-menu-2-container #footer-menu {
   margin: unset;
 }
@@ -1114,11 +1068,9 @@ footer .footer-socials svg path {
   padding: 0 2rem;
   color: #0e3e66;
 }
-
 .services-corporate img {
   width: 100%;
 }
-
 .services-corporate p {
   padding: 0 2rem;
 }
@@ -1126,41 +1078,33 @@ footer .footer-socials svg path {
 .services-poy {
   color: #fff;
 }
-
 .services-poy img {
   width: 100%;
 }
-
 .services-poy h3,
 .services-poy h4 {
   margin: 1rem 2rem;
 }
-
 .services-poy p {
   margin: 1rem 2rem 2rem;
 }
-
 .services-poy a[role=button] {
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
-
 .services-poy .poy-part-1,
 .services-poy .poy-part-2 {
   background-color: #0e3e66;
   padding: 1rem 0;
   border-radius: 15px;
 }
-
 .services-poy .testimonials {
   color: #000;
   padding: 2rem;
 }
-
 .services-poy .testimonials .card-1 {
   margin-bottom: 2rem;
 }
-
 .services-poy .testimonials .card-1,
 .services-poy .testimonials .card-2 {
   border: 1px solid #000;
@@ -1171,7 +1115,6 @@ footer .footer-socials svg path {
   top: 0;
   background-color: #fff;
 }
-
 .services-poy .testimonials .card-1 p,
 .services-poy .testimonials .card-2 p {
   margin: unset;
@@ -1182,11 +1125,9 @@ footer .footer-socials svg path {
 .services-santa h3 {
   margin: 2rem 2rem 1rem;
 }
-
 .services-santa img {
   width: 100%;
 }
-
 .services-santa p {
   margin: 1rem 2rem;
 }
@@ -1483,5 +1424,4 @@ footer .footer-socials svg path {
   .image-gallery-container .image-wrapper {
     border: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
