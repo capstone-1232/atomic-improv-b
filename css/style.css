@@ -713,9 +713,9 @@ h4 {
   align-items: center;
 }
 .site-header h1 {
-  -webkit-text-stroke: 0.5px #000;
   font-size: 2rem;
   margin: 0.5rem 0;
+  font-weight: 400;
 }
 
 .site-branding {
@@ -889,30 +889,52 @@ a[role=button]:hover {
 }
 
 .home-about {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   font-family: "Bebas Neue", sans-serif;
-  color: #0e3e66;
+  color: #fff;
+  background-color: #0e3e66;
+  margin-top: 2rem;
+  position: relative;
 }
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
+  margin: 0 2rem;
 }
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
 }
 .home-about p {
-  color: #000;
-  margin-top: unset;
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem;
 }
-.home-about a {
+.home-about a[role=button] {
   margin-top: 1.5rem;
+  margin-right: 2rem;
+  margin: 1rem 2rem 2rem auto;
 }
-
-.social-links {
+.home-about img {
+  position: absolute;
+  width: 70%;
+  left: 0;
+  bottom: 0;
+}
+.home-about .socials {
+  background-color: #fff;
+  height: 23rem;
+}
+.home-about .socials h3 {
+  color: #0e3e66;
+}
+.home-about .social-links {
   display: grid;
-  grid-template-columns: 25% 25%;
+  grid-template-columns: 50% 50%;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: 4.5rem;
+}
+.home-about .social-links svg {
+  width: 4rem;
 }
 
 .home-testimonials {
