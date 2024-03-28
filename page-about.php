@@ -10,7 +10,13 @@ get_header();
     <div class="column1">
         <h3>We're improv at it's finest!</h3>
         <div class="image-about">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-and-chris.png" alt="Donovan with Chris">
+        <picture>
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/whoweare1.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/whoweare1md.webp" media="(max-width: 800px)">
+
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-and-chris.png" alt="Donovan Workun posing ">
+                </picture>
         </div>
     </div>
     <div class="column2">
@@ -28,17 +34,17 @@ get_header();
 </section>
 
 <section class="meet-donovan-section">
-    <h3>Meet Donovan Workun</h3>
+    <h2>MEET DONOVAN WORKUN</h2>
     <img src="<?php echo get_template_directory_uri(); ?>/img/donovan-workun-white-attire.webp" alt="Donovan Workun">
     <p>A world renowned Improviser, and a founding member of Atomic Improv, Donovan has over 30 years of comedy under his belt. He’s toured all over Canada, the US, and Europe, never ceasing to amaze and astound audiences with his wit and his motley variety of characters.</p>
     <p>Donovan was also the first Improviser to headline at Montreal’s Just For Laughs and has shared the stage with names such as Wayne Brady, Colin Mochrie, Mike Myers, and two people whom he’s always greatly looked up to and respected - Dave Thomas and Joe Flaherty. Beyond that, Donovan has also been a performer and write for several seasons of CBC’s radio program: The Irrelevant Show. Donovan is a side-splitting genius that you do not want to miss out on.</p>
 </section>
 
 <section class="chris-borger-about">
-    <h3>MEET CHRIS BORGER</h3>
+    <h2>MEET CHRIS BORGER</h2>
     <p>Donovan’s not just a one man show, you know. He has a very talented partner that joins him for his Improv acts!</p>
 
-    <img src="<?php echo get_template_directory_uri(); ?>/img/chris-borger-white-background.webp" alt="Donovan with Chris Borger">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/meetchris.webp" alt="Chris Borger showing off his funny style">
 
     <p>Chris Borger has worked as a professional improviser since 2011, and performs regularly with Atomic Improv, White Rhino, Rapid Fire Theatre, and the 11 o’ Clock Number. He has produced online video content for CBC Comedy, and Oilers Nation, and educational videos for the University of Alberta. </p>
 
@@ -48,3 +54,7 @@ get_header();
 <?php
 get_footer();
 ?>
+
+
+
+
