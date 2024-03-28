@@ -1035,6 +1035,14 @@ footer .site-info span {
   display: flex;
   flex-direction: column;
 }
+.footer-container .footer-socials a {
+  padding: 1rem;
+}
+.footer-container .footer-socials svg,
+.footer-container .footer-socials svg path {
+  fill: #fff;
+  width: 3rem;
+}
 .footer-container .footer-nav-container {
   grid-area: c;
 }
@@ -1044,16 +1052,6 @@ footer .site-info span {
 
 .footer-navigation {
   height: 100%;
-}
-
-.footer-socials a {
-  padding: 1rem;
-}
-
-footer .footer-socials svg,
-footer .footer-socials svg path {
-  fill: #fff;
-  width: 3rem;
 }
 
 .menu-menu-2-container {
@@ -1154,7 +1152,8 @@ footer .footer-socials svg path {
   margin: 2rem;
 }
 
-.about-heading {
+.about-heading,
+.contact-heading {
   padding: 0;
   padding-left: 2rem;
   color: #0E3E66;
@@ -1187,17 +1186,6 @@ footer .footer-socials svg path {
   border: 2px solid #FFFFFF;
 }
 
-.image-gallery-section h3,
-.contact-heading {
-  padding-left: 2rem;
-  color: #FFFFFF;
-}
-
-.meet-donovan-section h2 {
-  padding-left: 2rem;
-  color: #000;
-}
-
 .image-gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -1210,7 +1198,6 @@ footer .footer-socials svg path {
   overflow: hidden;
   border: 2px solid #FFFFFF;
 }
-
 .image-wrapper img {
   display: block;
   width: 100%;
@@ -1239,79 +1226,30 @@ footer .footer-socials svg path {
 .column1 {
   background-color: #0E3E66;
   color: white;
-  padding: 1.25rem;
+}
+.column1 h3 {
+  margin: 2rem;
+}
+.column1 .image-about {
+  margin: 1.25rem;
 }
 
-.column2 body {
+.column2 {
   color: #000000;
-  padding: 1.25rem;
-  margin-top: 1.25rem;
   display: inline-block;
+  margin: 0 2rem;
 }
 .column2 p {
   padding: 10px;
   margin: 10px 0;
 }
 
-@media screen and (min-width: 87.4375rem) {
-  .about-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-  }
-  .flex-container {
-    flex-direction: row;
-  }
-  .column1,
-  .column2 {
-    flex: 1;
-  }
-  .column2 p {
-    background-color: #FFFFFF;
-  }
-  .about-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  .flex-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 10px;
-    margin: 1.25rem;
-    width: 100%;
-  }
-  .contact-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    text-align: center;
-  }
-  .chris-borger-about p {
-    color: #000000;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  .image-gallery-container .image-wrapper {
-    border: none;
-  }
-}
 @media screen and (max-width: 87.4375rem) {
   .column2 {
     color: white;
     margin-top: 1rem;
   }
 }
-.image-gallery-section {
-  background-color: #0E3E66;
-}
-
-.image-gallery-section h3 {
-  color: #FFFFFF;
-}
-
 .send-message-heading {
   text-align: center;
   padding: 2rem 0;
@@ -1427,6 +1365,10 @@ footer .footer-socials svg path {
   content: "\f164";
 }
 
+.meet-donovan-section h2 {
+  padding-left: 2rem;
+  color: #000;
+}
 .meet-donovan-section p {
   padding: 0 2rem;
 }
@@ -1499,10 +1441,53 @@ footer .footer-socials svg path {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  .upcoming-events .event-info {
+  
+   .upcoming-events .event-info {
     margin-left: 3rem;
   }
   .upcoming-events a[role=button] {
     margin-right: 3rem;
   }
+}
+@media screen and (min-width: 87.5rem) {
+  .about-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .flex-container {
+    flex-direction: row;
+  }
+  .column1,
+  .column2 {
+    flex: 1;
+  }
+  .column2 p {
+    background-color: #FFFFFF;
+  }
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    margin: 1.25rem;
+    width: 100%;
+  }
+  .contact-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+    text-align: center;
+  }
+  .chris-borger-about p {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .image-gallery-container .image-wrapper {
+    border: none;
 }/*# sourceMappingURL=style.css.map */

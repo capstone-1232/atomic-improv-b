@@ -22,13 +22,12 @@ get_header();
     <div class="column2">
         <p>Atomic Improv stars three-time world improvisational champion Donovan Workun and professional improviser Chris Borger!</p>
         <p>With over thirty years of professional side-splitting jokes and impeccable talent to make anyone laugh, Atomic Improv’s interactive and hilarious shows are a perfect fit for any audience. Fast, funny and tailored to the crowd, Atomic Improv never fails to impress.</p>
+        <p>Atomic Improv has toured across North America, Asia and Mexico and are the first improv group to headline Montreal’s Just For Laughs Comedy Festival. They have also been featured in several TV comedy specials.  This Canadian comedy award winning duo  was selected to perform at the 2012 London Summer Olympic Games,  and  continues to perform, teach workshops and keynote for corporate events all across Canada. </p>
     </div>
 </section>
 
 <section class="flex-container">
     <div class="flex-item">
-        <p>When you’re with Atomic Improv, you’re not just watching a show… </p>
-        <p>You’re a part of it!</p>
         <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button" class="about-book-button">Book a Show!</a>
     </div>
 </section>
