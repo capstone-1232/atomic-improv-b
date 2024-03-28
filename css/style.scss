@@ -28,11 +28,6 @@ main {
 	display: block;
 }
 
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
 hr {
 	box-sizing: content-box;
 	height: 0;
@@ -858,7 +853,7 @@ a[role=button] {
 	color: $dark;
 	display: block;
 	border-radius: 0.5rem;
-	font-size: 1rem;
+	font-size: $pclamp;
 	width: fit-content;
 	margin-left: auto;
 	filter: drop-shadow(7px 7px $dark);
@@ -897,7 +892,7 @@ a[role=button]:hover {
 		font-size: $h2clamp;
 		-webkit-text-stroke: 0.75px $dark;
 		margin-top: unset;
-		margin: 0 2rem;
+		margin: 0 0 0 2rem;
 	}
 
 	h3 {
@@ -975,7 +970,7 @@ a[role=button]:hover {
 
 	img {
 		position: absolute;
-		width: 70%;
+		width: 60%;
 		left: 0;
 		bottom: 0;
 	}
@@ -983,21 +978,26 @@ a[role=button]:hover {
 	.socials {
 		background-color: $light;
 		height: 23rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 
 		h3 {
 			color: $dark-blue;
+			margin-right: 2rem;
+			text-align: right;
 		}
 	}
 	
 	.social-links {
 		display: grid;
-		grid-template-columns: 50% 50%;
-		margin-left: auto;
+		grid-template-columns: 3rem 3rem;
+		gap: 1rem; 	
 		margin-right: 2rem;
-		margin-top: 4.5rem;
+		margin-top: 3rem;
 
 		svg {
-			width: 4rem;
+			width: 3rem;
 		}
 	}
 }
@@ -1168,10 +1168,6 @@ footer .footer-socials svg path {
 	}
 }
 
-.small {
-	font-size: $smallclamp;
-}
-
 .services-hero {
 	padding: 0 2rem;
 	color: $dark-blue;
@@ -1260,23 +1256,6 @@ footer .footer-socials svg path {
 	p {
 		margin: 1rem 2rem;
 	}
-}
-
-.socials {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	text-align: center;
-}
-
-.social-links {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-.social-links a {
-	margin: 0 10px;
 }
 
 @media screen and (min-width: 1399px) {
@@ -1579,6 +1558,11 @@ footer .footer-socials svg path {
 		}
 	}
 
+	.container {
+		max-width: 45rem;
+		margin: 0 auto;
+	}
+
 	.info-blurb {
 		padding: 0 3rem;
 	}
@@ -1586,7 +1570,11 @@ footer .footer-socials svg path {
 	.home-services {
 		h2, h3, p {
 			margin-left: 3rem;
-			margin-right: 3rem;
+		}
+
+		img {
+			// margin: 0 3rem;
+			width: calc(100vw - 6rem);
 		}
 
 		.home-santa a {
@@ -1597,27 +1585,26 @@ footer .footer-socials svg path {
 	.home-about {
 		h2, h3, p {
 			margin-left: 3rem;
-			margin-right: 3rem;
 		}
 
 		a[role=button] {
 			margin-right: 3rem;
 		}
 
+		img {
+			max-width: 20rem;
+		}
+
 		.socials {
 			height: 27rem;
 
-			img {
-				width: 60%;
-			}
-
 			.social-links {
-				grid-template-columns: 100% 100%;
-				grid-template-rows: 100% 100%;
+				grid-template-columns: 5rem 5rem;
 			}
 
 			svg {
 				padding: 1rem;
+				width: 5rem;
 			}
 		}
 	}
@@ -1636,5 +1623,18 @@ footer .footer-socials svg path {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
+
+		.event-info {
+			margin-left: 3rem;
+		}
+
+		a[role=button] {
+			margin-right: 3rem;
+		}
 	}
+
+}
+
+@media screen and (min-width:50rem) {
+	
 }

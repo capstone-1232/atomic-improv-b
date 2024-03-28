@@ -13,11 +13,6 @@ main {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
@@ -811,7 +806,7 @@ a[role=button] {
   color: #000;
   display: block;
   border-radius: 0.5rem;
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
@@ -850,7 +845,7 @@ a[role=button]:hover {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
-  margin: 0 2rem;
+  margin: 0 0 0 2rem;
 }
 .home-services h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
@@ -915,26 +910,31 @@ a[role=button]:hover {
 }
 .home-about img {
   position: absolute;
-  width: 70%;
+  width: 60%;
   left: 0;
   bottom: 0;
 }
 .home-about .socials {
   background-color: #fff;
   height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .home-about .socials h3 {
   color: #0e3e66;
+  margin-right: 2rem;
+  text-align: right;
 }
 .home-about .social-links {
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin-left: auto;
+  grid-template-columns: 3rem 3rem;
+  gap: 1rem;
   margin-right: 2rem;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
 }
 .home-about .social-links svg {
-  width: 4rem;
+  width: 3rem;
 }
 
 .home-testimonials {
@@ -1077,10 +1077,6 @@ footer .footer-socials svg path {
   margin: unset;
 }
 
-.small {
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
-}
-
 .services-hero {
   padding: 0 2rem;
   color: #0e3e66;
@@ -1152,23 +1148,6 @@ footer .footer-socials svg path {
 }
 .services-santa p {
   margin: 1rem 2rem;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-links a {
-  margin: 0 10px;
 }
 
 @media screen and (min-width: 1399px) {
@@ -1458,35 +1437,40 @@ footer .footer-socials svg path {
   .home-hero h2 {
     margin-bottom: 1rem;
   }
+  .container {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
   .info-blurb {
     padding: 0 3rem;
   }
   .home-services h2, .home-services h3, .home-services p {
     margin-left: 3rem;
-    margin-right: 3rem;
+  }
+  .home-services img {
+    width: calc(100vw - 6rem);
   }
   .home-services .home-santa a {
     margin-right: 3rem;
   }
   .home-about h2, .home-about h3, .home-about p {
     margin-left: 3rem;
-    margin-right: 3rem;
   }
   .home-about a[role=button] {
     margin-right: 3rem;
   }
+  .home-about img {
+    max-width: 20rem;
+  }
   .home-about .socials {
     height: 27rem;
   }
-  .home-about .socials img {
-    width: 60%;
-  }
   .home-about .socials .social-links {
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-columns: 5rem 5rem;
   }
   .home-about .socials svg {
     padding: 1rem;
+    width: 5rem;
   }
   .home-testimonials h2 {
     margin-left: 3rem;
@@ -1497,6 +1481,12 @@ footer .footer-socials svg path {
   }
   .upcoming-events h2, .upcoming-events h3, .upcoming-events p {
     margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .upcoming-events .event-info {
+    margin-left: 3rem;
+  }
+  .upcoming-events a[role=button] {
     margin-right: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
