@@ -28,11 +28,6 @@ main {
 	display: block;
 }
 
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
-}
-
 hr {
 	box-sizing: content-box;
 	height: 0;
@@ -1117,6 +1112,17 @@ footer {
 		grid-area: b;
 		display: flex;
 		flex-direction: column;
+
+		a {
+			padding: 1rem;
+		}
+
+		svg,
+		svg path {
+			fill: $light;
+			width: 3rem;
+		}
+
 	}
 
 	.footer-nav-container {
@@ -1130,18 +1136,6 @@ footer {
 
 .footer-navigation {
 	height: 100%;
-}
-
-.footer-socials {
-	a {
-		padding: 1rem;
-	}
-}
-
-footer .footer-socials svg,
-footer .footer-socials svg path {
-	fill: $light;
-	width: 3rem;
 }
 
 .menu-menu-2-container {
@@ -1273,18 +1267,18 @@ footer .footer-socials svg path {
 	display: flex;
 	justify-content: center;
 	margin-top: 1.25rem;
-}
 
-.social-links a {
-	margin: 0 10px;
+	a {
+		margin: 0 10px;
+	}
 }
-
 
 .about-book-button {
 	margin: 2rem;
 }
 
-.about-heading {
+.about-heading,
+.contact-heading {
 	padding: 0;
 	padding-left: 2rem;
 	color: #0E3E66;
@@ -1321,17 +1315,6 @@ footer .footer-socials svg path {
 	border: 2px solid #FFFFFF;
 }
 
-.image-gallery-section h3,
-.contact-heading {
-	padding-left: 2rem;
-	color: #FFFFFF;
-}
-
-.meet-donovan-section h2 {
-	padding-left: 2rem;
-	color: #000
-}
-
 .image-gallery-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -1343,12 +1326,13 @@ footer .footer-socials svg path {
 	border-radius: 0.625rem;
 	overflow: hidden;
 	border: 2px solid #FFFFFF;
-}
 
-.image-wrapper img {
-	display: block;
-	width: 100%;
-	border-radius: inherit;
+	img {
+		display: block;
+		width: 100%;
+		border-radius: inherit;
+	}
+
 }
 
 .image-about {
@@ -1373,74 +1357,25 @@ footer .footer-socials svg path {
 .column1 {
 	background-color: #0E3E66;
 	color: white;
-	padding: 1.25rem;
+
+	h3 {
+		margin: 2rem;
+	}
+
+	.image-about {
+		margin: 1.25rem;
+	}
 }
 
 .column2 {
-	body {
-		color: #000000;
-		padding: 1.25rem;
-		margin-top: 1.25rem;
-		display: inline-block;
-	}
+	color: #000000;
+	display: inline-block;
+	margin: 0 2rem;
+
 
 	p {
 		padding: 10px;
 		margin: 10px 0;
-	}
-}
-
-@media screen and (min-width: 87.4375rem) {
-	.about-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-	}
-
-	.flex-container {
-		flex-direction: row;
-	}
-
-	.column1,
-	.column2 {
-		flex: 1;
-	}
-
-	.column2 p {
-		background-color: #FFFFFF;
-	}
-
-	.about-heading {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-	}
-
-	.flex-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: #FFFFFF;
-		color: #000000;
-		border-radius: 10px;
-		margin: 1.25rem;
-		width: 100%;
-	}
-
-	.contact-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		text-align: center;
-	}
-
-	.chris-borger-about p {
-		color: #000000;
-		background-color: #FFFFFF;
-		padding: 1rem;
-		border-radius: 8px;
-	}
-
-	.image-gallery-container .image-wrapper {
-		border: none;
 	}
 }
 
@@ -1449,14 +1384,6 @@ footer .footer-socials svg path {
 		color: white;
 		margin-top: 1rem;
 	}
-}
-
-.image-gallery-section {
-	background-color: #0E3E66;
-}
-
-.image-gallery-section h3 {
-	color: #FFFFFF;
 }
 
 .send-message-heading {
@@ -1571,6 +1498,12 @@ footer .footer-socials svg path {
 }
 
 .meet-donovan-section {
+
+	h2 {
+		padding-left: 2rem;
+		color: #000
+	}
+
 	p {
 		padding: 0 2rem;
 	}
@@ -1665,5 +1598,58 @@ footer .footer-socials svg path {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
+	}
+}
+
+// Media Query for 1400px/87.5rem
+
+@media screen and (min-width: 87.5rem) {
+	.about-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+
+	.flex-container {
+		flex-direction: row;
+	}
+
+	.column1,
+	.column2 {
+		flex: 1;
+	}
+
+	.column2 p {
+		background-color: #FFFFFF;
+	}
+
+	.flex-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #FFFFFF;
+		color: #000000;
+		border-radius: 10px;
+		margin: 1.25rem;
+		width: 100%;
+	}
+
+	.contact-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		text-align: center;
+	}
+
+	.chris-borger-about p {
+		color: #000000;
+		background-color: #FFFFFF;
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.image-gallery-container .image-wrapper {
+		border: none;
 	}
 }
