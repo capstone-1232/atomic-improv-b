@@ -4,10 +4,9 @@
 get_header();
 ?>
 
-<h2 class="contact-heading">Contact Donovan!</h2>
+<h2 class="contact-heading">Hire us!</h2>
 
 <section class="hire-artist-section">
-<h3 class="hire-artist-heading">Hire us!</h3>
     <div class="hire-artist-content">
     <p class="hire-artist-paragraph">These guys are pretty great. You absolutely wouldn’t want to miss out on hiring them for your next event, would you?</p>
         <p>Fill out the form below, and you can hash out the details of your next event with them!</p>
