@@ -747,9 +747,9 @@ h4 {
 	align-items: center;
 
 	h1 {
-		-webkit-text-stroke: 0.5px $dark;
 		font-size: 2rem;
 		margin: 0.5rem 0;
+		font-weight: 400;
 	}
 }
 
@@ -845,6 +845,7 @@ h4 {
 
 		a {
 			margin-bottom: 1rem;
+			// margin-top: 1rem;
 		}
 	}
 }
@@ -949,6 +950,7 @@ a[role=button]:hover {
 	color: $light;
 	background-color: $dark-blue;
 	margin-top: 2rem;
+	position: relative;
 
 	h2 {
 		font-size: $h2clamp;
@@ -971,14 +973,33 @@ a[role=button]:hover {
 		margin: 1rem 2rem 2rem auto;
 	}
 
+	img {
+		position: absolute;
+		width: 70%;
+		left: 0;
+		bottom: 0;
+	}
+
 	.socials {
 		background-color: $light;
-	}
-}
+		height: 23rem;
 
-.social-links {
-	display: grid;
-	grid-template-columns: 25% 25%;
+		h3 {
+			color: $dark-blue;
+		}
+	}
+	
+	.social-links {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		margin-left: auto;
+		margin-right: 2rem;
+		margin-top: 4.5rem;
+
+		svg {
+			width: 4rem;
+		}
+	}
 }
 
 .home-testimonials {
