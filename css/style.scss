@@ -451,7 +451,7 @@ select {
 			}
 
 			a {
-				width: 200px;
+				width: 12.5rem;
 			}
 		}
 	}
@@ -468,7 +468,7 @@ select {
 	.menu-menu-1-container {
 		background-color: $grey;
 		position: absolute;
-		top: 50px;
+		top: 3.125rem;
 		color: $light;
 		font-size: 1.5rem;
 		right: 0;
@@ -682,7 +682,7 @@ select {
 		height: auto;
 		left: 5px;
 		line-height: normal;
-		padding: 15px 23px 14px;
+		padding: 0.9375rem 1.4375rem 0.875rem;
 		text-decoration: none;
 		top: 5px;
 		width: auto;
@@ -819,7 +819,7 @@ h4 {
 }
 
 .home-hero {
-	background: url('../img/sm/whoweare1.webp') top/190% no-repeat;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/sm/whoweare1.webp') top/190% no-repeat;
 	color: $light;
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
@@ -922,7 +922,7 @@ a[role=button]:hover {
 
 	.home-santa {
 		background-color: $light;
-		border-radius: 20px;
+		border-radius: 1.25rem;
 		color: $dark-blue;
 		padding-top: 1rem;
 
@@ -988,7 +988,7 @@ a[role=button]:hover {
 			color: $dark-blue;
 		}
 	}
-	
+
 	.social-links {
 		display: grid;
 		grid-template-columns: 50% 50%;
@@ -1105,7 +1105,7 @@ footer {
 	grid-template-areas: "a c"
 		"b c"
 		"b d";
-	grid-template-rows: 100px 250px 100px;
+	grid-template-rows: 6.25rem 15.625rem 6.25rem;
 	grid-template-columns: 1fr 2fr;
 
 	.custom-logo-link {
@@ -1218,7 +1218,7 @@ footer .footer-socials svg path {
 	.poy-part-2 {
 		background-color: $dark-blue;
 		padding: 1rem 0;
-		border-radius: 15px;
+		border-radius: 0.9375rem;
 	}
 
 	.testimonials {
@@ -1272,63 +1272,63 @@ footer .footer-socials svg path {
 .social-links {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 
 .social-links a {
 	margin: 0 10px;
 }
 
-@media screen and (min-width: 1399px) {
-    .about-heading {
-        background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    }
+@media screen and (min-width: 87.4375rem) {
+	.about-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+	}
 }
 
 .about-book-button {
-    margin: 2rem;
+	margin: 2rem;
 }
 
 
 .about-heading {
-    padding: 2rem 0;
-    padding-left: 2rem;
-    color: #0E3E66;
+	padding: 2rem 0;
+	padding-left: 2rem;
+	color: #0E3E66;
 }
 
 .flex-container {
-    background-color: #0E3E66;
-    color: #FFFFFF;
+	background-color: #0E3E66;
+	color: #FFFFFF;
 }
 
 .flex-item h2 {
-    padding-left: 20px;
+	padding-left: 1.25rem;
 }
 
 .flex-item p {
-    text-align: center;
+	text-align: center;
 }
 
 .flex-item img {
-    border-radius: 10px;
+	border-radius: 0.625rem;
 }
 
 .image-about img {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
+	display: block;
+	width: 100%;
+	border-radius: 0.625rem;
 }
 
 .flex-item .image-about {
-    margin: 0 auto 1rem;
-    overflow: hidden;
-    border: 2px solid #FFFFFF;
+	margin: 0 auto 1rem;
+	overflow: hidden;
+	border: 2px solid #FFFFFF;
 }
 
 .image-gallery-section h3,
 .contact-heading {
-    padding-left: 2rem;
-    color: #FFFFFF;
+	padding-left: 2rem;
+	color: #FFFFFF;
 }
 
 .meet-donovan-section h2 {
@@ -1337,94 +1337,120 @@ footer .footer-socials svg path {
 }
 
 .image-gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .image-wrapper {
-    margin: 0 auto 1rem;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid #FFFFFF;
+	margin: 0 auto 1rem;
+	border-radius: 0.625rem;
+	overflow: hidden;
+	border: 2px solid #FFFFFF;
 }
 
 .image-wrapper img {
-    display: block;
-    width: 100%;
-    border-radius: inherit;
+	display: block;
+	width: 100%;
+	border-radius: inherit;
 }
 
 .image-about {
-    margin: 0 auto 1rem;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid #FFFFFF;
+	margin: 0 auto 1rem;
+	border-radius: 0.625rem;
+	overflow: hidden;
+	border: 2px solid #FFFFFF;
 }
 
 .image-about img {
-    display: block;
-    width: 100%;
-    border-radius: inherit;
+	display: block;
+	width: 100%;
+	border-radius: inherit;
 	overflow: hidden;
 }
 
 .meet-donovan-section h2 {
-    color: #000000; 
+	color: #000000;
 }
 
 .flex-container {
-    display: flex; 
-    flex-direction: column; 
+	display: flex;
+	flex-direction: column;
 }
 
 .column1 {
-    background-color: #0E3E66; 
-    color: white; 
-    padding: 20px; 
+	background-color: #0E3E66;
+	color: white;
+	padding: 1.25rem;
 }
 
 .column2 {
-    color: #000000; 
-    padding: 20px; 
-    margin-top: 20px; 
-    display: inline-block;
+	color: #000000;
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	display: inline-block;
 }
 
 .column2 p {
-    padding: 10px; 
-    margin: 10px 0;
+	padding: 10px;
+	margin: 10px 0;
 }
 
-@media screen and (min-width: 1399px) {
-    .flex-container {
-        flex-direction: row;
-    }
-  
-    .column1,
-    .column2 {
-        flex: 1; 
-    }
-  
-    .column2 p {
-        background-color: #FFFFFF; 
-    }
+@media screen and (min-width: 87.4375rem) {
+	.flex-container {
+		flex-direction: row;
+	}
+
+	.column1,
+	.column2 {
+		flex: 1;
+	}
+
+	.column2 p {
+		background-color: #FFFFFF;
+	}
+
+	.about-heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+
+	.flex-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #FFFFFF;
+		color: #000000;
+		border-radius: 10px;
+		margin: 1.25rem;
+		width: 100%;
+	}
+
+	.contact-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		text-align: center;
+	}
+
+	.chris-borger-about p {
+		color: #000000;
+		background-color: #FFFFFF;
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.image-gallery-container .image-wrapper {
+		border: none;
+	}
 }
 
-@media screen and (max-width: 1399px) {
-    .column2 {
-        color: white;
-		margin-top: 20rem;
-    }
-}
-
-@media screen and (min-width: 1399px) {
-    .about-heading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0; 
-    }
+@media screen and (max-width: 87.4375rem) {
+	.column2 {
+		color: white;
+		margin-top: 1rem;
+	}
 }
 
 .image-gallery-section {
@@ -1435,121 +1461,120 @@ footer .footer-socials svg path {
 	color: #FFFFFF;
 }
 
-@media screen and (min-width: 1399px) {
-	.flex-item {
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        background-color: #FFFFFF;
-        color: #000000;
-        border-radius: 10px;
-        margin: 20px;
-        width: 100%; 
-    }
-}
-
 .send-message-heading {
-    text-align: center;
-    padding: 2rem 0;
-    color: #FFFFFF;
+	text-align: center;
+	padding: 2rem 0;
+	color: #FFFFFF;
 }
 
 .contact-styled {
-    background: #0E3E66; /* Background color */
-    padding: 20px; /* Padding for the form */
-    border-radius: 10px; /* Border radius for the form */
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF; /* Text color */
+	background: #0E3E66;
+	/* Background color */
+	padding: 1.25rem;
+	/* Padding for the form */
+	border-radius: 0.625rem;
+	/* Border radius for the form */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	/* Text color */
 }
 
 .contact-styled h3 {
-    color: #FFFFFF; /* Heading text color */
+	color: #FFFFFF;
+	/* Heading text color */
 }
 
 .contact-styled .nf-field-label {
-    color: #FFFFFF; /* Label text color */
-    text-transform: capitalize;
+	color: #FFFFFF;
+	/* Label text color */
+	text-transform: capitalize;
 }
 
 .contact-styled .nf-form-content input[type="text"],
 .contact-styled .nf-form-content input[type="email"],
 .contact-styled .nf-form-content input[type="date"],
 .contact-styled .nf-form-content textarea {
-    color: #000000; /* Text color for input fields */
-    border-radius: 5px; /* Border radius for input fields */
-    background-color: #FFFFFF; /* Background color for input fields */
-    border: 1px solid #000000; /* Black border for input fields */
-    padding: 10px; /* Adjust padding as needed */
+	color: #000000;
+	/* Text color for input fields */
+	border-radius: 5px;
+	/* Border radius for input fields */
+	background-color: #FFFFFF;
+	/* Background color for input fields */
+	border: 1px solid #000000;
+	/* Black border for input fields */
+	padding: 0.625rem;
+	/* Adjust padding as needed */
 }
 
 .contact-styled .nf-form-content input[type="text"]::placeholder,
 .contact-styled .nf-form-content input[type="email"]::placeholder,
 .contact-styled .nf-form-content input[type="date"]::placeholder,
 .contact-styled .nf-form-content textarea::placeholder {
-    color: #000000; /* Text color for placeholder */
+	color: #000000;
+	/* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type="submit"] {
-    display: block; /* Ensure button takes full width */
-    margin: 0 auto; /* Center the button horizontally */
-    background: #9EB7E5; /* Button background color */
-    color: #000000; /* Button text color */
-    border: none; /* Remove button border */
-    border-radius: 5px; /* Border radius for button */
-    padding: 10px 20px; /* Adjust padding as needed */
-    font-weight: bold; /* Make button text bold */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: background-color 0.3s ease; /* Add transition effect */
+	display: block;
+	/* Ensure button takes full width */
+	margin: 0 auto;
+	/* Center the button horizontally */
+	background: #9EB7E5;
+	/* Button background color */
+	color: #000000;
+	/* Button text color */
+	border: none;
+	/* Remove button border */
+	border-radius: 5px;
+	/* Border radius for button */
+	padding: 0.625rem 1.25rem;
+	/* Adjust padding as needed */
+	font-weight: bold;
+	/* Make button text bold */
+	cursor: pointer;
+	/* Change cursor to pointer on hover */
+	transition: background-color 0.3s ease;
+	/* Add transition effect */
 }
 
 
 .contact-styled .nf-form-content input[type="submit"]:hover {
-    background: #70EE9C; /* Button background color on hover */
-    color: #000000; /* Button text color on hover */
+	background: #70EE9C;
+	/* Button background color on hover */
+	color: #000000;
+	/* Button text color on hover */
 }
 
 .contact-styled .nf-error.field-wrap .nf-field-element:after {
-    background: #e74c3c; /* Error message background color */
+	background: #e74c3c;
+	/* Error message background color */
 }
 
 .contact-styled .nf-form-fields-required {
-    margin-bottom: 10px; /* Add margin below required fields */
+	margin-bottom: 0.625rem;
+	/* Add margin below required fields */
 }
 
 .contact-styled .nf-error .nf-error-msg {
-    color: #e74c3c; /* Error message text color */
+	color: #e74c3c;
+	/* Error message text color */
 }
 
 .contact-styled .nf-error-msg,
 .ninja-forms-req-symbol {
-    color: #e74c3c; /* Required symbol text color */
+	color: #e74c3c;
+	/* Required symbol text color */
 }
 
 .contact-styled .nf-pass.field-wrap .nf-field-element:after {
-    color: #2ecc71; /* Password strength color */
-    content: "\f164";
+	color: #2ecc71;
+	/* Password strength color */
+	content: "\f164";
 }
 
-@media screen and (min-width: 1399px) {
-    .contact-heading {
-        background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		text-align: center;
-    }
-}
-
-.meet-donovan-section p{
+.meet-donovan-section p {
 	text-align: center;
-  }
-
-  @media screen and (min-width: 1399px) {
-	.chris-borger-about p {
-	  color: #000000;
-	  background-color: #FFFFFF;
-	  padding: 1rem;
-	  border-radius: 8px;
-	}
-  }
+}
 
 .chris-borger-about h2 {
 	color: #000000;
@@ -1560,14 +1585,7 @@ footer .footer-socials svg path {
 	text-align: center;
 }
 
-  @media (min-width: 1399px) {
-    .image-gallery-container .image-wrapper {
-        border: none;
-    }
-}
-
-
-//  media query for screen min width of 500px
+//  media query for screen min width of 31.25rem/500px
 
 @media screen and (min-width:31.25rem) {
 	.home-hero {
@@ -1584,7 +1602,10 @@ footer .footer-socials svg path {
 	}
 
 	.home-services {
-		h2, h3, p {
+
+		h2,
+		h3,
+		p {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
@@ -1595,7 +1616,10 @@ footer .footer-socials svg path {
 	}
 
 	.home-about {
-		h2, h3, p {
+
+		h2,
+		h3,
+		p {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
@@ -1632,7 +1656,9 @@ footer .footer-socials svg path {
 	.upcoming-events {
 		padding: 2rem 0;
 
-		h2, h3, p {
+		h2,
+		h3,
+		p {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
