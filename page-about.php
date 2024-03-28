@@ -34,38 +34,20 @@ get_header();
 </section>
 
 <section class="meet-donovan-section">
-    <h2>MEET DONOVAN WORKUN</h2>
+    <h2>Meet Donovan Workun</h2>
     <picture>
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/meetdonovansm.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/meetdonovanmd.webp" media="(max-width: 800px)">
 
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetdonovanlg.webp" alt="Donovan Workun">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetdonovanlg.webp" alt="Donovan Workun being a goofball and having a fun time.">
                 </picture>
     <p>A world renowned Improviser, and a founding member of Atomic Improv, Donovan has over 30 years of comedy under his belt. He’s toured all over Canada, the US, and Europe, never ceasing to amaze and astound audiences with his wit and his motley variety of characters.</p>
     <p>Donovan was also the first Improviser to headline at Montreal’s Just For Laughs and has shared the stage with names such as Wayne Brady, Colin Mochrie, Mike Myers, and two people whom he’s always greatly looked up to and respected - Dave Thomas and Joe Flaherty. Beyond that, Donovan has also been a performer and write for several seasons of CBC’s radio program: The Irrelevant Show. Donovan is a side-splitting genius that you do not want to miss out on.</p>
 </section>
 
-<section class="image-gallery-section">
-    <h3>WHAT HE'S BEEN A PART OF!</h3>
-    <div class="image-gallery-container">
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/sm/oktoberfest.webp" alt="Donovan with a hat taking part in the oktober fest">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/hot-boy-summer.webp" alt="Poster of Hot Boy Summer">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/the-irrelevant-show.png" alt="Poster of the Irrelevant Show">
-        </div>
-        <div class="image-wrapper">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/canadian-comedy-awards.png" alt="Poster of the Canadian Comedy Awards">
-        </div>
-    </div>
-</section>
-
 <section class="chris-borger-about">
-    <h2>MEET CHRIS BORGER</h2>
+    <h2>Meet Chris Borger</h2>
     <p>Donovan’s not just a one man show, you know. He has a very talented partner that joins him for his Improv acts!</p>
 
     <picture>
