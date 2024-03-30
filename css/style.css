@@ -784,9 +784,15 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
   font-weight: 400;
   margin-top: 17rem;
   margin-bottom: unset;
+  line-height: 3rem;
+}
+.home-hero h2 span {
+  display: inline-flex;
+  overflow: hidden;
 }
 .home-hero .tagline > span {
   display: block;
@@ -1441,8 +1447,7 @@ footer .site-info span {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  
-   .upcoming-events .event-info {
+  .upcoming-events .event-info {
     margin-left: 3rem;
   }
   .upcoming-events a[role=button] {
@@ -1490,4 +1495,5 @@ footer .site-info span {
   }
   .image-gallery-container .image-wrapper {
     border: none;
+  }
 }/*# sourceMappingURL=style.css.map */

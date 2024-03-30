@@ -825,9 +825,17 @@ h4 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-wrap: nowrap;
 		font-weight: 400;
 		margin-top: 17rem;
 		margin-bottom: unset;
+		line-height: 3rem;
+
+		span {
+			display: inline-flex;
+			// position: relative;
+			overflow: hidden;
+		}
 	}
 
 	.tagline {
