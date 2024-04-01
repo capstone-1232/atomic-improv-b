@@ -10,6 +10,9 @@ const menuButtonLine2 = document.querySelector(".line-2")
 
 const menuOpenDiv = document.querySelector('.menu-menu-1-container')
 
+const header = document.querySelector('.site-header')
+
+
 menuToggle.addEventListener("click", (e)=> {
     
     if (!menuButtonLine1.classList.contains('rotate-span-1')) {
@@ -26,6 +29,15 @@ menuToggle.addEventListener("click", (e)=> {
 
     menuOpenDiv.classList.toggle('menu-open')
 
+    setTimeout(() => {
+        if (siteNavigation.classList.contains('toggled')) {
+            header.style.zIndex = '2'
+        } else {
+            header.style.zIndex = 'unset'
+        }
+    }, 500)
+
+    
 })
 
 document.addEventListener('click', function (event) {
