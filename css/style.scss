@@ -417,6 +417,7 @@ select {
 .main-navigation {
 	display: block;
 	position: relative;
+	z-index: 9999;
 
 	ul {
 		height: 0;
@@ -740,6 +741,9 @@ h4 {
 	color: $light;
 	justify-content: space-between;
 	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 
 	h1 {
 		font-size: 2rem;
@@ -813,11 +817,15 @@ h4 {
 	}
 }
 
+
 .home-hero {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/sm/whoweare1.webp') top/190% no-repeat;
 	color: $light;
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
+	position: sticky;
+	top: 64px;
+	z-index: -99;
 
 	h2 {
 		font-family: $bebas;
@@ -825,9 +833,17 @@ h4 {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-wrap: nowrap;
 		font-weight: 400;
 		margin-top: 17rem;
 		margin-bottom: unset;
+		line-height: 3rem;
+
+		span {
+			display: inline-flex;
+			// position: relative;
+			overflow: hidden;
+		}
 	}
 
 	.tagline {
@@ -870,12 +886,19 @@ a[role=button]:hover {
 	background-color: $light-green;
 }
 
+.light-bg {
+	background-color: $light;
+	border-radius: 1.5rem 1.5rem 0 0;
+	position: relative;
+}
+
 .info-blurb {
 	color: $dark;
-	padding: 0 1.5rem;
+	padding: 2rem;
 	font-family: $nunito;
 	font-weight: 500;
-	margin: 1.5rem 0;
+	background-color: $light;
+	border-radius: 1.5rem 1.5rem 0 0;
 
 	* {
 		margin: 0.7rem 0;
@@ -920,6 +943,7 @@ a[role=button]:hover {
 		border-radius: 1.25rem;
 		color: $dark-blue;
 		padding-top: 1rem;
+		padding-bottom: 2rem;
 
 		p {
 			color: $dark;
@@ -940,11 +964,10 @@ a[role=button]:hover {
 }
 
 .home-about {
-	padding: 2rem 0 0;
+	padding: 3rem 0 0;
 	font-family: $bebas;
 	color: $light;
 	background-color: $dark-blue;
-	margin-top: 2rem;
 	position: relative;
 
 	h2 {
@@ -994,7 +1017,7 @@ a[role=button]:hover {
 		grid-template-columns: 3rem 3rem;
 		gap: 1rem; 	
 		margin-right: 2rem;
-		margin-top: 3rem;
+		margin-top: 2rem;
 
 		svg {
 			width: 3rem;
@@ -1048,6 +1071,7 @@ a[role=button]:hover {
 	font-family: $bebas;
 	color: $dark-blue;
 	padding: 2rem 1.5rem;
+	background-color: $light;
 
 	h2 {
 		font-size: $h2clamp;

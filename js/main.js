@@ -10,6 +10,9 @@ const menuButtonLine2 = document.querySelector(".line-2")
 
 const menuOpenDiv = document.querySelector('.menu-menu-1-container')
 
+const header = document.querySelector('.site-header')
+
+
 menuToggle.addEventListener("click", (e)=> {
     
     if (!menuButtonLine1.classList.contains('rotate-span-1')) {
@@ -26,6 +29,15 @@ menuToggle.addEventListener("click", (e)=> {
 
     menuOpenDiv.classList.toggle('menu-open')
 
+    setTimeout(() => {
+        if (siteNavigation.classList.contains('toggled')) {
+            header.style.zIndex = '2'
+        } else {
+            header.style.zIndex = 'unset'
+        }
+    }, 300)
+
+    
 })
 
 document.addEventListener('click', function (event) {
@@ -41,7 +53,31 @@ document.addEventListener('click', function (event) {
 
 // Gsap
 
-// const scrollTrigger = gsap.registerPlugin(ScrollTrigger) 
+const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".tagline",
+        start:'top 20%',
+        end:'70% 20%',
+        scrub: true,
+        markers: true
+    }
+}) 
+
+tl.to('.tagline', {y:20, opacity: 0})
+
+// animation for the tagline to appear on page load
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const taglineTl = gsap.timeline({defaults: {ease: 'expo'}})
+
+    taglineTl.fromTo('.tagline-part-1>span>span', {visibility: 'hidden', y: '100%'}, {visibility: 'visible', y: 0, stagger: 0.03})
+
+    taglineTl.fromTo('.tagline-part-2>span>span', {visibility: 'hidden', y: '100%'}, {visibility: 'visible', y: 0, stagger: 0.03}, "<")
+
+    taglineTl.fromTo('.tagline>a', {opacity:0, y: '100%'}, { opacity: 1, y: 0})
+})
+
+
 
 // Lenis smooth scroll
 /* const lenis = new Lenis()

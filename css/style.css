@@ -401,6 +401,7 @@ select {
 .main-navigation {
   display: block;
   position: relative;
+  z-index: 9999;
 }
 .main-navigation ul {
   height: 0;
@@ -706,6 +707,9 @@ h4 {
   color: #fff;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .site-header h1 {
   font-size: 2rem;
@@ -777,6 +781,9 @@ h4 {
   color: #fff;
   padding: 1rem;
   border-radius: 0 0 1.5rem 1.5rem;
+  position: sticky;
+  top: 64px;
+  z-index: -99;
 }
 .home-hero h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -784,9 +791,15 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
   font-weight: 400;
   margin-top: 17rem;
   margin-bottom: unset;
+  line-height: 3rem;
+}
+.home-hero h2 span {
+  display: inline-flex;
+  overflow: hidden;
 }
 .home-hero .tagline > span {
   display: block;
@@ -824,12 +837,19 @@ a[role=button]:hover {
   background-color: #70ee9c;
 }
 
+.light-bg {
+  background-color: #fff;
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+}
+
 .info-blurb {
   color: #000;
-  padding: 0 1.5rem;
+  padding: 2rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  margin: 1.5rem 0;
+  background-color: #fff;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 .info-blurb * {
   margin: 0.7rem 0;
@@ -867,6 +887,7 @@ a[role=button]:hover {
   border-radius: 1.25rem;
   color: #0e3e66;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .home-services .home-santa p {
   color: #000;
@@ -884,11 +905,10 @@ a[role=button]:hover {
 }
 
 .home-about {
-  padding: 2rem 0 0;
+  padding: 3rem 0 0;
   font-family: "Bebas Neue", sans-serif;
   color: #fff;
   background-color: #0e3e66;
-  margin-top: 2rem;
   position: relative;
 }
 .home-about h2 {
@@ -931,7 +951,7 @@ a[role=button]:hover {
   grid-template-columns: 3rem 3rem;
   gap: 1rem;
   margin-right: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .home-about .social-links svg {
   width: 3rem;
@@ -979,6 +999,7 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   color: #0e3e66;
   padding: 2rem 1.5rem;
+  background-color: #fff;
 }
 .upcoming-events h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
@@ -1441,8 +1462,7 @@ footer .site-info span {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-  
-   .upcoming-events .event-info {
+  .upcoming-events .event-info {
     margin-left: 3rem;
   }
   .upcoming-events a[role=button] {
@@ -1490,4 +1510,5 @@ footer .site-info span {
   }
   .image-gallery-container .image-wrapper {
     border: none;
+  }
 }/*# sourceMappingURL=style.css.map */
