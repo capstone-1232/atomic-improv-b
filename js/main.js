@@ -35,7 +35,7 @@ menuToggle.addEventListener("click", (e)=> {
         } else {
             header.style.zIndex = 'unset'
         }
-    }, 500)
+    }, 300)
 
     
 })
