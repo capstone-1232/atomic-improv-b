@@ -13,6 +13,11 @@ main {
   display: block;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -401,7 +406,6 @@ select {
 .main-navigation {
   display: block;
   position: relative;
-  z-index: 9999;
 }
 .main-navigation ul {
   height: 0;
@@ -430,7 +434,7 @@ select {
   top: 0;
 }
 .main-navigation ul ul a {
-  width: 12.5rem;
+  width: 200px;
 }
 .main-navigation li {
   position: relative;
@@ -442,7 +446,7 @@ select {
 .main-navigation .menu-menu-1-container {
   background-color: #212121;
   position: absolute;
-  top: 3.125rem;
+  top: 50px;
   color: #fff;
   font-size: 1.5rem;
   right: 0;
@@ -645,7 +649,7 @@ select {
   height: auto;
   left: 5px;
   line-height: normal;
-  padding: 0.9375rem 1.4375rem 0.875rem;
+  padding: 15px 23px 14px;
   text-decoration: none;
   top: 5px;
   width: auto;
@@ -811,7 +815,6 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
   font-weight: 400;
   margin-top: 17rem;
   margin-bottom: unset;
@@ -836,7 +839,7 @@ a[role=button] {
   color: #000;
   display: block;
   border-radius: 0.5rem;
-  font-size: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
+  font-size: 1rem;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
@@ -854,19 +857,12 @@ a[role=button]:hover {
   background-color: #70ee9c;
 }
 
-.light-bg {
-  background-color: #fff;
-  border-radius: 1.5rem 1.5rem 0 0;
-  position: relative;
-}
-
 .info-blurb {
   color: #000;
-  padding: 2rem;
+  padding: 0 1.5rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  background-color: #fff;
-  border-radius: 1.5rem 1.5rem 0 0;
+  margin: 1.5rem 0;
 }
 .info-blurb * {
   margin: 0.7rem 0;
@@ -882,7 +878,7 @@ a[role=button]:hover {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
-  margin: 0 0 0 2rem;
+  margin: 0 2rem;
 }
 .home-services h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
@@ -901,10 +897,9 @@ a[role=button]:hover {
 }
 .home-services .home-santa {
   background-color: #fff;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   color: #0e3e66;
   padding-top: 1rem;
-  padding-bottom: 2rem;
 }
 .home-services .home-santa p {
   color: #000;
@@ -928,10 +923,11 @@ a[role=button]:hover {
 }
 
 .home-about {
-  padding: 3rem 0 0;
+  padding: 2rem 0 0;
   font-family: "Bebas Neue", sans-serif;
   color: #fff;
   background-color: #0e3e66;
+  margin-top: 2rem;
   position: relative;
 }
 .home-about h2 {
@@ -953,16 +949,13 @@ a[role=button]:hover {
 }
 .home-about img {
   position: absolute;
-  width: 60%;
+  width: 70%;
   left: 0;
   bottom: 0;
 }
 .home-about .socials {
   background-color: #fff;
   height: 23rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 .home-about .socials h3 {
   color: #0e3e66;
@@ -970,13 +963,15 @@ a[role=button]:hover {
 }
 .home-about .social-links {
   display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: auto;
   grid-template-columns: 3rem 3rem;
   gap: 1rem;
   margin-right: 2rem;
-  margin-top: 2rem;
+  margin-top: 4.5rem;
 }
 .home-about .social-links svg {
-  width: 3rem;
+  width: 4rem;
 }
 
 .home-testimonials {
@@ -1021,7 +1016,6 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   color: #0e3e66;
   padding: 2rem 1.5rem;
-  background-color: #fff;
 }
 .upcoming-events h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
@@ -1068,7 +1062,7 @@ footer .site-info span {
 .footer-container {
   display: grid;
   grid-template-areas: "a c" "b c" "b d";
-  grid-template-rows: 6.25rem 15.625rem 6.25rem;
+  grid-template-rows: 100px 250px 100px;
   grid-template-columns: 1fr 2fr;
 }
 .footer-container .custom-logo-link {
@@ -1080,14 +1074,6 @@ footer .site-info span {
   display: flex;
   flex-direction: column;
 }
-.footer-container .footer-socials a {
-  padding: 1rem;
-}
-.footer-container .footer-socials svg,
-.footer-container .footer-socials svg path {
-  fill: #fff;
-  width: 3rem;
-}
 .footer-container .footer-nav-container {
   grid-area: c;
 }
@@ -1097,6 +1083,16 @@ footer .site-info span {
 
 .footer-navigation {
   height: 100%;
+}
+
+.footer-socials a {
+  padding: 1rem;
+}
+
+footer .footer-socials svg,
+footer .footer-socials svg path {
+  fill: #fff;
+  width: 3rem;
 }
 
 .menu-menu-2-container {
@@ -1118,6 +1114,10 @@ footer .site-info span {
 }
 .menu-menu-2-container #footer-menu {
   margin: unset;
+}
+
+.small {
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
 }
 
 .services-hero {
@@ -1157,7 +1157,7 @@ footer .site-info span {
 .services-poy .poy-part-2 {
   background-color: #0e3e66;
   padding: 1rem 0;
-  border-radius: 0.9375rem;
+  border-radius: 15px;
 }
 .services-poy .poy-part-2 p:nth-child(3) {
   margin-bottom: 1rem;
@@ -1199,13 +1199,34 @@ footer .site-info span {
   margin: 1rem 2rem;
 }
 
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+@media screen and (min-width: 1399px) {
+  .about-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+  }
+}
 .about-book-button {
   margin: 2rem;
 }
 
-.about-heading,
-.contact-heading {
-  padding: 0;
+.about-heading {
+  padding: 2rem 0;
   padding-left: 2rem;
   color: #0E3E66;
 }
@@ -1216,25 +1237,38 @@ footer .site-info span {
 }
 
 .flex-item h2 {
-  padding-left: 1.25rem;
+  padding-left: 20px;
 }
+
 .flex-item p {
   text-align: center;
 }
+
 .flex-item img {
-  border-radius: 0.625rem;
+  border-radius: 10px;
 }
 
 .image-about img {
   display: block;
   width: 100%;
-  border-radius: 0.625rem;
+  border-radius: 10px;
 }
 
 .flex-item .image-about {
   margin: 0 auto 1rem;
   overflow: hidden;
   border: 2px solid #FFFFFF;
+}
+
+.image-gallery-section h3,
+.contact-heading {
+  padding-left: 2rem;
+  color: #FFFFFF;
+}
+
+.meet-donovan-section h2 {
+  padding-left: 2rem;
+  color: #FFFFFF;
 }
 
 .image-gallery-container {
@@ -1245,10 +1279,11 @@ footer .site-info span {
 
 .image-wrapper {
   margin: 0 auto 1rem;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   overflow: hidden;
   border: 2px solid #FFFFFF;
 }
+
 .image-wrapper img {
   display: block;
   width: 100%;
@@ -1257,7 +1292,7 @@ footer .site-info span {
 
 .image-about {
   margin: 0 auto 1rem;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   overflow: hidden;
   border: 2px solid #FFFFFF;
 }
@@ -1269,6 +1304,10 @@ footer .site-info span {
   overflow: hidden;
 }
 
+.meet-donovan-section h2 {
+  color: #000000;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -1277,15 +1316,14 @@ footer .site-info span {
 .column1 {
   background-color: #0E3E66;
   color: white;
-}
-.column1 h3 {
-  margin: 2rem;
-}
-.column1 .image-about {
-  margin: 1.25rem;
+  padding: 20px;
 }
 
 .column2 {
+  color: #000000;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
   color: #000000;
   display: inline-block;
   margin: 0 2rem;
@@ -1304,33 +1342,80 @@ footer .site-info span {
     color: white;
     margin-top: 1rem;
   }
+  .column2 p {
+    color: #000000;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+@media screen and (min-width: 1399px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  .column1,
+  .column2 {
+    flex: 1;
+  }
+  .column2 p {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .column2 {
+    color: white;
+    margin-top: 20rem;
+  }
+}
+@media screen and (min-width: 1399px) {
+  .about-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+.image-gallery-section {
+  background-color: #0E3E66;
+}
+
+.image-gallery-section h3 {
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 1399px) {
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+  }
 }
 .send-message-heading {
   text-align: center;
-  margin: 0 0 2rem 0;
+  padding: 2rem 0;
   color: #FFFFFF;
 }
 
 .contact-styled {
-  background: #0E3E66;
-  /* Background color */
-  padding: 2rem;
-  /* Padding for the form */
-  border-radius: 0.625rem;
-  /* Border radius for the form */
+  background: #0E3E66; /* Background color */
+  padding: 20px; /* Padding for the form */
+  border-radius: 10px; /* Border radius for the form */
   font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
-  /* Text color */
+  color: #FFFFFF; /* Text color */
 }
 
 .contact-styled h3 {
-  color: #FFFFFF;
-  /* Heading text color */
+  color: #FFFFFF; /* Heading text color */
 }
 
 .contact-styled .nf-field-label {
-  color: #FFFFFF;
-  /* Label text color */
+  color: #FFFFFF; /* Label text color */
   text-transform: capitalize;
 }
 
@@ -1338,102 +1423,85 @@ footer .site-info span {
 .contact-styled .nf-form-content input[type=email],
 .contact-styled .nf-form-content input[type=date],
 .contact-styled .nf-form-content textarea {
-  color: #000000;
-  /* Text color for input fields */
-  border-radius: 5px;
-  /* Border radius for input fields */
-  background-color: #FFFFFF;
-  /* Background color for input fields */
-  border: 1px solid #000000;
-  /* Black border for input fields */
-  padding: 0.625rem;
-  /* Adjust padding as needed */
+  color: #000000; /* Text color for input fields */
+  border-radius: 5px; /* Border radius for input fields */
+  background-color: #FFFFFF; /* Background color for input fields */
+  border: 1px solid #000000; /* Black border for input fields */
+  padding: 10px; /* Adjust padding as needed */
 }
 
 .contact-styled .nf-form-content input[type=text]::-moz-placeholder, .contact-styled .nf-form-content input[type=email]::-moz-placeholder, .contact-styled .nf-form-content input[type=date]::-moz-placeholder, .contact-styled .nf-form-content textarea::-moz-placeholder {
-  color: #000000;
-  /* Text color for placeholder */
+  color: #000000; /* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type=text]::placeholder,
 .contact-styled .nf-form-content input[type=email]::placeholder,
 .contact-styled .nf-form-content input[type=date]::placeholder,
 .contact-styled .nf-form-content textarea::placeholder {
-  color: #000000;
-  /* Text color for placeholder */
+  color: #000000; /* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type=submit] {
-  display: block;
-  /* Ensure button takes full width */
-  margin: 0 auto;
-  /* Center the button horizontally */
-  background: #9EB7E5;
-  /* Button background color */
-  color: #000000;
-  /* Button text color */
-  border: none;
-  /* Remove button border */
-  border-radius: 5px;
-  /* Border radius for button */
-  padding: 0.625rem 1.25rem;
-  /* Adjust padding as needed */
-  font-weight: bold;
-  /* Make button text bold */
-  cursor: pointer;
-  /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease;
-  /* Add transition effect */
+  display: block; /* Ensure button takes full width */
+  margin: 0 auto; /* Center the button horizontally */
+  background: #9EB7E5; /* Button background color */
+  color: #000000; /* Button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Border radius for button */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-weight: bold; /* Make button text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
 }
 
 .contact-styled .nf-form-content input[type=submit]:hover {
-  background: #70EE9C;
-  /* Button background color on hover */
-  color: #000000;
-  /* Button text color on hover */
+  background: #70EE9C; /* Button background color on hover */
+  color: #000000; /* Button text color on hover */
 }
 
 .contact-styled .nf-error.field-wrap .nf-field-element:after {
-  background: #e74c3c;
-  /* Error message background color */
+  background: #e74c3c; /* Error message background color */
 }
 
 .contact-styled .nf-form-fields-required {
-  margin-bottom: 0.625rem;
-  /* Add margin below required fields */
+  margin-bottom: 10px; /* Add margin below required fields */
 }
 
 .contact-styled .nf-error .nf-error-msg {
-  color: #e74c3c;
-  /* Error message text color */
+  color: #e74c3c; /* Error message text color */
 }
 
 .contact-styled .nf-error-msg,
 .ninja-forms-req-symbol {
-  color: #e74c3c;
-  /* Required symbol text color */
+  color: #e74c3c; /* Required symbol text color */
 }
 
 .contact-styled .nf-pass.field-wrap .nf-field-element:after {
-  color: #2ecc71;
-  /* Password strength color */
+  color: #2ecc71; /* Password strength color */
   content: "\f164";
 }
 
-.meet-donovan-section h2 {
-  padding-left: 2rem;
-  color: #000;
+@media screen and (min-width: 1399px) {
+  .contact-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+    text-align: center;
+  }
 }
 .meet-donovan-section p {
-  padding: 0 2rem;
+  text-align: center;
 }
 
+@media screen and (min-width: 1399px) {
+  .chris-borger-about p {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
 .chris-borger-about h2 {
   color: #000000;
   padding-left: 2rem;
-}
-.chris-borger-about p {
-  padding: 0 2rem;
 }
 
 .hire-artist-section p {
@@ -1449,10 +1517,6 @@ footer .site-info span {
   .home-hero h2 {
     margin-bottom: 1rem;
   }
-  .container {
-    max-width: 45rem;
-    margin: 0 auto;
-  }
   .info-blurb {
     padding: 0 3rem;
   }
@@ -1462,9 +1526,7 @@ footer .site-info span {
   .info-blurb p:last-of-type {
     margin-bottom: 2rem;
   }
-  .home-services h2,
-  .home-services h3,
-  .home-services p {
+  .home-services h2, .home-services h3, .home-services p {
     margin-left: 3rem;
   }
   .home-services p {
@@ -1485,6 +1547,7 @@ footer .site-info span {
   .home-about h3,
   .home-about p {
     margin-left: 3rem;
+    margin-right: 3rem;
   }
   .home-about p:first-of-type {
     padding-top: 2rem;
@@ -1492,18 +1555,18 @@ footer .site-info span {
   .home-about a[role=button] {
     margin-right: 3rem;
   }
-  .home-about img {
-    max-width: 20rem;
-  }
   .home-about .socials {
     height: 27rem;
   }
+  .home-about .socials img {
+    width: 60%;
+  }
   .home-about .socials .social-links {
-    grid-template-columns: 5rem 5rem;
+    grid-template-columns: 100% 100%;
+    grid-template-rows: 100% 100%;
   }
   .home-about .socials svg {
     padding: 1rem;
-    width: 5rem;
   }
   .home-testimonials h2 {
     margin-left: 3rem;
@@ -1512,16 +1575,8 @@ footer .site-info span {
   .upcoming-events {
     padding: 2rem 0;
   }
-  .upcoming-events h2,
-  .upcoming-events h3,
-  .upcoming-events p {
+  .upcoming-events h2, .upcoming-events h3, .upcoming-events p {
     margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  .upcoming-events .event-info {
-    margin-left: 3rem;
-  }
-  .upcoming-events a[role=button] {
     margin-right: 3rem;
   }
 }

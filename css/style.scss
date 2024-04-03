@@ -848,7 +848,7 @@ h4 {
 }
 
 .home-hero {
-	background: url('../img/sm/whoweare1.webp') top/190% no-repeat;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/sm/whoweare1.webp') top/190% no-repeat;
 	color: $light;
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
@@ -864,6 +864,13 @@ h4 {
 		font-weight: 400;
 		margin-top: 17rem;
 		margin-bottom: unset;
+		line-height: 3rem;
+
+		span {
+			display: inline-flex;
+			// position: relative;
+			overflow: hidden;
+		}
 	}
 
 	.tagline {
@@ -1476,7 +1483,7 @@ footer .footer-socials svg path {
     padding: 10px; 
     margin: 10px 0;
 }
-
+}
 @media screen and (min-width: 1399px) {
     .flex-container {
         flex-direction: row;
