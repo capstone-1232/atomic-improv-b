@@ -63,7 +63,7 @@ const tl = gsap.timeline({
     }
 })
 
-tl.to('.tagline', { y: 20, opacity: 0 })
+// tl.to('.tagline', { y: 20, opacity: 0 })
 
 // animation for the tagline to appear on page load
 
@@ -75,6 +75,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     taglineTl.fromTo('.tagline-part-2>span>span', { visibility: 'hidden', y: '100%' }, { visibility: 'visible', y: 0, stagger: 0.03 }, "<")
 
     taglineTl.fromTo('.tagline>a', { opacity: 0, y: '100%' }, { opacity: 1, y: 0 })
+
+    taglineTl.fromTo('.site-header .site-branding', {x:'-200%'}, {x: 0}, "<")
+
+    taglineTl.fromTo('.site-header .menu-toggle', {x:'200%'}, {x: 0}, "<")
 })
 
 
