@@ -242,7 +242,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1rem;
 	font-family: $nunito;
 	font-weight: 500;
 }
@@ -847,16 +847,13 @@ h4 {
 	}
 
 	.tagline {
-		&>span {
-			display: block;
-			text-align: right;
-			font-style: italic;
-			margin-bottom: 1.25rem;
-		}
-
 		a {
 			margin-bottom: 1rem;
 			// margin-top: 1rem;
+		}
+
+		h2 {
+			line-height: 1.5;
 		}
 	}
 }
@@ -1007,15 +1004,14 @@ a[role=button]:hover {
 
 		h3 {
 			color: $dark-blue;
-			margin-right: 2rem;
-			text-align: right;
+			margin-left: 2rem;
 		}
 	}
 
 	.social-links {
 		display: grid;
 		grid-template-columns: 3rem 3rem;
-		gap: 1rem; 	
+		gap: 1rem;
 		margin-right: 2rem;
 		margin-top: 2rem;
 
@@ -1380,11 +1376,6 @@ footer {
 	display: inline-block;
 	margin: 0 2rem;
 
-
-	p {
-		padding: 10px;
-		margin: 10px 0;
-	}
 }
 
 @media screen and (max-width: 87.4375rem) {
@@ -1396,14 +1387,15 @@ footer {
 
 .send-message-heading {
 	text-align: center;
-	padding: 2rem 0;
+	// padding: 2rem 0;
+	margin: 0 0 2rem 0;
 	color: #FFFFFF;
 }
 
 .contact-styled {
 	background: #0E3E66;
 	/* Background color */
-	padding: 1.25rem;
+	padding: 2rem;
 	/* Padding for the form */
 	border-radius: 0.625rem;
 	/* Border radius for the form */
@@ -1529,7 +1521,18 @@ footer {
 	}
 }
 
-//  media query for screen min width of 31.25rem/500px
+.hire-artist-section {
+	p {
+		margin: 0 2rem 2rem 2rem;
+	}
+
+}
+
+/******************* Media queries ***************/
+
+
+
+//  media query for screen min width of 31.25rem/500px - Horizontal phone view
 
 @media screen and (min-width:31.25rem) {
 	.home-hero {
@@ -1539,6 +1542,7 @@ footer {
 		h2 {
 			margin-bottom: 1rem;
 		}
+
 	}
 
 	.container {
@@ -1548,6 +1552,14 @@ footer {
 
 	.info-blurb {
 		padding: 0 3rem;
+
+		p:first-of-type {
+			padding-top: 2rem;
+		}
+
+		p:last-of-type {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.home-services {
@@ -1558,9 +1570,14 @@ footer {
 			margin-left: 3rem;
 		}
 
+		p {
+			margin: 1rem 3rem 0rem;
+		}
+
 		img {
-			// margin: 0 3rem;
 			width: calc(100vw - 6rem);
+			margin: 0 3rem 0;
+			border-radius: 5px;
 		}
 
 		.home-santa a {
@@ -1570,10 +1587,16 @@ footer {
 
 	.home-about {
 
+		padding-top: 2rem;
+
 		h2,
 		h3,
 		p {
 			margin-left: 3rem;
+		}
+
+		p:first-of-type {
+			padding-top: 2rem;
 		}
 
 		a[role=button] {
@@ -1625,9 +1648,16 @@ footer {
 	}
 }
 
+
+
+// Media Query for min-width 800px/50rem - small tablets
 @media screen and (min-width:50rem) {}
 
-// Media Query for 1400px/87.5rem
+
+// Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
+@media screen and (min-width: 68.75rem) {}
+
+// Media Query for 1400px/87.5rem - Large Desktop
 
 @media screen and (min-width: 87.5rem) {
 	.about-heading {
@@ -1679,6 +1709,3 @@ footer {
 		border: none;
 	}
 }
-
-
-

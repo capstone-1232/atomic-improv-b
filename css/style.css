@@ -226,7 +226,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
 }
@@ -801,14 +801,11 @@ h4 {
   display: inline-flex;
   overflow: hidden;
 }
-.home-hero .tagline > span {
-  display: block;
-  text-align: right;
-  font-style: italic;
-  margin-bottom: 1.25rem;
-}
 .home-hero .tagline a {
   margin-bottom: 1rem;
+}
+.home-hero .tagline h2 {
+  line-height: 1.5;
 }
 
 a[role=button] {
@@ -943,8 +940,7 @@ a[role=button]:hover {
 }
 .home-about .socials h3 {
   color: #0e3e66;
-  margin-right: 2rem;
-  text-align: right;
+  margin-left: 2rem;
 }
 .home-about .social-links {
   display: grid;
@@ -1260,10 +1256,6 @@ footer .site-info span {
   display: inline-block;
   margin: 0 2rem;
 }
-.column2 p {
-  padding: 10px;
-  margin: 10px 0;
-}
 
 @media screen and (max-width: 87.4375rem) {
   .column2 {
@@ -1273,14 +1265,14 @@ footer .site-info span {
 }
 .send-message-heading {
   text-align: center;
-  padding: 2rem 0;
+  margin: 0 0 2rem 0;
   color: #FFFFFF;
 }
 
 .contact-styled {
   background: #0E3E66;
   /* Background color */
-  padding: 1.25rem;
+  padding: 2rem;
   /* Padding for the form */
   border-radius: 0.625rem;
   /* Border radius for the form */
@@ -1402,6 +1394,11 @@ footer .site-info span {
   padding: 0 2rem;
 }
 
+.hire-artist-section p {
+  margin: 0 2rem 2rem 2rem;
+}
+
+/******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
   .home-hero {
     background-size: 130%;
@@ -1417,21 +1414,38 @@ footer .site-info span {
   .info-blurb {
     padding: 0 3rem;
   }
+  .info-blurb p:first-of-type {
+    padding-top: 2rem;
+  }
+  .info-blurb p:last-of-type {
+    margin-bottom: 2rem;
+  }
   .home-services h2,
   .home-services h3,
   .home-services p {
     margin-left: 3rem;
   }
+  .home-services p {
+    margin: 1rem 3rem 0rem;
+  }
   .home-services img {
     width: calc(100vw - 6rem);
+    margin: 0 3rem 0;
+    border-radius: 5px;
   }
   .home-services .home-santa a {
     margin-right: 3rem;
+  }
+  .home-about {
+    padding-top: 2rem;
   }
   .home-about h2,
   .home-about h3,
   .home-about p {
     margin-left: 3rem;
+  }
+  .home-about p:first-of-type {
+    padding-top: 2rem;
   }
   .home-about a[role=button] {
     margin-right: 3rem;
