@@ -710,6 +710,7 @@ h4 {
   position: sticky;
   top: 0;
   z-index: 0;
+  overflow-x: clip;
 }
 .site-header h1 {
   font-size: 2rem;
