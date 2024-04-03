@@ -8,8 +8,7 @@ get_header();
 
 <section class="hire-artist-section">
     <div class="hire-artist-content">
-    <p class="hire-artist-paragraph">These guys are pretty great. You absolutely wouldn’t want to miss out on hiring them for your next event, would you?</p>
-        <p>Fill out the form below, and you can hash out the details of your next event with them!</p>
+    <p class="hire-artist-paragraph">Fill out the form below, and you can hash out the details of your next event with them!</p>
     </div>
 </section>
 
