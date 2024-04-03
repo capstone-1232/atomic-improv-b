@@ -11,6 +11,7 @@ $pclamp: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
 $h2clamp: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
 $h3clamp: clamp(2rem, 0.571rem + 3.81vw, 4rem);
 $h4clamp: clamp(1.5rem, 1.056rem + 2.222vw, 3rem);
+// Applies to Paragraph and Span text
 $smallclamp: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
 
 html {
@@ -962,6 +963,14 @@ a[role=button]:hover {
 
 		p {
 			color: $dark;
+
+			&:nth-child(3) {
+				margin-bottom: 1rem;
+			}
+
+			&:nth-child(4) {
+				margin-top: 1rem;
+			}
 		}
 
 		a {
@@ -1260,6 +1269,21 @@ footer .footer-socials svg path {
 		border-radius: 15px;
 	}
 
+	.poy-part-2 {
+
+		p:nth-child(3) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.poy-part-1 {
+		div:nth-child(4) {
+			p:nth-child(3) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
 	.testimonials {
 		color: $dark;
 		padding: 2rem;
@@ -1436,6 +1460,23 @@ footer .footer-socials svg path {
 
 
 }
+
+
+.testimonials {
+	span {
+		font-size: $smallclamp;
+		font-family: $nunito;
+		display: block;
+		font-style: italic;
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 87.4375rem) {
+	.column2 {
+		color: white;
+		margin-top: 1rem;
+	}
 
 .column2 p {
 	color: #000000;

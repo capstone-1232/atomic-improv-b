@@ -904,6 +904,12 @@ a[role=button]:hover {
 .home-services .home-santa p {
   color: #000;
 }
+.home-services .home-santa p:nth-child(3) {
+  margin-bottom: 1rem;
+}
+.home-services .home-santa p:nth-child(4) {
+  margin-top: 1rem;
+}
 .home-services .home-santa a {
   margin-right: 2rem;
 }
@@ -1151,7 +1157,19 @@ footer .footer-socials svg path {
 .services-poy .poy-part-2 {
   background-color: #0e3e66;
   padding: 1rem 0;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
+}
+.services-poy .poy-part-2 p:nth-child(3) {
+  margin-bottom: 1rem;
+}
+.services-poy .poy-part-1 div:nth-child(4) p:nth-child(3) {
+  margin-bottom: 1rem;
+}
+.services-poy .poy-part-2 p:nth-child(3) {
+  margin-bottom: 1rem;
+}
+.services-poy .poy-part-1 div:nth-child(4) p:nth-child(3) {
+  margin-bottom: 1rem;
 }
 .services-poy .testimonials {
   color: #000;
@@ -1317,6 +1335,14 @@ footer .footer-socials svg path {
   margin: 0 2rem;
 }
 
+.testimonials span {
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-family: "Nunito Sans", sans-serif;
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+
 .column2 p {
   color: #000000;
   padding: 10px;
@@ -1327,20 +1353,22 @@ footer .footer-socials svg path {
   .flex-container {
     flex-direction: row;
   }
+
   .column1,
   .column2 {
     flex: 1;
   }
+
   .column2 p {
     background-color: #FFFFFF;
     color: #000000;
   }
 }
-@media screen and (max-width: 1399px) {
+
+@media screen and (max-width: 87.4375rem) {
   .column2 {
     color: white;
-    margin-top: 20rem;
-  }
+    margin-top: 1rem;
 }
 @media screen and (min-width: 1399px) {
   .about-heading {
