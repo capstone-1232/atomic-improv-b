@@ -48,6 +48,7 @@
 						array(
 							'theme_location' => 'menu-2',
 							'menu_id'        => 'footer-menu',
+							'menu_class'	=> 'menu-menu-2-container',
 						)
 					);
 					?>
