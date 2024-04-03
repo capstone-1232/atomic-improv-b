@@ -247,7 +247,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1rem;
 	font-family: $nunito;
 	font-weight: 500;
 }
@@ -335,7 +335,7 @@ table {
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: $light-blue;
 }
 
 a:hover,
@@ -836,16 +836,13 @@ h4 {
 	}
 
 	.tagline {
-		&>span {
-			display: block;
-			text-align: right;
-			font-style: italic;
-			margin-bottom: 1.25rem;
-		}
-
 		a {
 			margin-bottom: 1rem;
 			// margin-top: 1rem;
+		}
+
+		h2 {
+			line-height: 1.5;
 		}
 	}
 }
@@ -986,13 +983,22 @@ a[role=button]:hover {
 
 		h3 {
 			color: $dark-blue;
+<<<<<<< HEAD
+=======
+			margin-left: 2rem;
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 		}
 	}
 	
 	.social-links {
 		display: grid;
+<<<<<<< HEAD
 		grid-template-columns: 50% 50%;
 		margin-left: auto;
+=======
+		grid-template-columns: 3rem 3rem;
+		gap: 1rem;
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 		margin-right: 2rem;
 		margin-top: 4.5rem;
 
@@ -1385,10 +1391,17 @@ footer .footer-socials svg path {
 }
 
 .column2 {
+
     color: #000000; 
     padding: 20px; 
     margin-top: 20px; 
     display: inline-block;
+
+	color: #000000;
+	display: inline-block;
+	margin: 0 2rem;
+
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 }
 
 .column2 p {
@@ -1452,6 +1465,7 @@ footer .footer-socials svg path {
 }
 
 .send-message-heading {
+<<<<<<< HEAD
     text-align: center;
     padding: 2rem 0;
     color: #FFFFFF;
@@ -1463,6 +1477,24 @@ footer .footer-socials svg path {
     border-radius: 10px; /* Border radius for the form */
     font-family: Arial, Helvetica, sans-serif;
     color: #FFFFFF; /* Text color */
+=======
+	text-align: center;
+	// padding: 2rem 0;
+	margin: 0 0 2rem 0;
+	color: #FFFFFF;
+}
+
+.contact-styled {
+	background: #0E3E66;
+	/* Background color */
+	padding: 2rem;
+	/* Padding for the form */
+	border-radius: 0.625rem;
+	/* Border radius for the form */
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	/* Text color */
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 }
 
 .contact-styled h3 {
@@ -1558,6 +1590,7 @@ footer .footer-socials svg path {
 	padding-left: 2rem;
 }
 
+<<<<<<< HEAD
 .chris-borger-about p {
 	text-align: center;
 }
@@ -1570,6 +1603,20 @@ footer .footer-socials svg path {
 
 
 //  media query for screen min width of 500px
+=======
+.hire-artist-section {
+	p {
+		margin: 0 2rem 2rem 2rem;
+	}
+
+}
+
+/******************* Media queries ***************/
+
+
+
+//  media query for screen min width of 31.25rem/500px - Horizontal phone view
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 
 @media screen and (min-width:31.25rem) {
 	.home-hero {
@@ -1579,16 +1626,38 @@ footer .footer-socials svg path {
 		h2 {
 			margin-bottom: 1rem;
 		}
+
 	}
 
 	.info-blurb {
 		padding: 0 3rem;
+
+		p:first-of-type {
+			padding-top: 2rem;
+		}
+
+		p:last-of-type {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.home-services {
 		h2, h3, p {
 			margin-left: 3rem;
+<<<<<<< HEAD
 			margin-right: 3rem;
+=======
+		}
+
+		p {
+			margin: 1rem 3rem 0rem;
+		}
+
+		img {
+			width: calc(100vw - 6rem);
+			margin: 0 3rem 0;
+			border-radius: 5px;
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 		}
 
 		.home-santa a {
@@ -1597,9 +1666,22 @@ footer .footer-socials svg path {
 	}
 
 	.home-about {
+<<<<<<< HEAD
 		h2, h3, p {
+=======
+
+		padding-top: 2rem;
+
+		h2,
+		h3,
+		p {
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21
 			margin-left: 3rem;
 			margin-right: 3rem;
+		}
+
+		p:first-of-type {
+			padding-top: 2rem;
 		}
 
 		a[role=button] {
@@ -1640,3 +1722,68 @@ footer .footer-socials svg path {
 		}
 	}
 }
+<<<<<<< HEAD
+=======
+
+
+
+// Media Query for min-width 800px/50rem - small tablets
+@media screen and (min-width:50rem) {}
+
+
+// Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
+@media screen and (min-width: 68.75rem) {}
+
+// Media Query for 1400px/87.5rem - Large Desktop
+
+@media screen and (min-width: 87.5rem) {
+	.about-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+	}
+
+	.flex-container {
+		flex-direction: row;
+	}
+
+	.column1,
+	.column2 {
+		flex: 1;
+	}
+
+	.column2 p {
+		background-color: #FFFFFF;
+	}
+
+	.flex-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #FFFFFF;
+		color: #000000;
+		border-radius: 10px;
+		margin: 1.25rem;
+		width: 100%;
+	}
+
+	.contact-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		text-align: center;
+	}
+
+	.chris-borger-about p {
+		color: #000000;
+		background-color: #FFFFFF;
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.image-gallery-container .image-wrapper {
+		border: none;
+	}
+}
+>>>>>>> d7b82ec04ace6a31571f951aa528900fffb07d21

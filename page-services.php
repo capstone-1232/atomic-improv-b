@@ -14,11 +14,13 @@ get_header();
 
     <section class="services-corporate">
         <h3>Corporate Shows</h3>
-        <img src="<?= get_template_directory_uri() ?>/img/corporate-events.webp"
-        alt="Donovan with his partner, Chris, posing while a comedy show.">
-        <!-- <picture>
-            <source srcset="<?= get_template_directory_uri()?>/img/sm/" media="">
-        </picture> -->
+        <picture>
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/atomicimprovcrewsm.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/atomicimprovcrewmd.webp" media="(max-width: 800px)">
+
+                    <img src="<?= get_template_directory_uri() ?>/img/lg/atomicimprovcrewlg.webp" alt="Donovan Workun (left) and Chris Borger (right) pointing their finger at the camera to encourage you to read about what they do.">
+                </picture>
         <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
         <p>The award winning production has performed thousands of times across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
     </section>
@@ -52,7 +54,7 @@ get_header();
         <div class="testimonials">
             <div class="card-1">
                 <p>“In these past 2 months since the workshop, we are already seeing changes  in the way our team communicates internally and externally. I would recommend this workshop for all teams, big or small!”</p>
-                <span>-Conoco Phillips</span>
+                <span>-ConocoPhillips</span>
             </div>
             <div class="card-2">
                 <p>“I laughed until my stomach hurt! Along with the laughter came excellent tips on how to be positive, work as a team and how to say Yes! These guys are good!”</p>
@@ -68,9 +70,10 @@ get_header();
     </section>
 
     <section class="services-santa">
-        <h3>The Funny Santa Guy</h3>
+        <h3>That Funny Santa!</h3>
         <img src="<?= get_template_directory_uri() ?>/img/santa-donovan.webp" alt="Donovan Workun dressed as santa claus sitting on a chair.">
-        <p>Ho-ho-holy smokes, who’s that funny Santa guy?! Let ThatFunnySanta bring his trademark merriment and mearth as a special treat for your holiday cheer!</p>
+        <p>Christmas is the most magical time of the year, and nothing is more special than having Santa Claus himself show up to your yuletide festivities. Thec ombination of this Santa's sparkling eyes, sharp wit, and ability to connect with children and adults alike is what makes him the most merry and the brightest St. Nick in all of Alberta!</p>
+        <p>Making his audience laugh and truly believe in the miracle of Christmas is what makes That Funny Santa the official Santa for Epcor, the Town of Banff and the Banff Springs Hotel! Not to fret however, as his jolly merriment is still available throughout many dates in November until early December for your naughty or nice party plans!</p>
         <img src="" alt="">
         <p>"I don’t know if there is anyone else but "ThatFunnySanta" who could bring such magic to our children", says Janice Krissa, co-founder of the FreeStore for Ukrainian Newcomers. "In a few short hours, he made hundreds of children and adults feel important and special and was able to turn a difficult time into a magical visit and memories that will last a lifetime."</p>
         <img src="" alt="">
