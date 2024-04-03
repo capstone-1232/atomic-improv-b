@@ -1157,13 +1157,7 @@ footer .footer-socials svg path {
 .services-poy .poy-part-2 {
   background-color: #0e3e66;
   padding: 1rem 0;
-  border-radius: 0.9375rem;
-}
-.services-poy .poy-part-2 p:nth-child(3) {
-  margin-bottom: 1rem;
-}
-.services-poy .poy-part-1 div:nth-child(4) p:nth-child(3) {
-  margin-bottom: 1rem;
+  border-radius: 15px;
 }
 .services-poy .poy-part-2 p:nth-child(3) {
   margin-bottom: 1rem;
@@ -1343,32 +1337,35 @@ footer .footer-socials svg path {
   text-align: right;
 }
 
-.column2 p {
-  color: #000000;
-  padding: 10px;
-  margin: 10px 0;
+@media screen and (max-width: 87.4375rem) {
+  .column2 {
+    color: white;
+    margin-top: 1rem;
+  }
+  .column2 p {
+    color: #000000;
+    padding: 10px;
+    margin: 10px 0;
+  }
 }
-
 @media screen and (min-width: 1399px) {
   .flex-container {
     flex-direction: row;
   }
-
   .column1,
   .column2 {
     flex: 1;
   }
-
   .column2 p {
     background-color: #FFFFFF;
     color: #000000;
   }
 }
-
-@media screen and (max-width: 87.4375rem) {
+@media screen and (max-width: 1399px) {
   .column2 {
     color: white;
-    margin-top: 1rem;
+    margin-top: 20rem;
+  }
 }
 @media screen and (min-width: 1399px) {
   .about-heading {
