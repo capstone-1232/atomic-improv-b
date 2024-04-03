@@ -86,7 +86,13 @@ get_header();
             <div class="divider"></div>
             <div class="home-santa">
                 <h3>That Funny Santa!</h3>
-                <img src="<?= get_template_directory_uri() ?>/img/sm/santa2.webp" alt="Donovan Dressed as a Santa, sitting on a wide chair with two black dogs in his lap and laughing.">
+                <picture>
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa2.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/santa2.webp" media="(max-width: 800px)">
+
+                    <img src="<?= get_template_directory_uri() ?>/img/lg/santa2.webp" alt="Holly Jolly Santa Claus is looking forward to being a part of your festivities this year!">
+                </picture>
                 <p>Christmas is a magical time of year and there is nothing more special than bringing to your event!</p>
                 <p>Let ThatFunnySanta bring his trademark merriment and mirth as a special treat to your holiday cheer!</p>
                 <a href="<?= esc_url(get_permalink(8)); ?>" aria-label="Discover More" role="button">Discover More</a>
