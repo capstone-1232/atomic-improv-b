@@ -68,6 +68,9 @@ const tl = gsap.timeline({
 // animation for the tagline to appear on page load
 
 document.addEventListener('DOMContentLoaded', (event) => {
+    
+
+    // GSAP timelines
     const taglineTl = gsap.timeline({ defaults: { ease: 'expo' } })
 
     taglineTl.fromTo('.tagline-part-1>span>span', { visibility: 'hidden', y: '100%' }, { visibility: 'visible', y: 0, stagger: 0.03 })
@@ -79,6 +82,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     taglineTl.fromTo('.site-header .site-branding', {x:'-200%'}, {x: 0}, "<")
 
     taglineTl.fromTo('.site-header .menu-toggle', {x:'200%'}, {x: 0}, "<")
+
 })
 
 
