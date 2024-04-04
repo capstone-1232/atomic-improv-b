@@ -102,7 +102,7 @@ get_header();
     
     <section class="home-about">
             <h2>Who is Atomic Improv?</h2>
-            <!-- <video src=""></video> -->
+            <iframe width="900" height="315" src="https://www.youtube.com/embed/90KLfFZoszI?si=qJi6iM7h1-uQWY02" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p>Three-time world Improv Champion and Canadian comedy award winning Donovan Workun and professional improviser of
                 over 11 years Chris Borger form Atomic Improv, Canada’s premier improv comedy show.</p>
             <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Get to know more about Atomic Improv" role="button">Get to know
