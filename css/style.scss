@@ -910,12 +910,20 @@ a[role=button]:hover {
 	background-color: $light-green;
 }
 
+.light-bg {
+	z-index: 1;
+	position: relative;
+	background-color: $light;
+	border-radius: 1.5rem 1.5rem 0 0;
+	padding-top: 1rem;
+}
+
 .info-blurb {
 	color: $dark;
 	padding: 0 1.5rem;
 	font-family: $nunito;
 	font-weight: 500;
-	margin: 1.5rem 0;
+	margin-bottom: 1.5rem;
 
 	* {
 		margin: 0.7rem 0;
@@ -925,7 +933,6 @@ a[role=button]:hover {
 .home-services {
 	background-color: $dark-blue;
 	color: $light;
-	border-radius: 1.5rem;
 	padding: 2rem 0 0 0;
 
 	h2 {
@@ -960,6 +967,7 @@ a[role=button]:hover {
 		border-radius: 20px;
 		color: $dark-blue;
 		padding-top: 1rem;
+		padding-bottom: 2rem;
 
 		p {
 			color: $dark;
@@ -992,7 +1000,6 @@ a[role=button]:hover {
 	font-family: $bebas;
 	color: $light;
 	background-color: $dark-blue;
-	margin-top: 2rem;
 	position: relative;
 
 	h2 {
@@ -1026,24 +1033,28 @@ a[role=button]:hover {
 	.socials {
 		background-color: $light;
 		height: 23rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 
 		h3 {
 			color: $dark-blue;
-			margin-left: 2rem;
+			margin-right: 2rem;
+			text-align: right;
 		}
 	}
 	
 	.social-links {
 		display: grid;
-		grid-template-columns: 50% 50%;
-		margin-left: auto;
+		grid-template-columns: 3rem 3rem;
+		// margin-left: auto;
 		grid-template-columns: 3rem 3rem;
 		gap: 1rem;
 		margin-right: 2rem;
 		margin-top: 4.5rem;
 
 		svg {
-			width: 4rem;
+			width: 3rem;
 		}
 	}
 }
@@ -1085,7 +1096,7 @@ a[role=button]:hover {
 			width: fit-content;
 			font-family: $nunito;
 			font-style: italic;
-			font-size: 0.8rem;
+			font-size: $smallclamp;
 		}
 	}
 }
@@ -1104,6 +1115,10 @@ a[role=button]:hover {
 	h3 {
 		font-size: $h3clamp;
 		font-weight: 400;
+	}
+
+	p {
+		color: $dark;
 	}
 
 	.event-info {
@@ -1325,22 +1340,6 @@ footer .footer-socials svg path {
 	}
 }
 
-.socials {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	text-align: center;
-}
-
-.social-links {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-
-.social-links a {
-	margin: 0 10px;
-}
 
 @media screen and (min-width: 1399px) {
     .about-heading {
@@ -1720,6 +1719,10 @@ footer .footer-socials svg path {
 			margin-right: 3rem;
 		}
 
+		img {
+			max-width: 20rem;
+		}
+
 		.socials {
 			height: 27rem;
 
@@ -1728,12 +1731,14 @@ footer .footer-socials svg path {
 			}
 
 			.social-links {
-				grid-template-columns: 100% 100%;
-				grid-template-rows: 100% 100%;
+				grid-template-columns: 4rem 4rem;
+				gap: 2rem;
+				// grid-template-rows: 100% 100%;
 			}
 
 			svg {
-				padding: 1rem;
+				// padding: 1rem;
+				width: 4rem;
 			}
 		}
 	}

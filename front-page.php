@@ -69,20 +69,20 @@ get_header();
 </section>
 
 <div class="light-bg">
-    <div class="info-blurb container">
+    <div class="info-blurb">
         <p>The Atomic Improv Co. is Canada's Premier two man Improv troupe that has been creating comedy on the spot based entirely on audience suggestions since 1990.</p>
         <p>Their unique and customized comedy show is the perfect for any size and type of event. From corporate retreats and workshops at parties, they can take your event from “Hum Drum” to hilarious at Atomic speeds!</p>
     </div>
     
     <section class="home-services">
-        <div class="container">
+
             <h2>Beyond the Improv!</h2>
             <div class="home-poy">
                 <h3>Power of Yes!</h3>
                 <img src="<?= get_template_directory_uri() ?>/img/poy.webp" alt="Power of yes logo">
                 <p>Take an innovative approach to team building and communication with “The Power of Yes”.</p>
             </div>
-        </div>
+
             <div class="divider"></div>
             <div class="home-santa">
                 <h3>That Funny Santa!</h3>
@@ -101,14 +101,12 @@ get_header();
     </section>
     
     <section class="home-about">
-        <div class="container">
             <h2>Who is Atomic Improv?</h2>
             <!-- <video src=""></video> -->
             <p>Three-time world Improv Champion and Canadian comedy award winning Donovan Workun and professional improviser of
                 over 11 years Chris Borger form Atomic Improv, Canada’s premier improv comedy show.</p>
             <a href="<?= esc_url(get_permalink(10)); ?>" aria-label="Get to know more about Donovan" role="button">Get to know
                 more</a>
-        </div>
     
         <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
     
@@ -219,7 +217,7 @@ get_header();
                         <?= $event_location ?>
                     </p>
                 </div>
-                <a href="<?= $event_ticket_link ?>" aria-label="Get Tickets" role="button">Get Tickets</a>
+                <a href="<?= $event_ticket_link ?> " target="_blank" aria-label="Get Tickets" role="button">Get Tickets</a>
     
     
                 <?php

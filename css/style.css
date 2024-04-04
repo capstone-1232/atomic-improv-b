@@ -857,12 +857,20 @@ a[role=button]:hover {
   background-color: #70ee9c;
 }
 
+.light-bg {
+  z-index: 1;
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding-top: 1rem;
+}
+
 .info-blurb {
   color: #000;
   padding: 0 1.5rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 .info-blurb * {
   margin: 0.7rem 0;
@@ -871,7 +879,6 @@ a[role=button]:hover {
 .home-services {
   background-color: #0e3e66;
   color: #fff;
-  border-radius: 1.5rem;
   padding: 2rem 0 0 0;
 }
 .home-services h2 {
@@ -900,6 +907,7 @@ a[role=button]:hover {
   border-radius: 20px;
   color: #0e3e66;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .home-services .home-santa p {
   color: #000;
@@ -927,7 +935,6 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   color: #fff;
   background-color: #0e3e66;
-  margin-top: 2rem;
   position: relative;
 }
 .home-about h2 {
@@ -956,22 +963,25 @@ a[role=button]:hover {
 .home-about .socials {
   background-color: #fff;
   height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .home-about .socials h3 {
   color: #0e3e66;
-  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: right;
 }
 .home-about .social-links {
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin-left: auto;
+  grid-template-columns: 3rem 3rem;
   grid-template-columns: 3rem 3rem;
   gap: 1rem;
   margin-right: 2rem;
   margin-top: 4.5rem;
 }
 .home-about .social-links svg {
-  width: 4rem;
+  width: 3rem;
 }
 
 .home-testimonials {
@@ -1009,7 +1019,7 @@ a[role=button]:hover {
   width: fit-content;
   font-family: "Nunito Sans", sans-serif;
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
 }
 
 .upcoming-events {
@@ -1025,6 +1035,9 @@ a[role=button]:hover {
 .upcoming-events h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
+}
+.upcoming-events p {
+  color: #000;
 }
 .upcoming-events .event-info {
   display: flex;
@@ -1197,23 +1210,6 @@ footer .footer-socials svg path {
 }
 .services-santa p {
   margin: 1rem 2rem;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-links a {
-  margin: 0 10px;
 }
 
 @media screen and (min-width: 1399px) {
@@ -1555,6 +1551,9 @@ footer .footer-socials svg path {
   .home-about a[role=button] {
     margin-right: 3rem;
   }
+  .home-about img {
+    max-width: 20rem;
+  }
   .home-about .socials {
     height: 27rem;
   }
@@ -1562,11 +1561,11 @@ footer .footer-socials svg path {
     width: 60%;
   }
   .home-about .socials .social-links {
-    grid-template-columns: 100% 100%;
-    grid-template-rows: 100% 100%;
+    grid-template-columns: 4rem 4rem;
+    gap: 2rem;
   }
   .home-about .socials svg {
-    padding: 1rem;
+    width: 4rem;
   }
   .home-testimonials h2 {
     margin-left: 3rem;
