@@ -16,7 +16,7 @@ get_header();
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/whoweare1md.webp" media="(max-width: 800px)">
 
                     <img src="<?php echo get_template_directory_uri(); ?>/img/lg/whoweare1lg.webp" alt="Donovan Workun and Chris Borger posing together in matching attires">
-                </picture>
+        </picture>
         </div>
     </div>
     <div class="column2">

@@ -1364,6 +1364,16 @@ a[role=button] {
   }
 }
 @media screen and (min-width: 1399px) {
+  .chris-borger-about p {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .contact-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+    text-align: center;
+  }
   .flex-item {
     display: flex;
     flex-direction: column;
@@ -1523,24 +1533,10 @@ a[role=button] {
   content: "\f164";
 }
 
-@media screen and (min-width: 1399px) {
-  .contact-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    text-align: center;
-  }
-}
 .meet-donovan-section p {
   text-align: center;
 }
 
-@media screen and (min-width: 1399px) {
-  .chris-borger-about p {
-    color: #000000;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-}
 .chris-borger-about h2 {
   color: #000000;
   padding-left: 2rem;
@@ -1565,10 +1561,10 @@ a[role=button] {
     margin-bottom: 1rem;
   }
   .info-blurb {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
   .info-blurb p:first-of-type {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .info-blurb p:last-of-type {
     margin-bottom: 2rem;

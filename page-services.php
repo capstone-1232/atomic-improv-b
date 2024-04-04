@@ -20,7 +20,7 @@ get_header();
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/atomicimprovcrewmd.webp" media="(max-width: 800px)">
 
                     <img src="<?= get_template_directory_uri() ?>/img/lg/atomicimprovcrewlg.webp" alt="Donovan Workun (left) and Chris Borger (right) pointing their finger at the camera to encourage you to read about what they do.">
-                </picture>
+        </picture>
         <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
         <p>The award winning production has performed thousands of times across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
     </section>
