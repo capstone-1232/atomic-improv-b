@@ -1482,6 +1482,18 @@ footer .footer-socials svg path {
 
 @media screen and (min-width: 1399px) {
 
+	.chris-borger-about p {
+		color: #000000;
+		background-color: #FFFFFF;
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.contact-heading {
+		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+		text-align: center;
+	}
+
 	.flex-item {
 		display: flex;
 		flex-direction: column;
@@ -1532,8 +1544,6 @@ footer .footer-socials svg path {
 .image-gallery-section h3 {
 	color: #FFFFFF;
 }
-
-@media screen and (min-width: 1399px) {}
 
 .send-message-heading {
 	text-align: center;
@@ -1646,25 +1656,10 @@ footer .footer-socials svg path {
 	content: "\f164";
 }
 
-@media screen and (min-width: 1399px) {
-	.contact-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		text-align: center;
-	}
-}
-
 .meet-donovan-section p {
 	text-align: center;
 }
 
-@media screen and (min-width: 1399px) {
-	.chris-borger-about p {
-		color: #000000;
-		background-color: #FFFFFF;
-		padding: 1rem;
-		border-radius: 8px;
-	}
-}
 
 .chris-borger-about h2 {
 	color: #000000;
@@ -1696,10 +1691,10 @@ footer .footer-socials svg path {
 	}
 
 	.info-blurb {
-		padding: 0 3rem;
+		padding: 0 2rem;
 
 		p:first-of-type {
-			padding-top: 2rem;
+			padding-top: 1rem;
 		}
 
 		p:last-of-type {
