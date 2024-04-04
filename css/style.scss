@@ -993,6 +993,7 @@ a[role=button]:hover {
 	background-color: $light;
 	margin: 2rem auto;
 	border-radius: 9999px;
+	display: block;
 }
 
 .home-about {
@@ -1256,6 +1257,11 @@ footer .footer-socials svg path {
 	}
 }
 
+a[role=button] {
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+}
+
 .services-poy {
 	color: $light;
 
@@ -1272,16 +1278,11 @@ footer .footer-socials svg path {
 		margin: 1rem 2rem 2rem;
 	}
 
-	a[role=button] {
-		margin-right: 2rem;
-		margin-bottom: 2rem;
-	}
-
 	.poy-part-1,
 	.poy-part-2 {
 		background-color: $dark-blue;
 		padding: 1rem 0;
-		border-radius: 15px;
+		border-radius: 15px 15px 0 0;
 	}
 
 	.poy-part-2 {
@@ -1299,11 +1300,36 @@ footer .footer-socials svg path {
 		}
 	}
 
+	.poy-testimonial {
+		position: sticky;
+		top: 0;
+		background-color: $dark-blue;
+		color: $light;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		border-radius: 0 0 15px 15px;
+
+		h4 {
+			margin: 0 2rem;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
 	.testimonials {
 		color: $dark;
-		padding: 2rem;
 
 		.card-1 {
+			margin-bottom: 2rem;
+			position: sticky;
+			top: 17rem;
+		}
+
+		.card-2 {
+			position: relative;
+			z-index: 1;
 			margin-bottom: 2rem;
 		}
 
@@ -1312,10 +1338,10 @@ footer .footer-socials svg path {
 			border: 1px solid $dark;
 			border-radius: 10px;
 			padding: 1rem;
-			height: 15.625rem;
-			position: sticky;
-			top: 0;
+			height: max-content;
 			background-color: $light;
+			margin-left: 2rem;
+			margin-right: 2rem;
 
 			p {
 				margin: unset;
@@ -1339,7 +1365,6 @@ footer .footer-socials svg path {
 		margin: 1rem 2rem;
 	}
 }
-
 
 
 
@@ -1685,6 +1710,13 @@ footer .footer-socials svg path {
 //  media query for screen min width of 31.25rem/500px - Horizontal phone view
 
 @media screen and (min-width:31.25rem) {
+
+	.md-img {
+			max-width: 30rem;
+			display: block;
+			margin: 0 auto;
+	}
+		
 	.home-hero {
 		background-size: 130%;
 		padding: 1rem 3rem;
@@ -1721,13 +1753,16 @@ footer .footer-socials svg path {
 
 		img {
 			width: calc(100vw - 6rem);
-			margin: 0 3rem 0;
 			border-radius: 5px;
 		}
 
 		.home-santa a {
 			margin-right: 3rem;
 		}
+	}
+
+	a[role=button] {
+		margin-right: 3rem;
 	}
 
 	.home-about {
@@ -1745,10 +1780,6 @@ footer .footer-socials svg path {
 			padding-top: 2rem;
 		}
 
-		a[role=button] {
-			margin-right: 3rem;
-		}
-
 		img {
 			max-width: 20rem;
 		}
@@ -1763,11 +1794,9 @@ footer .footer-socials svg path {
 			.social-links {
 				grid-template-columns: 4rem 4rem;
 				gap: 2rem;
-				// grid-template-rows: 100% 100%;
 			}
 
 			svg {
-				// padding: 1rem;
 				width: 4rem;
 			}
 		}
@@ -1786,6 +1815,42 @@ footer .footer-socials svg path {
 		h2,
 		h3,
 		p {
+			margin-left: 3rem;
+			margin-right: 3rem;
+		}
+	}
+
+	.services-hero {
+		padding: 0 3rem;
+	}
+
+	.services-corporate {
+		h3 {
+			padding: 0 3rem;
+		}
+
+
+		p {
+			padding: 0 3rem;
+		}
+	}
+
+	.services-poy {
+		h3 {
+			margin-left: 3rem;
+		}
+
+		p {
+			margin-left: 3rem;
+		}		
+
+		.poy-testimonial h4 {
+			margin-left: 3rem;
+		}
+	}
+
+	.services-santa {
+		h3, p {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}

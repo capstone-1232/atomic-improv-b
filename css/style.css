@@ -928,6 +928,7 @@ a[role=button]:hover {
   background-color: #fff;
   margin: 2rem auto;
   border-radius: 9999px;
+  display: block;
 }
 
 .home-about {
@@ -1149,6 +1150,11 @@ footer .footer-socials svg path {
   padding: 0 2rem;
 }
 
+a[role=button] {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
 .services-poy {
   color: #fff;
 }
@@ -1162,15 +1168,11 @@ footer .footer-socials svg path {
 .services-poy p {
   margin: 1rem 2rem 2rem;
 }
-.services-poy a[role=button] {
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-}
 .services-poy .poy-part-1,
 .services-poy .poy-part-2 {
   background-color: #0e3e66;
   padding: 1rem 0;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
 }
 .services-poy .poy-part-2 p:nth-child(3) {
   margin-bottom: 1rem;
@@ -1178,11 +1180,32 @@ footer .footer-socials svg path {
 .services-poy .poy-part-1 div:nth-child(4) p:nth-child(3) {
   margin-bottom: 1rem;
 }
+.services-poy .poy-testimonial {
+  position: sticky;
+  top: 0;
+  background-color: #0e3e66;
+  color: #fff;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0 0 15px 15px;
+}
+.services-poy .poy-testimonial h4 {
+  margin: 0 2rem;
+}
+.services-poy .poy-testimonial p {
+  margin-bottom: 0;
+}
 .services-poy .testimonials {
   color: #000;
-  padding: 2rem;
 }
 .services-poy .testimonials .card-1 {
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 17rem;
+}
+.services-poy .testimonials .card-2 {
+  position: relative;
+  z-index: 1;
   margin-bottom: 2rem;
 }
 .services-poy .testimonials .card-1,
@@ -1190,10 +1213,11 @@ footer .footer-socials svg path {
   border: 1px solid #000;
   border-radius: 10px;
   padding: 1rem;
-  height: 15.625rem;
-  position: sticky;
-  top: 0;
+  height: -moz-max-content;
+  height: max-content;
   background-color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .services-poy .testimonials .card-1 p,
 .services-poy .testimonials .card-2 p {
@@ -1212,11 +1236,6 @@ footer .footer-socials svg path {
   margin: 1rem 2rem;
 }
 
-@media screen and (min-width: 1399px) {
-  .about-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-  }
-}
 .about-book-button {
   margin: 2rem;
 }
@@ -1345,6 +1364,24 @@ footer .footer-socials svg path {
   }
 }
 @media screen and (min-width: 1399px) {
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+  }
+  .about-heading {
+    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
   .flex-container {
     flex-direction: row;
   }
@@ -1363,14 +1400,6 @@ footer .footer-socials svg path {
     margin-top: 20rem;
   }
 }
-@media screen and (min-width: 1399px) {
-  .about-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-}
 .image-gallery-section {
   background-color: #0E3E66;
 }
@@ -1379,19 +1408,6 @@ footer .footer-socials svg path {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1399px) {
-  .flex-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 10px;
-    margin: 20px;
-    width: 100%;
-  }
-}
 .send-message-heading {
   text-align: center;
   padding: 2rem 0;
@@ -1399,19 +1415,25 @@ footer .footer-socials svg path {
 }
 
 .contact-styled {
-  background: #0E3E66; /* Background color */
-  padding: 20px; /* Padding for the form */
-  border-radius: 10px; /* Border radius for the form */
+  background: #0E3E66;
+  /* Background color */
+  padding: 20px;
+  /* Padding for the form */
+  border-radius: 10px;
+  /* Border radius for the form */
   font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF; /* Text color */
+  color: #FFFFFF;
+  /* Text color */
 }
 
 .contact-styled h3 {
-  color: #FFFFFF; /* Heading text color */
+  color: #FFFFFF;
+  /* Heading text color */
 }
 
 .contact-styled .nf-field-label {
-  color: #FFFFFF; /* Label text color */
+  color: #FFFFFF;
+  /* Label text color */
   text-transform: capitalize;
 }
 
@@ -1419,61 +1441,85 @@ footer .footer-socials svg path {
 .contact-styled .nf-form-content input[type=email],
 .contact-styled .nf-form-content input[type=date],
 .contact-styled .nf-form-content textarea {
-  color: #000000; /* Text color for input fields */
-  border-radius: 5px; /* Border radius for input fields */
-  background-color: #FFFFFF; /* Background color for input fields */
-  border: 1px solid #000000; /* Black border for input fields */
-  padding: 10px; /* Adjust padding as needed */
+  color: #000000;
+  /* Text color for input fields */
+  border-radius: 5px;
+  /* Border radius for input fields */
+  background-color: #FFFFFF;
+  /* Background color for input fields */
+  border: 1px solid #000000;
+  /* Black border for input fields */
+  padding: 10px;
+  /* Adjust padding as needed */
 }
 
 .contact-styled .nf-form-content input[type=text]::-moz-placeholder, .contact-styled .nf-form-content input[type=email]::-moz-placeholder, .contact-styled .nf-form-content input[type=date]::-moz-placeholder, .contact-styled .nf-form-content textarea::-moz-placeholder {
-  color: #000000; /* Text color for placeholder */
+  color: #000000;
+  /* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type=text]::placeholder,
 .contact-styled .nf-form-content input[type=email]::placeholder,
 .contact-styled .nf-form-content input[type=date]::placeholder,
 .contact-styled .nf-form-content textarea::placeholder {
-  color: #000000; /* Text color for placeholder */
+  color: #000000;
+  /* Text color for placeholder */
 }
 
 .contact-styled .nf-form-content input[type=submit] {
-  display: block; /* Ensure button takes full width */
-  margin: 0 auto; /* Center the button horizontally */
-  background: #9EB7E5; /* Button background color */
-  color: #000000; /* Button text color */
-  border: none; /* Remove button border */
-  border-radius: 5px; /* Border radius for button */
-  padding: 10px 20px; /* Adjust padding as needed */
-  font-weight: bold; /* Make button text bold */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: background-color 0.3s ease; /* Add transition effect */
+  display: block;
+  /* Ensure button takes full width */
+  margin: 0 auto;
+  /* Center the button horizontally */
+  background: #9EB7E5;
+  /* Button background color */
+  color: #000000;
+  /* Button text color */
+  border: none;
+  /* Remove button border */
+  border-radius: 5px;
+  /* Border radius for button */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  font-weight: bold;
+  /* Make button text bold */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease;
+  /* Add transition effect */
 }
 
 .contact-styled .nf-form-content input[type=submit]:hover {
-  background: #70EE9C; /* Button background color on hover */
-  color: #000000; /* Button text color on hover */
+  background: #70EE9C;
+  /* Button background color on hover */
+  color: #000000;
+  /* Button text color on hover */
 }
 
 .contact-styled .nf-error.field-wrap .nf-field-element:after {
-  background: #e74c3c; /* Error message background color */
+  background: #e74c3c;
+  /* Error message background color */
 }
 
 .contact-styled .nf-form-fields-required {
-  margin-bottom: 10px; /* Add margin below required fields */
+  margin-bottom: 10px;
+  /* Add margin below required fields */
 }
 
 .contact-styled .nf-error .nf-error-msg {
-  color: #e74c3c; /* Error message text color */
+  color: #e74c3c;
+  /* Error message text color */
 }
 
 .contact-styled .nf-error-msg,
 .ninja-forms-req-symbol {
-  color: #e74c3c; /* Required symbol text color */
+  color: #e74c3c;
+  /* Required symbol text color */
 }
 
 .contact-styled .nf-pass.field-wrap .nf-field-element:after {
-  color: #2ecc71; /* Password strength color */
+  color: #2ecc71;
+  /* Password strength color */
   content: "\f164";
 }
 
@@ -1506,6 +1552,11 @@ footer .footer-socials svg path {
 
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
+  .md-img {
+    max-width: 30rem;
+    display: block;
+    margin: 0 auto;
+  }
   .home-hero {
     background-size: 130%;
     padding: 1rem 3rem;
@@ -1522,7 +1573,9 @@ footer .footer-socials svg path {
   .info-blurb p:last-of-type {
     margin-bottom: 2rem;
   }
-  .home-services h2, .home-services h3, .home-services p {
+  .home-services h2,
+  .home-services h3,
+  .home-services p {
     margin-left: 3rem;
   }
   .home-services p {
@@ -1530,10 +1583,12 @@ footer .footer-socials svg path {
   }
   .home-services img {
     width: calc(100vw - 6rem);
-    margin: 0 3rem 0;
     border-radius: 5px;
   }
   .home-services .home-santa a {
+    margin-right: 3rem;
+  }
+  a[role=button] {
     margin-right: 3rem;
   }
   .home-about {
@@ -1547,9 +1602,6 @@ footer .footer-socials svg path {
   }
   .home-about p:first-of-type {
     padding-top: 2rem;
-  }
-  .home-about a[role=button] {
-    margin-right: 3rem;
   }
   .home-about img {
     max-width: 20rem;
@@ -1574,7 +1626,31 @@ footer .footer-socials svg path {
   .upcoming-events {
     padding: 2rem 0;
   }
-  .upcoming-events h2, .upcoming-events h3, .upcoming-events p {
+  .upcoming-events h2,
+  .upcoming-events h3,
+  .upcoming-events p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .services-hero {
+    padding: 0 3rem;
+  }
+  .services-corporate h3 {
+    padding: 0 3rem;
+  }
+  .services-corporate p {
+    padding: 0 3rem;
+  }
+  .services-poy h3 {
+    margin-left: 3rem;
+  }
+  .services-poy p {
+    margin-left: 3rem;
+  }
+  .services-poy .poy-testimonial h4 {
+    margin-left: 3rem;
+  }
+  .services-santa h3, .services-santa p {
     margin-left: 3rem;
     margin-right: 3rem;
   }
