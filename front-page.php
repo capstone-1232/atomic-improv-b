@@ -64,7 +64,7 @@ get_header();
                 </span>
             </span>
         </h2>
-        <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button">Book a Show!</a>
+        <a href="<?= esc_url(get_permalink(14)); ?>" aria-label="Book a Show" role="button">Book a Show!</a>
     </div>
 </section>
 
@@ -95,7 +95,7 @@ get_header();
                 </picture>
                 <p>Christmas is a magical time of year and there is nothing more special than bringing to your event!</p>
                 <p>Let ThatFunnySanta bring his trademark merriment and mirth as a special treat to your holiday cheer!</p>
-                <a href="<?= esc_url(get_permalink(8)); ?>" aria-label="Discover More" role="button">Discover More</a>
+                <a href="<?= esc_url(get_permalink(10)); ?>" aria-label="Discover More" role="button">Discover More</a>
             </div>
     
     </section>
@@ -105,7 +105,7 @@ get_header();
             <!-- <video src=""></video> -->
             <p>Three-time world Improv Champion and Canadian comedy award winning Donovan Workun and professional improviser of
                 over 11 years Chris Borger form Atomic Improv, Canada’s premier improv comedy show.</p>
-            <a href="<?= esc_url(get_permalink(10)); ?>" aria-label="Get to know more about Donovan" role="button">Get to know
+            <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Get to know more about Atomic Improv" role="button">Get to know
                 more</a>
     
         <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
