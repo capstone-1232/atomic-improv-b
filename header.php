@@ -51,7 +51,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<h1>Atomic Improv</h1>
+		<h1><a href="<?= esc_url(home_url('/'));?>">Atomic Improv</a></h1>
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Show Menu">
