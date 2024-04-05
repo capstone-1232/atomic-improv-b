@@ -7,14 +7,14 @@
 get_header();
 
 ?>
-<div class="container">
+<div class="light-bg">
     <div class="services-hero">
         <h2>What do we do?</h2>
     </div>
 
     <section class="services-corporate">
         <h3>Corporate Shows</h3>
-        <picture>
+        <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/atomicimprovcrewsm.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/atomicimprovcrewmd.webp" media="(max-width: 800px)">
@@ -28,7 +28,7 @@ get_header();
         <div class="poy-part-1">
             <h3>The Power of Yes</h3>
             <div>
-                <picture>
+                <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/powerofyesgraham.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/powerofyesgraham.webp" media="(max-width: 800px)">
@@ -41,7 +41,7 @@ get_header();
             <span class="divider"></span>
             <div>
                 <h4>Why should you say "Yes" to the Power of Yes?</h4>
-                <picture>
+                <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/powerofyes2sm.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/powerofyes2md.webp" media="(max-width: 800px)">
@@ -52,15 +52,15 @@ get_header();
                 <p>Each Power of Yes! workshop focuses on researched business principles and can be customized to meet your organization's needs. Power of Yes! will enhance your staff's ability to work as a team in an effective manner and confidently communicate with clients and each other.</p>
             </div>
             <span class="divider"></span>
-            <div>
+        </div>
+        <div class="testimonials">
+            <div class="poy-testimonial">
                 <h4>Still not sure if the power of yes is the power for you?</h4>
                 <p>We get it. Actions speak louder than words, and we’d love to show you some of our testimonies about how The Power of Yes! has helped people just like you.</p>
             </div>
-        </div>
-        <div class="testimonials">
             <div class="card-1">
                 <p>“In these past 2 months since the workshop, we are already seeing changes  in the way our team communicates internally and externally. I would recommend this workshop for all teams, big or small!”</p>
-                <span>ConocoPhillips</span>
+                <span>Conoco Phillips</span>
             </div>
             <div class="card-2">
                 <p>“I laughed until my stomach hurt! Along with the laughter came excellent tips on how to be positive, work as a team and how to say Yes! These guys are good!”</p>
@@ -69,7 +69,7 @@ get_header();
         </div>
         <div class="poy-part-2">
             <h4>Also Starring the Talented Graham Neil!</h4>
-            <picture>
+            <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/grahamneilsm.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/grahamneilmd.webp" media="(max-width: 800px)">
@@ -83,7 +83,7 @@ get_header();
 
     <section class="services-santa">
         <h3>That Funny Santa!</h3>
-        <picture>
+        <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa1sm.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/santa1md.webp" media="(max-width: 800px)">
@@ -92,7 +92,7 @@ get_header();
                 </picture>
         <p>Christmas is the most magical time of the year, and nothing is more special than having Santa Claus himself show up to your yuletide festivities. Thec ombination of this Santa's sparkling eyes, sharp wit, and ability to connect with children and adults alike is what makes him the most merry and the brightest St. Nick in all of Alberta!</p>
         <p>Making his audience laugh and truly believe in the miracle of Christmas is what makes That Funny Santa the official Santa for Epcor, the Town of Banff and the Banff Springs Hotel! Not to fret however, as his jolly merriment is still available throughout many dates in November until early December for your naughty or nice party plans!</p>
-        <picture>
+        <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa2.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/santa2.webp" media="(max-width: 800px)">
@@ -100,7 +100,7 @@ get_header();
                     <img src="<?= get_template_directory_uri() ?>/img/lg/santa2.webp" alt="Santa Claus sitting in a chair.">
                 </picture>
         <p>"I don’t know if there is anyone else but "ThatFunnySanta" who could bring such magic to our children", says Janice Krissa, co-founder of the FreeStore for Ukrainian Newcomers. "In a few short hours, he made hundreds of children and adults feel important and special and was able to turn a difficult time into a magical visit and memories that will last a lifetime."</p>
-        <picture>
+        <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa3.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/santa3.webp" media="(max-width: 800px)">

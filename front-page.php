@@ -86,7 +86,7 @@ get_header();
             <div class="divider"></div>
             <div class="home-santa">
                 <h3>That Funny Santa!</h3>
-                <picture>
+                <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa2.webp" media="(max-width: 500px)">
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/santa2.webp" media="(max-width: 800px)">
