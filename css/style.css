@@ -717,7 +717,7 @@ h4 {
   align-items: center;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   overflow-x: clip;
   transition: transform 0.2s ease;
   width: 100vw;
@@ -803,7 +803,7 @@ h4 {
   width: 100%;
   height: 0;
   background-color: #70ee9c;
-  transition: height 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   color: #000;
   z-index: -1;
 }
@@ -874,7 +874,7 @@ a[role=button]:hover {
   position: relative;
   background-color: #fff;
   border-radius: 1.5rem 1.5rem 0 0;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .info-blurb {
@@ -921,6 +921,11 @@ a[role=button]:hover {
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+.home-services .home-santa h3 {
+  margin: 1rem auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .home-services .home-santa p {
   color: #000;
 }
@@ -937,10 +942,14 @@ a[role=button]:hover {
   display: block;
   text-align: center;
   font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  color: #000;
 }
 .home-services .home-santa .instagram a {
   margin: 0;
   padding: 0;
+}
+.home-services .home-santa .instagram a:focus, .home-services .home-santa .instagram a:active, .home-services .home-santa .instagram a:hover {
+  color: #0e3e66;
 }
 
 .divider {
@@ -984,6 +993,7 @@ a[role=button]:hover {
   width: 70%;
   left: 0;
   bottom: 0;
+  z-index: 0;
 }
 .home-about .socials {
   background-color: #fff;
@@ -1003,6 +1013,8 @@ a[role=button]:hover {
   gap: 1rem;
   margin-right: 2rem;
   margin-top: 4.5rem;
+  position: relative;
+  z-index: 2;
 }
 .home-about .social-links svg {
   width: 4rem;
@@ -1524,15 +1536,12 @@ a[role=button] {
 
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
-
   /********************************** Home Content Start ********************************/
-
   .md-img {
     max-width: 30rem;
     display: block;
     margin: 0 auto;
   }
-
   .home-hero {
     background-size: 130%;
     padding: 1rem 3rem;
@@ -1608,9 +1617,7 @@ a[role=button] {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-
   /********************************** Home Content End ********************************/
-
   .services-hero {
     padding: 0 3rem;
   }
@@ -1634,8 +1641,54 @@ a[role=button] {
     margin-right: 3rem;
   }
 }
+@media screen and (min-width: 50rem) {
+  .home-hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
+  }
+  .info-blurb {
+    padding: 0 5rem;
+  }
+  .home-services {
+    padding: 2rem 2rem 0;
+  }
+  .home-about iframe {
+    width: 40rem;
+    height: 20rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .home-about h2, .home-about p {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .home-about .socials h3 {
+    margin-right: 5rem;
+  }
+  .home-about .social-links {
+    margin-right: 5rem;
+  }
+  .home-about a[role=button] {
+    margin-right: 5rem;
+  }
+  .home-testimonials {
+    padding: 2rem 5rem;
+  }
+  .home-testimonials h2 {
+    margin-left: unset;
+  }
+  .upcoming-events {
+    padding: 2rem 2rem 0;
+  }
+  .upcoming-events img {
+    margin: 0 auto;
+    display: block;
+  }
+  .upcoming-events .event-info {
+    margin-left: 3rem;
+  }
+}
 @media screen and (min-width: 87.5rem) {
-  /********************************** Who We Are Content End ********************************/
+  /********************************** Who We Are Content Start ********************************/
   .about-heading {
     background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
     display: flex;
