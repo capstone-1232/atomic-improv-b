@@ -912,14 +912,23 @@ a[role=button]:hover {
 .home-services .home-santa p {
   color: #000;
 }
-.home-services .home-santa p:nth-child(3) {
+.home-services .home-santa p:nth-child(4) {
   margin-bottom: 1rem;
 }
-.home-services .home-santa p:nth-child(4) {
-  margin-top: 1rem;
+.home-services .home-santa p:nth-child(5) {
+  margin-top: 0;
 }
 .home-services .home-santa a {
   margin-right: 2rem;
+}
+.home-services .home-santa .instagram {
+  display: block;
+  text-align: center;
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+}
+.home-services .home-santa .instagram a {
+  margin: 0;
+  padding: 0;
 }
 
 .divider {
@@ -940,7 +949,10 @@ a[role=button]:hover {
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
-  margin: 0 2rem;
+  margin: 0 2rem 2rem;
+}
+.home-about iframe {
+  margin-bottom: 2rem;
 }
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
@@ -969,19 +981,18 @@ a[role=button]:hover {
 }
 .home-about .socials h3 {
   color: #0e3e66;
-  margin-right: 2rem;
-  text-align: right;
+  margin-right: 1rem;
 }
 .home-about .social-links {
   display: grid;
-  grid-template-columns: 3rem 3rem;
-  grid-template-columns: 3rem 3rem;
+  grid-template-columns: 6rem 3rem;
+  grid-template-rows: 6rem 3rem;
   gap: 1rem;
   margin-right: 2rem;
   margin-top: 4.5rem;
 }
 .home-about .social-links svg {
-  width: 3rem;
+  width: 4rem;
 }
 
 .home-testimonials {
@@ -1328,7 +1339,7 @@ footer .footer-socials svg path {
   text-align: right;
 }
 
-@media screen and (max-width: 87.4375rem) {
+@media screen and (min-width: 1100px) {
   .column2 {
     color: white;
     margin-top: 1rem;
@@ -1337,53 +1348,6 @@ footer .footer-socials svg path {
     color: #000000;
     padding: 10px;
     margin: 10px 0;
-  }
-}
-@media screen and (min-width: 1399px) {
-  .chris-borger-about p {
-    color: #000000;
-    background-color: #FFFFFF;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  .contact-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    text-align: center;
-  }
-  .flex-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 10px;
-    margin: 20px;
-    width: 100%;
-  }
-  .about-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  .flex-container {
-    flex-direction: row;
-  }
-  .column1,
-  .column2 {
-    flex: 1;
-  }
-  .column2 p {
-    background-color: #FFFFFF;
-    color: #000000;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .column2 {
-    color: white;
-    margin-top: 20rem;
   }
 }
 .image-gallery-section {
@@ -1524,6 +1488,7 @@ footer .footer-socials svg path {
 
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
+  /********************************** Home Content Start ********************************/
   .home-hero {
     background-size: 130%;
     padding: 1rem 3rem;
@@ -1600,8 +1565,10 @@ footer .footer-socials svg path {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+  /********************************** Home Content End ********************************/
 }
 @media screen and (min-width: 87.5rem) {
+  /********************************** Who We Are Content End ********************************/
   .about-heading {
     background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
     display: flex;
@@ -1643,4 +1610,5 @@ footer .footer-socials svg path {
   .image-gallery-container .image-wrapper {
     border: none;
   }
+  /********************************** Who We Are Content End ********************************/
 }/*# sourceMappingURL=style.css.map */

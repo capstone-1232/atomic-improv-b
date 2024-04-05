@@ -972,17 +972,30 @@ a[role=button]:hover {
 		p {
 			color: $dark;
 
-			&:nth-child(3) {
+			&:nth-child(4) {
 				margin-bottom: 1rem;
 			}
 
-			&:nth-child(4) {
-				margin-top: 1rem;
+			&:nth-child(5) {
+				margin-top: 0;
 			}
+
 		}
 
 		a {
 			margin-right: 2rem;
+		}
+
+		.instagram {
+			display: block;
+			text-align: center;
+			font-size: $smallclamp;
+
+			a {
+				margin: 0;
+				padding: 0;
+
+			}
 		}
 	}
 }
@@ -1005,7 +1018,11 @@ a[role=button]:hover {
 	h2 {
 		font-size: $h2clamp;
 		font-weight: 400;
-		margin: 0 2rem;
+		margin: 0 2rem 2rem;
+	}
+
+	iframe {
+		margin-bottom: 2rem;
 	}
 
 	h3 {
@@ -1039,22 +1056,21 @@ a[role=button]:hover {
 
 		h3 {
 			color: $dark-blue;
-			margin-right: 2rem;
-			text-align: right;
+			margin-right: 1rem;
+			// text-align: right;
 		}
 	}
 
 	.social-links {
 		display: grid;
-		grid-template-columns: 3rem 3rem;
-		// margin-left: auto;
-		grid-template-columns: 3rem 3rem;
+		grid-template-columns: 6rem 3rem;
+		grid-template-rows: 6rem 3rem;
 		gap: 1rem;
 		margin-right: 2rem;
 		margin-top: 4.5rem;
 
 		svg {
-			width: 3rem;
+			width: 4rem;
 		}
 	}
 }
@@ -1467,7 +1483,7 @@ footer .footer-socials svg path {
 	}
 }
 
-@media screen and (max-width: 87.4375rem) {
+@media screen and (min-width: 1100px) {
 	.column2 {
 		color: white;
 		margin-top: 1rem;
@@ -1479,63 +1495,6 @@ footer .footer-socials svg path {
 		margin: 10px 0;
 	}
 }
-
-@media screen and (min-width: 1399px) {
-
-	.chris-borger-about p {
-		color: #000000;
-		background-color: #FFFFFF;
-		padding: 1rem;
-		border-radius: 8px;
-	}
-
-	.contact-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		text-align: center;
-	}
-
-	.flex-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: #FFFFFF;
-		color: #000000;
-		border-radius: 10px;
-		margin: 20px;
-		width: 100%;
-	}
-
-	.about-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-	}
-
-	.flex-container {
-		flex-direction: row;
-	}
-
-	.column1,
-	.column2 {
-		flex: 1;
-	}
-
-	.column2 p {
-		background-color: #FFFFFF;
-		color: #000000;
-	}
-}
-
-@media screen and (max-width: 1399px) {
-	.column2 {
-		color: white;
-		margin-top: 20rem;
-	}
-}
-
 
 .image-gallery-section {
 	background-color: #0E3E66;
@@ -1680,6 +1639,9 @@ footer .footer-socials svg path {
 //  media query for screen min width of 31.25rem/500px - Horizontal phone view
 
 @media screen and (min-width:31.25rem) {
+
+
+	/********************************** Home Content Start ********************************/
 	.home-hero {
 		background-size: 130%;
 		padding: 1rem 3rem;
@@ -1785,6 +1747,8 @@ footer .footer-socials svg path {
 			margin-right: 3rem;
 		}
 	}
+
+	/********************************** Home Content End ********************************/
 }
 
 
@@ -1799,6 +1763,9 @@ footer .footer-socials svg path {
 // Media Query for 1400px/87.5rem - Large Desktop
 
 @media screen and (min-width: 87.5rem) {
+
+	/********************************** Who We Are Content End ********************************/
+
 	.about-heading {
 		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
 		display: flex;
@@ -1847,4 +1814,6 @@ footer .footer-socials svg path {
 	.image-gallery-container .image-wrapper {
 		border: none;
 	}
+
+	/********************************** Who We Are Content End ********************************/
 }
