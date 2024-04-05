@@ -33,7 +33,7 @@ get_header();
 
                     <source srcset="<?= get_template_directory_uri() ?>/img/md/powerofyesgraham.webp" media="(max-width: 800px)">
 
-                    <img src="<?= get_template_directory_uri() ?>/img/donovan-graham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
+                    <img src="<?= get_template_directory_uri() ?>/img/lg/powerofyesgraham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
                 </picture>
                 <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches youactive listening, positivity and empathy in collaboration all through fun and simple improv techniques that will move your business forward.</p>
                 <a href="#" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>

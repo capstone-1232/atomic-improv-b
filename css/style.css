@@ -936,7 +936,7 @@ a[role=button]:hover {
 .home-services .home-santa .instagram {
   display: block;
   text-align: center;
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
   color: #000;
 }
 .home-services .home-santa .instagram a {
@@ -1165,7 +1165,7 @@ footer .footer-socials svg path {
 }
 
 .services-hero {
-  padding: 0 2rem;
+  padding: 3rem 2rem 0;
   color: #0e3e66;
 }
 
@@ -1628,7 +1628,7 @@ a[role=button] {
   }
   /********************************** Home Content End ********************************/
   .services-hero {
-    padding: 0 3rem;
+    padding: 3rem 3rem 0;
   }
   .services-corporate h3 {
     padding: 0 3rem;
@@ -1657,9 +1657,6 @@ a[role=button] {
   }
   .info-blurb {
     padding: 0 5rem;
-  }
-  .home-services {
-    padding: 2rem 2rem 0;
   }
   .home-about iframe {
     width: 40rem;
@@ -1695,6 +1692,23 @@ a[role=button] {
   }
   .upcoming-events .event-info {
     margin-left: 3rem;
+  }
+  .services-hero {
+    padding: 3rem 5rem 0;
+  }
+  .services-corporate {
+    padding: 0 2rem 1rem;
+  }
+  .services-poy .poy-part-1 {
+    padding: 1rem 2rem;
+  }
+  .services-poy .poy-testimonial {
+    padding: 0 2rem 2rem;
+  }
+  .services-poy .testimonials .card-1,
+  .services-poy .testimonials .card-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
 }
 @media screen and (min-width: 87.5rem) {

@@ -1280,7 +1280,7 @@ footer .footer-socials svg path {
 }
 
 .services-hero {
-	padding: 0 2rem;
+	padding: 3rem 2rem 0;
 	color: $dark-blue;
 }
 
@@ -1826,7 +1826,7 @@ a[role=button] {
 	/********************************** Home Content End ********************************/
 
 	.services-hero {
-		padding: 0 3rem;
+		padding: 3rem 3rem 0;
 	}
 
 	.services-corporate {
@@ -1877,10 +1877,6 @@ a[role=button] {
 		padding: 0 5rem;
 	}
 
-	.home-services {
-		padding: 2rem 2rem 0;
-	}
-
 	.home-about {
 
 		iframe {
@@ -1928,6 +1924,33 @@ a[role=button] {
 
 		.event-info {
 			margin-left: 3rem;
+		}
+	}
+	
+
+	.services-hero {
+		padding: 3rem 5rem 0;
+	}
+
+	.services-corporate {
+		padding: 0 2rem 1rem;
+	}
+
+	.services-poy {
+		.poy-part-1 {
+			padding: 1rem 2rem;
+		}
+
+		.poy-testimonial {
+			padding: 0 2rem 2rem;
+		}
+
+		.testimonials {
+			.card-1,
+				.card-2 {
+					margin-right: 5rem;
+					margin-left: 5rem;
+				}
 		}
 	}
 }
