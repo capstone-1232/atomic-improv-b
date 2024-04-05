@@ -7,12 +7,13 @@ $dark: #000;
 $light: #fff;
 $bebas: "Bebas Neue", sans-serif;
 $nunito: "Nunito Sans", sans-serif;
+// Paragraph text
 $pclamp: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
 $h2clamp: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
 $h3clamp: clamp(2rem, 0.571rem + 3.81vw, 4rem);
 $h4clamp: clamp(1.5rem, 1.056rem + 2.222vw, 3rem);
 // Applies to Paragraph and Span text
-$smallclamp: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+$smallclamp: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
 
 html {
 	line-height: 1.15;
@@ -495,11 +496,11 @@ select {
 	height: 100%;
 }
 
-@media screen and (min-width:37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-}
+// @media screen and (min-width:37.5rem) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// }
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -761,7 +762,7 @@ h4 {
 		font-size: 2rem;
 		margin: 0.5rem 0;
 		font-weight: 400;
-		
+
 		a {
 			text-decoration: none;
 		}
@@ -1393,6 +1394,25 @@ a[role=button] {
 	p {
 		margin: 1rem 2rem;
 	}
+
+	.testimonials {
+
+		.card-1 {
+			border: 1px solid $dark;
+			border-radius: 10px;
+			padding: 1rem;
+			height: max-content;
+			background-color: $light;
+			margin: 2rem 2rem;
+		}
+
+		p {
+			margin: unset;
+			margin-bottom: 1rem;
+			color: $dark-blue;
+		}
+
+	}
 }
 
 
@@ -1682,11 +1702,11 @@ a[role=button] {
 	/********************************** Home Content Start ********************************/
 
 	.md-img {
-			max-width: 30rem;
-			display: block;
-			margin: 0 auto;
+		max-width: 30rem;
+		display: block;
+		margin: 0 auto;
 	}
-		
+
 	.home-hero {
 		background-size: 130%;
 		padding: 1rem 3rem;
@@ -1814,7 +1834,7 @@ a[role=button] {
 
 		p {
 			margin-left: 3rem;
-		}		
+		}
 
 		.poy-testimonial h4 {
 			margin-left: 3rem;
@@ -1822,7 +1842,9 @@ a[role=button] {
 	}
 
 	.services-santa {
-		h3, p {
+
+		h3,
+		p {
 			margin-left: 3rem;
 			margin-right: 3rem;
 		}
