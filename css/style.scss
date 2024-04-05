@@ -739,6 +739,10 @@ h4 {
 	font-weight: 400;
 }
 
+#wpadminbar {
+	display: none;
+}
+
 .site-header {
 	display: flex;
 	background-color: $grey;
@@ -746,16 +750,26 @@ h4 {
 	color: $light;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
+	position: fixed;
 	top: 0;
-	z-index: 0;
+	z-index: 1;
 	overflow-x: clip;
+	transition: transform 0.2s ease;
+	width: 100vw;
 
 	h1 {
 		font-size: 2rem;
 		margin: 0.5rem 0;
 		font-weight: 400;
+		
+		a {
+			text-decoration: none;
+		}
 	}
+}
+
+.header-scroll {
+	transform: translateY(-100%);
 }
 
 .site-branding {
@@ -853,7 +867,7 @@ h4 {
 	padding: 1rem;
 	border-radius: 0 0 1.5rem 1.5rem;
 	position: sticky;
-	top: 64px;
+	top: 0;
 
 	h2 {
 		font-family: $bebas;
@@ -911,7 +925,6 @@ a[role=button]:hover {
 }
 
 .light-bg {
-	z-index: 1;
 	position: relative;
 	background-color: $light;
 	border-radius: 1.5rem 1.5rem 0 0;
