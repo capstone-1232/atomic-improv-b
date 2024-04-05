@@ -471,11 +471,6 @@ select {
   height: 100%;
 }
 
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-}
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -936,7 +931,7 @@ a[role=button]:hover {
 .home-services .home-santa .instagram {
   display: block;
   text-align: center;
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
 }
 .home-services .home-santa .instagram a {
   margin: 0;
@@ -1043,7 +1038,7 @@ a[role=button]:hover {
   width: fit-content;
   font-family: "Nunito Sans", sans-serif;
   font-style: italic;
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
 }
 
 .upcoming-events {
@@ -1154,7 +1149,7 @@ footer .footer-socials svg path {
 }
 
 .small {
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
 }
 
 .services-hero {
@@ -1257,6 +1252,20 @@ a[role=button] {
 }
 .services-santa p {
   margin: 1rem 2rem;
+}
+.services-santa .testimonials .card-1 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #fff;
+  margin: 2rem 2rem;
+}
+.services-santa .testimonials p {
+  margin: unset;
+  margin-bottom: 1rem;
+  color: #0e3e66;
 }
 
 .about-book-button {
@@ -1368,7 +1377,7 @@ a[role=button] {
 }
 
 .testimonials span {
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
   font-family: "Nunito Sans", sans-serif;
   display: block;
   font-style: italic;
@@ -1524,15 +1533,12 @@ a[role=button] {
 
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
-
   /********************************** Home Content Start ********************************/
-
   .md-img {
     max-width: 30rem;
     display: block;
     margin: 0 auto;
   }
-
   .home-hero {
     background-size: 130%;
     padding: 1rem 3rem;
@@ -1608,9 +1614,7 @@ a[role=button] {
     margin-left: 3rem;
     margin-right: 3rem;
   }
-
   /********************************** Home Content End ********************************/
-
   .services-hero {
     padding: 0 3rem;
   }
@@ -1629,7 +1633,8 @@ a[role=button] {
   .services-poy .poy-testimonial h4 {
     margin-left: 3rem;
   }
-  .services-santa h3, .services-santa p {
+  .services-santa h3,
+  .services-santa p {
     margin-left: 3rem;
     margin-right: 3rem;
   }

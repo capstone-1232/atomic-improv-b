@@ -22,7 +22,7 @@ get_header();
                     <img src="<?= get_template_directory_uri() ?>/img/lg/atomicimprovcrewlg.webp" alt="Donovan Workun (left) and Chris Borger (right) pointing their finger at the camera to encourage you to read about what they do.">
         </picture>
         <p>Pioneers in corporate comedy shows, Atomic Improv is always professional,  incorporating the clients needs and tailoring the show to the event.  This duo delivers cutting edge comedy that keeps the crowds roaring.</p>
-        <p>The award winning production has performed thousands of times across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
+        <p>The award winning production has performed thousands of shows across North America and Europe to rave reviews and sold out crowds. Atomic Improv will make your next corporate function a sure fire success!</p>
     </section>
     <section class="services-poy">
         <div class="poy-part-1">
@@ -35,7 +35,7 @@ get_header();
 
                     <img src="<?= get_template_directory_uri() ?>/img/donovan-graham.webp" alt="Donovan Workun (left) and Graham Neil (right) in suits posing for a picture.">
                 </picture>
-                <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches you the creative techniques of improv and how to apply them to improve your business, work, and life.</p>
+                <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches youactive listening, positivity and empathy in collaboration all through fun and simple improv techniques that will move your business forward.</p>
                 <a href="#" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>
             </div>
             <span class="divider"></span>
@@ -99,7 +99,12 @@ get_header();
 
                     <img src="<?= get_template_directory_uri() ?>/img/lg/santa2.webp" alt="Santa Claus sitting in a chair.">
                 </picture>
-        <p>"I don’t know if there is anyone else but "ThatFunnySanta" who could bring such magic to our children", says Janice Krissa, co-founder of the FreeStore for Ukrainian Newcomers. "In a few short hours, he made hundreds of children and adults feel important and special and was able to turn a difficult time into a magical visit and memories that will last a lifetime."</p>
+                <div class="testimonials">
+                    <div class="card-1">
+                        <p>"I don’t know if there is anyone else but "ThatFunnySanta" who could bring such magic to our children. In a few short hours, he made hundreds of children and adults feel important and special and was able to turn a difficult time into a magical visit and memories that will last a lifetime."</p>
+                        <span>Janice Krissa<br>co-founder of  FreeStore <br>for Ukrainian Newcomers.</span>
+                    </div>
+                </div>
         <picture class="md-img lg-img">
                     <source srcset="<?= get_template_directory_uri() ?>/img/sm/santa3.webp" media="(max-width: 500px)">
 
