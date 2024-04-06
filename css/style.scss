@@ -1038,6 +1038,8 @@ a[role=button]:hover {
 
 	iframe {
 		margin-bottom: 2rem;
+		width: 50rem;
+		height: clamp(20rem, 80vh, 30rem);
 	}
 
 	h3 {
@@ -1854,7 +1856,35 @@ a[role=button] {
 
 
 // Media Query for min-width 800px/50rem - small tablets
-@media screen and (min-width:50rem) {}
+@media screen and (min-width:50rem) {
+
+	/********************* Home classes *******************/
+
+	.home-about {
+		.iframe-container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	.home-testimonials {
+		.md-flex {
+			display: flex;
+		}
+
+		.testimonial-card {
+			width: calc(85vw / 2);
+			margin: 0 1rem;
+			height: 10rem;
+			display: flex;
+			flex-direction: column;
+
+			span {
+				margin-top: auto;
+			}
+		}
+	}
+}
 
 
 // Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
