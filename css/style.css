@@ -1167,7 +1167,7 @@ footer .footer-socials svg path {
 }
 
 .services-hero {
-  padding: 0 2rem;
+  padding: 3rem 2rem 0;
   color: #0e3e66;
 }
 
@@ -1627,7 +1627,7 @@ a[role=button] {
   }
   /********************************** Home Content End ********************************/
   .services-hero {
-    padding: 0 3rem;
+    padding: 3rem 3rem 0;
   }
   .services-corporate h3 {
     padding: 0 3rem;
@@ -1657,9 +1657,11 @@ a[role=button] {
   .info-blurb {
     padding: 0 5rem;
   }
+  
   .home-services {
     padding: 2rem 2rem 0;
   }
+
   .home-about .iframe-container {
     display: flex;
     justify-content: center;
@@ -1683,16 +1685,19 @@ a[role=button] {
   .home-testimonials h2 {
     margin-left: unset;
   }
-  .home-testimonials .md-flex {
+
+ 
+ .home-testimonials .md-flex {
     display: flex;
   }
-  .home-testimonials .testimonial-card {
+  .testimonial-card {
     width: 42.5vw;
     margin: 0 1rem;
     height: 10rem;
     display: flex;
     flex-direction: column;
   }
+
   .home-testimonials .testimonial-card .upcoming-events {
     padding: 2rem 2rem 0;
   }
@@ -1715,6 +1720,37 @@ a[role=button] {
   }
   .column2 p {
     color: #000000;
+
+  .testimonial-card .upcoming-events {
+    padding: 2rem 2rem 0;
+  }
+  .testimonial-card .upcoming-events img {
+    margin: 0 auto;
+    display: block;
+  }
+  .testimonial-card .upcoming-events span {
+    margin-top: auto;
+  }
+  .testimonial-card .upcoming-events .event-info {
+    margin-left: 3rem;
+  }
+  .testimonial-card .services-hero {
+    padding: 3rem 5rem 0;
+  }
+  .testimonial-card .services-corporate {
+    padding: 0 2rem 1rem;
+  }
+  .testimonial-card .services-poy .poy-part-1 {
+    padding: 1rem 2rem;
+  }
+  .testimonial-card .services-poy .poy-testimonial {
+    padding: 0 2rem 2rem;
+  }
+  .testimonial-card .services-poy .testimonials .card-1,
+  .testimonial-card .services-poy .testimonials .card-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+
   }
 }
 @media screen and (min-width: 87.5rem) {
