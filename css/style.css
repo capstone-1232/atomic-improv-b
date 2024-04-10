@@ -970,6 +970,8 @@ a[role=button]:hover {
 }
 .home-about iframe {
   margin-bottom: 2rem;
+  width: 50rem;
+  height: clamp(20rem, 80vh, 30rem);
 }
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
@@ -1652,6 +1654,10 @@ a[role=button] {
   }
 }
 @media screen and (min-width: 50rem) {
+
+   /********************* Home classes *******************/
+
+ 
   .home-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
   }
@@ -1686,6 +1692,22 @@ a[role=button] {
   .home-testimonials h2 {
     margin-left: unset;
   }
+  .home-about .iframe-container {
+    display: flex;
+    justify-content: center;
+  }
+  .home-testimonials .md-flex {
+    display: flex;
+  }
+  .home-testimonials .testimonial-card {
+    width: 42.5vw;
+    margin: 0 1rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .home-testimonials .testimonial-card span {
+    margin-top: auto;
   .upcoming-events {
     padding: 2rem 2rem 0;
   }
@@ -1695,6 +1717,7 @@ a[role=button] {
   }
   .upcoming-events .event-info {
     margin-left: 3rem;
+
   }
 }
 @media screen and (min-width: 87.5rem) {
