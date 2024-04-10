@@ -936,7 +936,7 @@ a[role=button]:hover {
 .home-services .home-santa .instagram {
   display: block;
   text-align: center;
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
   color: #000;
 }
 .home-services .home-santa .instagram a {
@@ -1328,8 +1328,10 @@ a[role=button] {
 }
 
 .meet-donovan-section h2 {
-  padding-left: 2rem;
   color: #FFFFFF;
+}
+.meet-donovan-section .divider {
+  background-color: #000;
 }
 
 .image-gallery-container {
@@ -1377,14 +1379,10 @@ a[role=button] {
 .column1 {
   background-color: #0E3E66;
   color: white;
-  padding: 20px;
+  padding: 0 2rem;
 }
 
 .column2 {
-  color: #000000;
-  padding: 20px;
-  margin-top: 20px;
-  display: inline-block;
   color: #000000;
   display: inline-block;
   margin: 0 2rem;
@@ -1398,17 +1396,6 @@ a[role=button] {
   text-align: right;
 }
 
-@media screen and (min-width: 1100px) {
-  .column2 {
-    color: white;
-    margin-top: 1rem;
-  }
-  .column2 p {
-    color: #000000;
-    padding: 10px;
-    margin: 10px 0;
-  }
-}
 .image-gallery-section {
   background-color: #0E3E66;
 }
@@ -1532,17 +1519,27 @@ a[role=button] {
   content: "\f164";
 }
 
-.meet-donovan-section p {
-  text-align: center;
-}
-
 .chris-borger-about h2 {
   color: #000000;
-  padding-left: 2rem;
 }
 
 .hire-artist-section p {
   margin: 0 2rem 2rem 2rem;
+}
+
+.meet-donovan-section, .chris-borger-about {
+  margin: 2rem;
+}
+.meet-donovan-section img, .chris-borger-about img {
+  border-radius: 0.25rem;
+}
+
+.column2 p {
+  color: white;
+}
+
+.site-footer {
+  padding: 2rem;
 }
 
 /******************* Media queries ***************/
@@ -1654,10 +1651,6 @@ a[role=button] {
   }
 }
 @media screen and (min-width: 50rem) {
-
-   /********************* Home classes *******************/
-
- 
   .home-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
   }
@@ -1667,23 +1660,21 @@ a[role=button] {
   .home-services {
     padding: 2rem 2rem 0;
   }
-  .home-about iframe {
-    width: 40rem;
-    height: 20rem;
-    display: block;
-    margin: 0 auto;
+  .home-about .iframe-container {
+    display: flex;
+    justify-content: center;
   }
-  .home-about h2, .home-about p {
+  .home-about .iframe-container h2, .home-about .iframe-container p {
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  .home-about .socials h3 {
+  .home-about .iframe-container .socials h3 {
     margin-right: 5rem;
   }
-  .home-about .social-links {
+  .home-about .iframe-container .social-links {
     margin-right: 5rem;
   }
-  .home-about a[role=button] {
+  .home-about .iframe-container a[role=button] {
     margin-right: 5rem;
   }
   .home-testimonials {
@@ -1691,10 +1682,6 @@ a[role=button] {
   }
   .home-testimonials h2 {
     margin-left: unset;
-  }
-  .home-about .iframe-container {
-    display: flex;
-    justify-content: center;
   }
   .home-testimonials .md-flex {
     display: flex;
@@ -1706,18 +1693,28 @@ a[role=button] {
     display: flex;
     flex-direction: column;
   }
-  .home-testimonials .testimonial-card span {
-    margin-top: auto;
-  .upcoming-events {
+  .home-testimonials .testimonial-card .upcoming-events {
     padding: 2rem 2rem 0;
   }
-  .upcoming-events img {
+  .home-testimonials .testimonial-card .upcoming-events img {
     margin: 0 auto;
     display: block;
   }
-  .upcoming-events .event-info {
+  .home-testimonials .testimonial-card .upcoming-events span {
+    margin-top: auto;
+  }
+  .home-testimonials .testimonial-card .upcoming-events .event-info {
     margin-left: 3rem;
-
+  }
+}
+@media screen and (min-width: 68.75rem) {
+  /********************************** Who We Are Content Start ********************************/
+  .column2 {
+    color: white;
+    margin-top: 1rem;
+  }
+  .column2 p {
+    color: #000000;
   }
 }
 @media screen and (min-width: 87.5rem) {
@@ -1738,6 +1735,7 @@ a[role=button] {
   }
   .column2 p {
     background-color: #FFFFFF;
+    color: #000;
   }
   .flex-item {
     display: flex;
