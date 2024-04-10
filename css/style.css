@@ -936,7 +936,7 @@ a[role=button]:hover {
 .home-services .home-santa .instagram {
   display: block;
   text-align: center;
-  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.75rem);
+  font-size: clamp(0.875rem, 0.25rem + 1.667vw, 1.25rem);
   color: #000;
 }
 .home-services .home-santa .instagram a {
@@ -1167,7 +1167,7 @@ footer .footer-socials svg path {
 }
 
 .services-hero {
-  padding: 0 2rem;
+  padding: 3rem 2rem 0;
   color: #0e3e66;
 }
 
@@ -1630,7 +1630,7 @@ a[role=button] {
   }
   /********************************** Home Content End ********************************/
   .services-hero {
-    padding: 0 3rem;
+    padding: 3rem 3rem 0;
   }
   .services-corporate h3 {
     padding: 0 3rem;
@@ -1654,36 +1654,27 @@ a[role=button] {
   }
 }
 @media screen and (min-width: 50rem) {
-
-   /********************* Home classes *******************/
-
- 
   .home-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
   }
   .info-blurb {
     padding: 0 5rem;
   }
-  .home-services {
-    padding: 2rem 2rem 0;
+  .home-about .iframe-container {
+    display: flex;
+    justify-content: center;
   }
-  .home-about iframe {
-    width: 40rem;
-    height: 20rem;
-    display: block;
-    margin: 0 auto;
-  }
-  .home-about h2, .home-about p {
+  .home-about .iframe-container h2, .home-about .iframe-container p {
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  .home-about .socials h3 {
+  .home-about .iframe-container .socials h3 {
     margin-right: 5rem;
   }
-  .home-about .social-links {
+  .home-about .iframe-container .social-links {
     margin-right: 5rem;
   }
-  .home-about a[role=button] {
+  .home-about .iframe-container a[role=button] {
     margin-right: 5rem;
   }
   .home-testimonials {
@@ -1692,32 +1683,45 @@ a[role=button] {
   .home-testimonials h2 {
     margin-left: unset;
   }
-  .home-about .iframe-container {
-    display: flex;
-    justify-content: center;
-  }
-  .home-testimonials .md-flex {
+  .md-flex {
     display: flex;
   }
-  .home-testimonials .testimonial-card {
+  .testimonial-card {
     width: 42.5vw;
     margin: 0 1rem;
     height: 10rem;
     display: flex;
     flex-direction: column;
   }
-  .home-testimonials .testimonial-card span {
-    margin-top: auto;
-  .upcoming-events {
+  .testimonial-card .upcoming-events {
     padding: 2rem 2rem 0;
   }
-  .upcoming-events img {
+  .testimonial-card .upcoming-events img {
     margin: 0 auto;
     display: block;
   }
-  .upcoming-events .event-info {
+  .testimonial-card .upcoming-events span {
+    margin-top: auto;
+  }
+  .testimonial-card .upcoming-events .event-info {
     margin-left: 3rem;
-
+  }
+  .testimonial-card .services-hero {
+    padding: 3rem 5rem 0;
+  }
+  .testimonial-card .services-corporate {
+    padding: 0 2rem 1rem;
+  }
+  .testimonial-card .services-poy .poy-part-1 {
+    padding: 1rem 2rem;
+  }
+  .testimonial-card .services-poy .poy-testimonial {
+    padding: 0 2rem 2rem;
+  }
+  .testimonial-card .services-poy .testimonials .card-1,
+  .testimonial-card .services-poy .testimonials .card-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
 }
 @media screen and (min-width: 87.5rem) {

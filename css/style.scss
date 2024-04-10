@@ -1282,7 +1282,7 @@ footer .footer-socials svg path {
 }
 
 .services-hero {
-	padding: 0 2rem;
+	padding: 3rem 2rem 0;
 	color: $dark-blue;
 }
 
@@ -1828,7 +1828,7 @@ a[role=button] {
 	/********************************** Home Content End ********************************/
 
 	.services-hero {
-		padding: 0 3rem;
+		padding: 3rem 3rem 0;
 	}
 
 	.services-corporate {
@@ -1879,36 +1879,31 @@ a[role=button] {
 		padding: 0 5rem;
 	}
 
-	.home-services {
-		padding: 2rem 2rem 0;
-	}
-
-	.home-about {
-
 	.home-about {
 		.iframe-container {
 			display: flex;
 			justify-content: center;
 
-		h2, p {
-			margin-left: 5rem;
-			margin-right: 5rem;
-		}
+			h2, p {
+				margin-left: 5rem;
+				margin-right: 5rem;
+			}
 
-		.socials {
-			h3 {
+			.socials {
+				h3 {
+					margin-right: 5rem;
+				}
+			}
+
+			.social-links {
+				margin-right: 5rem;
+			}
+
+			a[role=button] {
 				margin-right: 5rem;
 			}
 		}
-
-		.social-links {
-			margin-right: 5rem;
-		}
-
-		a[role=button] {
-			margin-right: 5rem;
-		}
-	}
+	}	
 
 	.home-testimonials {
 
@@ -1919,31 +1914,59 @@ a[role=button] {
 		}
 	}
     
-    		.md-flex {
-			display: flex;
+	.md-flex {
+		display: flex;
+	}
+
+	.testimonial-card {
+		width: calc(85vw / 2);
+		margin: 0 1rem;
+		height: 10rem;
+		display: flex;
+		flex-direction: column;
+
+		.upcoming-events {
+			padding: 2rem 2rem 0;
+
+			img {
+				margin: 0 auto;
+				display: block;
+			}
+		
+			span {
+					margin-top: auto;
+				}
+
+			.event-info {
+				margin-left: 3rem;
+			}
+		}
+		
+
+		.services-hero {
+			padding: 3rem 5rem 0;
 		}
 
-		.testimonial-card {
-			width: calc(85vw / 2);
-			margin: 0 1rem;
-			height: 10rem;
-			display: flex;
-			flex-direction: column;
-
-	.upcoming-events {
-		padding: 2rem 2rem 0;
-
-		img {
-			margin: 0 auto;
-			display: block;
+		.services-corporate {
+			padding: 0 2rem 1rem;
 		}
-    
-    	span {
-				margin-top: auto;
+
+		.services-poy {
+			.poy-part-1 {
+				padding: 1rem 2rem;
 			}
 
-		.event-info {
-			margin-left: 3rem;
+			.poy-testimonial {
+				padding: 0 2rem 2rem;
+			}
+
+			.testimonials {
+				.card-1,
+					.card-2 {
+						margin-right: 5rem;
+						margin-left: 5rem;
+					}
+			}
 		}
 	}
 }
