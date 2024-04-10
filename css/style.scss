@@ -1827,6 +1827,8 @@ a[role=button] {
 
 	/********************************** Home Content End ********************************/
 
+	/************************ Services Content Start ******************/ 
+
 	.services-hero {
 		padding: 3rem 3rem 0;
 	}
@@ -1864,12 +1866,16 @@ a[role=button] {
 			margin-right: 3rem;
 		}
 	}
+
+	/************************ Services Content End ******************/
 }
 
 
 
 // Media Query for min-width 800px/50rem - small tablets
 @media screen and (min-width:50rem) {
+
+	/************************ Home Content Start ******************/
 
 	.home-hero {
 		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('../img/md/whoweare1md.webp') top/100% no-repeat;
@@ -1941,39 +1947,113 @@ a[role=button] {
 				margin-left: 3rem;
 			}
 		}
+	}
+	/************************ Home Content End ******************/
 		
+	/************************ Services Content Start ******************/
 
-		.services-hero {
-			padding: 3rem 5rem 0;
+	.services-hero {
+		padding: 3rem 5rem 0;
+	}
+
+	.services-corporate {
+		padding: 0 2rem 1rem;
+	}
+
+	.services-poy {
+		.poy-part-1 {
+			padding: 1rem 2rem;
 		}
 
-		.services-corporate {
-			padding: 0 2rem 1rem;
+		.poy-testimonial {
+			padding: 0 2rem 2rem;
 		}
 
-		.services-poy {
-			.poy-part-1 {
-				padding: 1rem 2rem;
-			}
-
-			.poy-testimonial {
-				padding: 0 2rem 2rem;
-			}
-
-			.testimonials {
-				.card-1,
-					.card-2 {
-						margin-right: 5rem;
-						margin-left: 5rem;
-					}
-			}
+		.testimonials {
+			.card-1,
+				.card-2 {
+					margin-right: 5rem;
+					margin-left: 5rem;
+				}
 		}
 	}
 }
 
 
 // Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
-@media screen and (min-width: 68.75rem) {}
+@media screen and (min-width: 68.75rem) {
+
+	/************************ Home Content Start ******************/
+
+	.home-hero {
+		background-size: 100%;
+	}
+
+	.home-services{
+		.home-poy, .home-santa {
+			display: grid;
+			grid-template-columns: repeat(12, 5rem);
+		}
+
+		.home-poy{
+			h3 {
+				grid-column: 1 / -1;
+			}
+		
+			picture {
+				grid-column: 2 / 8;
+			}
+		
+			p {
+				grid-column: 9 / 13;
+				margin: unset;
+			}
+		}
+
+		.home-santa {
+			grid-template-rows: repeat(8, 5.5rem);
+
+			h3 {
+				grid-column: 2 / 13;
+				display: inline-block;
+				margin: unset;
+			}
+
+			picture, span {
+				grid-column: 9/13;
+			}
+
+			p {
+				margin: unset;
+				&:nth-of-type(1) {
+					grid-row: 2 / 4;
+					grid-column: 2 / 7;
+				}
+
+				&:nth-of-type(2) {
+					grid-row: 4 / 6;
+					grid-column: 2 / 7;
+				}
+			}
+
+			.instagram {
+				grid-row: 7;
+				text-align: left;
+			}
+
+			a[role=button] {
+				grid-column: 6 / 8;
+				grid-row: 6;
+				margin: unset;
+				height: fit-content;
+			}
+		}
+	}
+
+	
+
+	/************************ Home Content End ******************/
+}
 
 // Media Query for 1400px/87.5rem - Large Desktop
 
