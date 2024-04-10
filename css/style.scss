@@ -1048,6 +1048,8 @@ a[role=button]:hover {
 
 	iframe {
 		margin-bottom: 2rem;
+		width: 50rem;
+		height: clamp(20rem, 80vh, 30rem);
 	}
 
 	h3 {
@@ -1878,79 +1880,93 @@ a[role=button] {
 	}
 
 	.home-about {
+		.iframe-container {
+			display: flex;
+			justify-content: center;
 
-		iframe {
-			width: 40rem;
-			height: 20rem;
-			display: block;
-			margin: 0 auto;
-		}
+			h2, p {
+				margin-left: 5rem;
+				margin-right: 5rem;
+			}
 
-		h2, p {
-			margin-left: 5rem;
-			margin-right: 5rem;
-		}
+			.socials {
+				h3 {
+					margin-right: 5rem;
+				}
+			}
 
-		.socials {
-			h3 {
+			.social-links {
+				margin-right: 5rem;
+			}
+
+			a[role=button] {
 				margin-right: 5rem;
 			}
 		}
-
-		.social-links {
-			margin-right: 5rem;
-		}
-
-		a[role=button] {
-			margin-right: 5rem;
-		}
-	}
+	}	
 
 	.home-testimonials {
+
 		padding: 2rem 5rem;
 
 		h2 {
 			margin-left: unset;
 		}
 	}
-
-	.upcoming-events {
-		padding: 2rem 2rem 0;
-
-		img {
-			margin: 0 auto;
-			display: block;
-		}
-
-		.event-info {
-			margin-left: 3rem;
-		}
-	}
-	
-
-	.services-hero {
-		padding: 3rem 5rem 0;
+    
+	.md-flex {
+		display: flex;
 	}
 
-	.services-corporate {
-		padding: 0 2rem 1rem;
-	}
+	.testimonial-card {
+		width: calc(85vw / 2);
+		margin: 0 1rem;
+		height: 10rem;
+		display: flex;
+		flex-direction: column;
 
-	.services-poy {
-		.poy-part-1 {
-			padding: 1rem 2rem;
-		}
+		.upcoming-events {
+			padding: 2rem 2rem 0;
 
-		.poy-testimonial {
-			padding: 0 2rem 2rem;
-		}
-
-		.testimonials {
-			.card-1,
-				.card-2 {
-					margin-right: 5rem;
-					margin-left: 5rem;
+			img {
+				margin: 0 auto;
+				display: block;
+			}
+		
+			span {
+					margin-top: auto;
 				}
+
+			.event-info {
+				margin-left: 3rem;
+			}
+		}
+		
+
+		.services-hero {
+			padding: 3rem 5rem 0;
+		}
+
+		.services-corporate {
+			padding: 0 2rem 1rem;
+		}
+
+		.services-poy {
+			.poy-part-1 {
+				padding: 1rem 2rem;
+			}
+
+			.poy-testimonial {
+				padding: 0 2rem 2rem;
+			}
+
+			.testimonials {
+				.card-1,
+					.card-2 {
+						margin-right: 5rem;
+						margin-left: 5rem;
+					}
+			}
 		}
 	}
 }

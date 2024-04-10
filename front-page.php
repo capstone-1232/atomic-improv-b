@@ -79,7 +79,13 @@ get_header();
             <h2>Beyond the Improv!</h2>
             <div class="home-poy">
                 <h3>Power of Yes!</h3>
-                <img src="<?= get_template_directory_uri() ?>/img/poy.webp" alt="Power of yes logo">
+                <picture class="md-img lg-img">
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/powerofyeshome.webp" media="(max-width: 500px)">
+
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/powerofyeshome.webp" media="(max-width: 800px)">
+
+                    <img src="<?= get_template_directory_uri() ?>/img/lg/powerofyeshome.webp" alt="Holly Jolly Santa Claus is looking forward to being a part of your festivities this year!">
+                </picture>
                 <p>Take an innovative approach to team building and communication with “The Power of Yes”.</p>
             </div>
 
@@ -106,8 +112,10 @@ get_header();
     
     <section class="home-about">
             <h2>Who is Atomic Improv</h2>
-            <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=0bSV87_cVhXxpc6o" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>Three time world champion improvisors Atomic Improv have been entertaining corporate clients for over 30 years and they are the gold standard when it comes to bringing laughter to your event.</p>
+           <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=0bSV87_cVhXxpc6o" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+           <p>Three time world champion improvisors Atomic Improv have been entertaining corporate clients for over 30 years and they are the gold standard when it comes to bringing laughter to your event.</p>
             <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Get to know more about Atomic Improv" role="button">Get to know
                 more</a>
     
@@ -154,16 +162,18 @@ get_header();
     </section>
     
     <section class="home-testimonials">
-        <h2>What do people say about Us?</h2>
-        <div class="testimonial-card">
-            <p><span>“An absolute gut-buster...<br>A festival of belly-laughs!”</span></p>
-            <span>-Edmonton Journal</span>
-        </div>
-        <div class="testimonial-card">
-            <p><span>"Workun deserves an
-                <br>Improv Oscar"</span></p>
-            <span>-Edie Ranvier,<br>
-            The Reviews Hub</span>
+        <h2>What do people say about us?</h2>
+        <div class="md-flex">
+            <div class="testimonial-card">
+                <p><span>“An absolute gut-buster...<br>A festival of belly-laughs!”</span></p>
+                <span>-Edmonton Journal</span>
+            </div>
+            <div class="testimonial-card">
+                <p><span>"Workun deserves an
+                    <br>Improv Oscar"</span></p>
+                <span>-Edie Ranvier,<br>
+                The Reviews Hub</span>
+            </div>
         </div>
     </section>
     
