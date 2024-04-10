@@ -112,10 +112,10 @@ get_header();
     
     <section class="home-about">
             <h2>Who is Atomic Improv</h2>
-            <div class="iframe-container">
+           <div class="iframe-container">
                 <iframe src="https://www.youtube.com/embed/Vkwthc6cyBY?si=0bSV87_cVhXxpc6o" title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>Three time world champion improvisors Atomic Improv have been entertaining corporate clients for over 30 years and they are the gold standard when it comes to bringing laughter to your event.</p>
+           <p>Three time world champion improvisors Atomic Improv have been entertaining corporate clients for over 30 years and they are the gold standard when it comes to bringing laughter to your event.</p>
             <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Get to know more about Atomic Improv" role="button">Get to know
                 more</a>
     
