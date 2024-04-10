@@ -496,12 +496,6 @@ select {
 	height: 100%;
 }
 
-// @media screen and (min-width:37.5rem) {
-// 	.menu-toggle {
-// 		display: none;
-// 	}
-// }
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -934,14 +928,9 @@ a[role=button]:hover {
 
 .info-blurb {
 	color: $dark;
-	padding: 0 1.5rem;
 	font-family: $nunito;
 	font-weight: 500;
 	margin-bottom: 1.5rem;
-
-	* {
-		margin: 0.7rem 0;
-	}
 }
 
 .home-services {
@@ -965,7 +954,6 @@ a[role=button]:hover {
 	p {
 		font-family: $nunito;
 		font-weight: 400;
-		margin: 2rem;
 	}
 
 	a {
@@ -1055,10 +1043,6 @@ a[role=button]:hover {
 	h3 {
 		font-size: $h3clamp;
 		font-weight: 400;
-	}
-
-	p {
-		margin: 0 2rem 1rem;
 	}
 
 	a[role=button] {
@@ -1296,10 +1280,6 @@ footer .footer-socials svg path {
 	img {
 		width: 100%;
 	}
-
-	p {
-		padding: 0 2rem;
-	}
 }
 
 a[role=button] {
@@ -1317,10 +1297,6 @@ a[role=button] {
 	h3,
 	h4 {
 		margin: 1rem 2rem;
-	}
-
-	p {
-		margin: 1rem 2rem 2rem;
 	}
 
 	.poy-part-1,
@@ -1406,10 +1382,6 @@ a[role=button] {
 		width: 100%;
 	}
 
-	p {
-		margin: 1rem 2rem;
-	}
-
 	.testimonials {
 
 		.card-1 {
@@ -1430,12 +1402,9 @@ a[role=button] {
 	}
 }
 
-
-
 .about-book-button {
 	margin: 2rem;
 }
-
 
 .about-heading {
 	padding: 2rem 0;
@@ -1448,22 +1417,28 @@ a[role=button] {
 	color: #FFFFFF;
 }
 
-.flex-item h2 {
-	padding-left: 20px;
-}
-
-.flex-item p {
-	text-align: center;
-}
-
-.flex-item img {
-	border-radius: 10px;
-}
-
-.image-about img {
-	display: block;
-	width: 100%;
-	border-radius: 10px;
+.flex-item{
+	h2 {
+		padding-left: 20px;
+	}
+	
+	p {
+		text-align: center;
+	}
+	
+	img {
+		border-radius: 10px;
+	}
+	.image-about {
+		margin: 0 auto 1rem;
+		overflow: hidden;
+		border: 2px solid #FFFFFF;
+	 	img {
+			display: block;
+			width: 100%;
+			border-radius: 10px;
+		}
+	}
 }
 
 .flex-item .image-about {
@@ -1478,9 +1453,14 @@ a[role=button] {
 	color: #FFFFFF;
 }
 
-.meet-donovan-section h2 {
-	padding-left: 2rem;
+.meet-donovan-section  {
+	h2 {
 	color: #FFFFFF;
+	}
+
+	.divider{
+		background-color: #000;
+	}
 }
 
 .image-gallery-container {
@@ -1494,12 +1474,12 @@ a[role=button] {
 	border-radius: 10px;
 	overflow: hidden;
 	border: 2px solid #FFFFFF;
-}
-
-.image-wrapper img {
-	display: block;
-	width: 100%;
-	border-radius: inherit;
+	
+	img {
+		display: block;
+		width: 100%;
+		border-radius: inherit;
+	}
 }
 
 .image-about {
@@ -1507,19 +1487,20 @@ a[role=button] {
 	border-radius: 10px;
 	overflow: hidden;
 	border: 2px solid #FFFFFF;
+
+	img {
+		display: block;
+		width: 100%;
+		border-radius: inherit;
+		overflow: hidden;
+	}
 }
 
-.image-about img {
-	display: block;
-	width: 100%;
-	border-radius: inherit;
-	overflow: hidden;
+.meet-donovan-section{
+	h2 {
+		color: #000000;
+		}
 }
-
-.meet-donovan-section h2 {
-	color: #000000;
-}
-
 .flex-container {
 	display: flex;
 	flex-direction: column;
@@ -1528,23 +1509,12 @@ a[role=button] {
 .column1 {
 	background-color: #0E3E66;
 	color: white;
-	padding: 20px;
 }
 
 .column2 {
-
-	color: #000000;
-	padding: 20px;
-	margin-top: 20px;
-	display: inline-block;
-
 	color: #000000;
 	display: inline-block;
-	margin: 0 2rem;
-
-
 }
-
 
 .testimonials {
 	span {
@@ -1553,19 +1523,6 @@ a[role=button] {
 		display: block;
 		font-style: italic;
 		text-align: right;
-	}
-}
-
-@media screen and (min-width: 1100px) {
-	.column2 {
-		color: white;
-		margin-top: 1rem;
-	}
-
-	.column2 p {
-		color: #000000;
-		padding: 10px;
-		margin: 10px 0;
 	}
 }
 
@@ -1688,25 +1645,45 @@ a[role=button] {
 	content: "\f164";
 }
 
-.meet-donovan-section p {
-	text-align: center;
-}
-
-
 .chris-borger-about h2 {
 	color: #000000;
-	padding-left: 2rem;
 }
 
-.hire-artist-section {
-	p {
-		margin: 0 2rem 2rem 2rem;
+.meet-donovan-section, .chris-borger-about{
+	img{
+		border-radius: 0.25rem;
 	}
+}
 
+.column2{ 
+	p { 
+	color: white;
+	}
+}
+
+.site-footer{
+	padding: 0 2rem;
+}
+.info-blurb, .home-santa, .home-services, .home-about, .services-corporate, .services-poy, .services-santa, .column2, .column1, .meet-donovan-section, .chris-borger-about, .hire-artist-section {
+
+	p{
+	padding: 0 2rem;
+	}	
+}
+
+.meet-donovan-section, .chris-borger-about, .column1{
+	h3{
+		padding: 0 2rem;
+	}
+}
+
+.card-1, .card-2{
+	p{
+		padding: 0;
+	}
 }
 
 /******************* Media queries ***************/
-
 
 
 //  media query for screen min width of 31.25rem/500px - Horizontal phone view
@@ -1885,6 +1862,10 @@ a[role=button] {
 		padding: 0 5rem;
 	}
 
+
+	.home-services {
+		padding: 2rem 2rem 0;
+	}
 	.home-about {
 		.iframe-container {
 			display: flex;
@@ -1909,7 +1890,9 @@ a[role=button] {
 				margin-right: 5rem;
 			}
 		}
-	}	
+
+	}
+	}
 
 	.home-testimonials {
 
@@ -1918,11 +1901,10 @@ a[role=button] {
 		h2 {
 			margin-left: unset;
 		}
-	}
-    
-	.md-flex {
-		display: flex;
-	}
+
+	   		.md-flex {
+			display: flex;
+		}
 
 	.testimonial-card {
 		width: calc(85vw / 2);
@@ -1931,21 +1913,21 @@ a[role=button] {
 		display: flex;
 		flex-direction: column;
 
-		.upcoming-events {
-			padding: 2rem 2rem 0;
+	.upcoming-events {
+				padding: 2rem 2rem 0;
 
-			img {
-				margin: 0 auto;
-				display: block;
-			}
-		
-			span {
-					margin-top: auto;
+				img {
+					margin: 0 auto;
+					display: block;
 				}
+			
+				span {
+						margin-top: auto;
+					}
 
-			.event-info {
-				margin-left: 3rem;
-			}
+				.event-info {
+					margin-left: 3rem;
+				}
 		}
 	}
 	/************************ Home Content End ******************/
@@ -2018,7 +2000,7 @@ a[role=button] {
 				display: inline-block;
 				margin: unset;
 			}
-
+      
 			picture, span {
 				grid-column: 9/13;
 			}
@@ -2046,13 +2028,30 @@ a[role=button] {
 				grid-row: 6;
 				margin: unset;
 				height: fit-content;
+      }    
+        
+			.testimonials {
+				.card-1,
+					.card-2 {
+						margin-right: 5rem;
+						margin-left: 5rem;
+				}
 			}
 		}
 	}
-
 	
-
 	/************************ Home Content End ******************/
+
+	/********************************** Who We Are Content Start ********************************/
+
+	.column2 {
+		color: white;
+		margin-top: 1rem;
+	}
+
+	.column2 p {
+		color: #000000;
+	}
 }
 
 // Media Query for 1400px/87.5rem - Large Desktop
@@ -2080,6 +2079,7 @@ a[role=button] {
 
 	.column2 p {
 		background-color: #FFFFFF;
+		color: #000;
 	}
 
 	.flex-item {

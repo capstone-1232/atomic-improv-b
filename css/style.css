@@ -874,13 +874,9 @@ a[role=button]:hover {
 
 .info-blurb {
   color: #000;
-  padding: 0 1.5rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   margin-bottom: 1.5rem;
-}
-.info-blurb * {
-  margin: 0.7rem 0;
 }
 
 .home-services {
@@ -901,7 +897,6 @@ a[role=button]:hover {
 .home-services p {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
-  margin: 2rem;
 }
 .home-services a {
   margin-top: 2rem;
@@ -976,9 +971,6 @@ a[role=button]:hover {
 .home-about h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
   font-weight: 400;
-}
-.home-about p {
-  margin: 0 2rem 1rem;
 }
 .home-about a[role=button] {
   margin-top: 1.5rem;
@@ -1178,9 +1170,6 @@ footer .footer-socials svg path {
 .services-corporate img {
   width: 100%;
 }
-.services-corporate p {
-  padding: 0 2rem;
-}
 
 a[role=button] {
   margin-right: 2rem;
@@ -1196,9 +1185,6 @@ a[role=button] {
 .services-poy h3,
 .services-poy h4 {
   margin: 1rem 2rem;
-}
-.services-poy p {
-  margin: 1rem 2rem 2rem;
 }
 .services-poy .poy-part-1,
 .services-poy .poy-part-2 {
@@ -1264,9 +1250,6 @@ a[role=button] {
 .services-santa img {
   width: 100%;
 }
-.services-santa p {
-  margin: 1rem 2rem;
-}
 .services-santa .testimonials .card-1 {
   border: 1px solid #000;
   border-radius: 10px;
@@ -1300,16 +1283,18 @@ a[role=button] {
 .flex-item h2 {
   padding-left: 20px;
 }
-
 .flex-item p {
   text-align: center;
 }
-
 .flex-item img {
   border-radius: 10px;
 }
-
-.image-about img {
+.flex-item .image-about {
+  margin: 0 auto 1rem;
+  overflow: hidden;
+  border: 2px solid #FFFFFF;
+}
+.flex-item .image-about img {
   display: block;
   width: 100%;
   border-radius: 10px;
@@ -1328,8 +1313,10 @@ a[role=button] {
 }
 
 .meet-donovan-section h2 {
-  padding-left: 2rem;
   color: #FFFFFF;
+}
+.meet-donovan-section .divider {
+  background-color: #000;
 }
 
 .image-gallery-container {
@@ -1344,7 +1331,6 @@ a[role=button] {
   overflow: hidden;
   border: 2px solid #FFFFFF;
 }
-
 .image-wrapper img {
   display: block;
   width: 100%;
@@ -1357,7 +1343,6 @@ a[role=button] {
   overflow: hidden;
   border: 2px solid #FFFFFF;
 }
-
 .image-about img {
   display: block;
   width: 100%;
@@ -1377,17 +1362,11 @@ a[role=button] {
 .column1 {
   background-color: #0E3E66;
   color: white;
-  padding: 20px;
 }
 
 .column2 {
   color: #000000;
-  padding: 20px;
-  margin-top: 20px;
   display: inline-block;
-  color: #000000;
-  display: inline-block;
-  margin: 0 2rem;
 }
 
 .testimonials span {
@@ -1398,17 +1377,6 @@ a[role=button] {
   text-align: right;
 }
 
-@media screen and (min-width: 1100px) {
-  .column2 {
-    color: white;
-    margin-top: 1rem;
-  }
-  .column2 p {
-    color: #000000;
-    padding: 10px;
-    margin: 10px 0;
-  }
-}
 .image-gallery-section {
   background-color: #0E3E66;
 }
@@ -1532,17 +1500,32 @@ a[role=button] {
   content: "\f164";
 }
 
-.meet-donovan-section p {
-  text-align: center;
-}
-
 .chris-borger-about h2 {
   color: #000000;
-  padding-left: 2rem;
 }
 
-.hire-artist-section p {
-  margin: 0 2rem 2rem 2rem;
+.meet-donovan-section img, .chris-borger-about img {
+  border-radius: 0.25rem;
+}
+
+.column2 p {
+  color: white;
+}
+
+.site-footer {
+  padding: 0 2rem;
+}
+
+.info-blurb p, .home-santa p, .home-services p, .home-about p, .services-corporate p, .services-poy p, .services-santa p, .column2 p, .column1 p, .meet-donovan-section p, .chris-borger-about p, .hire-artist-section p {
+  padding: 0 2rem;
+}
+
+.meet-donovan-section h3, .chris-borger-about h3, .column1 h3 {
+  padding: 0 2rem;
+}
+
+.card-1 p, .card-2 p {
+  padding: 0;
 }
 
 /******************* Media queries ***************/
@@ -1663,6 +1646,11 @@ a[role=button] {
   .info-blurb {
     padding: 0 5rem;
   }
+  
+  .home-services {
+    padding: 2rem 2rem 0;
+  }
+
   .home-about .iframe-container {
     display: flex;
     justify-content: center;
@@ -1686,7 +1674,9 @@ a[role=button] {
   .home-testimonials h2 {
     margin-left: unset;
   }
-  .md-flex {
+
+ 
+ .home-testimonials .md-flex {
     display: flex;
   }
   .testimonial-card {
@@ -1696,6 +1686,30 @@ a[role=button] {
     display: flex;
     flex-direction: column;
   }
+
+  .home-testimonials .testimonial-card .upcoming-events {
+    padding: 2rem 2rem 0;
+  }
+  .home-testimonials .testimonial-card .upcoming-events img {
+    margin: 0 auto;
+    display: block;
+  }
+  .home-testimonials .testimonial-card .upcoming-events span {
+    margin-top: auto;
+  }
+  .home-testimonials .testimonial-card .upcoming-events .event-info {
+    margin-left: 3rem;
+  }
+}
+@media screen and (min-width: 68.75rem) {
+  /********************************** Who We Are Content Start ********************************/
+  .column2 {
+    color: white;
+    margin-top: 1rem;
+  }
+  .column2 p {
+    color: #000000;
+
   .testimonial-card .upcoming-events {
     padding: 2rem 2rem 0;
   }
@@ -1727,6 +1741,7 @@ a[role=button] {
   .services-poy .testimonials .card-2 {
     margin-right: 5rem;
     margin-left: 5rem;
+
   }
 }
 @media screen and (min-width: 68.75rem) {
@@ -1801,6 +1816,7 @@ a[role=button] {
   }
   .column2 p {
     background-color: #FFFFFF;
+    color: #000;
   }
   .flex-item {
     display: flex;
