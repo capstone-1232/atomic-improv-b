@@ -1646,11 +1646,9 @@ a[role=button] {
   .info-blurb {
     padding: 0 5rem;
   }
-  
   .home-services {
     padding: 2rem 2rem 0;
   }
-
   .home-about .iframe-container {
     display: flex;
     justify-content: center;
@@ -1674,53 +1672,27 @@ a[role=button] {
   .home-testimonials h2 {
     margin-left: unset;
   }
-
- 
- .home-testimonials .md-flex {
+  .home-testimonials .md-flex {
     display: flex;
   }
-  .testimonial-card {
+  .home-testimonials .testimonial-card {
     width: 42.5vw;
     margin: 0 1rem;
     height: 10rem;
     display: flex;
     flex-direction: column;
   }
-
-  .home-testimonials .testimonial-card .upcoming-events {
+  .home-testimonials .upcoming-events {
     padding: 2rem 2rem 0;
   }
-  .home-testimonials .testimonial-card .upcoming-events img {
+  .home-testimonials .upcoming-events img {
     margin: 0 auto;
     display: block;
   }
-  .home-testimonials .testimonial-card .upcoming-events span {
+  .home-testimonials .upcoming-events span {
     margin-top: auto;
   }
-  .home-testimonials .testimonial-card .upcoming-events .event-info {
-    margin-left: 3rem;
-  }
-}
-@media screen and (min-width: 68.75rem) {
-  /********************************** Who We Are Content Start ********************************/
-  .column2 {
-    color: white;
-    margin-top: 1rem;
-  }
-  .column2 p {
-    color: #000000;
-
-  .testimonial-card .upcoming-events {
-    padding: 2rem 2rem 0;
-  }
-  .testimonial-card .upcoming-events img {
-    margin: 0 auto;
-    display: block;
-  }
-  .testimonial-card .upcoming-events span {
-    margin-top: auto;
-  }
-  .testimonial-card .upcoming-events .event-info {
+  .home-testimonials .upcoming-events .event-info {
     margin-left: 3rem;
   }
   /************************ Home Content End ******************/
@@ -1741,7 +1713,6 @@ a[role=button] {
   .services-poy .testimonials .card-2 {
     margin-right: 5rem;
     margin-left: 5rem;
-
   }
 }
 @media screen and (min-width: 68.75rem) {
@@ -1796,7 +1767,20 @@ a[role=button] {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .home-services .home-santa .testimonials .card-1,
+  .home-services .home-santa .testimonials .card-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
   /************************ Home Content End ******************/
+  /********************************** Who We Are Content Start ********************************/
+  .column2 {
+    color: white;
+    margin-top: 1rem;
+  }
+  .column2 p {
+    color: #000000;
+  }
 }
 @media screen and (min-width: 87.5rem) {
   /********************************** Who We Are Content Start ********************************/
