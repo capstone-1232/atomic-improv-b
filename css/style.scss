@@ -1275,7 +1275,6 @@ footer .footer-socials svg path {
 .services-corporate {
 
 	h3 {
-		padding: 0 2rem;
 		color: $dark-blue;
 	}
 
@@ -1449,8 +1448,7 @@ a[role=button] {
 	border: 2px solid #FFFFFF;
 }
 
-.image-gallery-section h3,
-.contact-heading {
+.image-gallery-section h3{
 	padding-left: 2rem;
 	color: #FFFFFF;
 }
@@ -1503,20 +1501,22 @@ a[role=button] {
 		color: #000000;
 		}
 }
+
 .flex-container {
 	display: flex;
 	flex-direction: column;
+	.column1 {
+		background-color: #0E3E66;
+		color: white;
+	}
+	
+	.column2 {
+		color: #000000;
+		display: inline-block;
+	}
 }
 
-.column1 {
-	background-color: #0E3E66;
-	color: white;
-}
 
-.column2 {
-	color: #000000;
-	display: inline-block;
-}
 
 .testimonials {
 	span {
@@ -1663,31 +1663,30 @@ a[role=button] {
 	}
 }
 
-.site-footer{
+.site-footer, .contact-heading{
 	padding: 0 2rem;
 }
 .info-blurb, .home-santa, .home-services, .home-about, .services-corporate, .services-poy, .services-santa, .column2, .column1, .meet-donovan-section, .chris-borger-about, .hire-artist-section {
 
-	p{
+	p, h3, h2{
 	padding: 0 2rem;
-	}	
+	}
+
 }
 
-.home-services, .home-about{
-	h2{
-		padding: 0 2rem;
-	}
-}
-
-.meet-donovan-section, .chris-borger-about, .column1, .home-services{
-	h3{
-		padding: 0 2rem;
-	}
+.contact-heading{
+	color: $dark-blue;
 }
 
 .card-1, .card-2{
 	p{
 		padding: 0;
+	}
+}
+
+.footer-navigation {
+	ul{
+		margin: 0;
 	}
 }
 
@@ -1874,6 +1873,7 @@ a[role=button] {
 	.home-services {
 		padding: 2rem 2rem 0;
 	}
+
 	.home-about {
 		.iframe-container {
 			display: flex;
@@ -1900,7 +1900,6 @@ a[role=button] {
 		}
 
 	}
-	}
 
 	.home-testimonials {
 
@@ -1921,6 +1920,8 @@ a[role=button] {
 		display: flex;
 		flex-direction: column;
 
+	}
+
 	.upcoming-events {
 				padding: 2rem 2rem 0;
 
@@ -1937,6 +1938,7 @@ a[role=button] {
 					margin-left: 3rem;
 				}
 		}
+
 	}
 	/************************ Home Content End ******************/
 		
@@ -1972,6 +1974,22 @@ a[role=button] {
 
 // Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
 @media screen and (min-width: 68.75rem) {
+
+	.services-hero, .about-heading {
+		background: linear-gradient(to right, #000000, #808080, #FFFFFF);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 5rem 0;
+				text-shadow: 
+    -0.125rem -0.125rem 0 black,  /* Top left */
+     0.125rem -0.125rem 0 black,  /* Top right */
+     0.125rem 0.125rem 0 black,   /* Bottom right */
+    -0.125rem 0.125rem 0 black;	/* Bottom left */
+	color: white;
+		
+	}
 
 	/************************ Home Content Start ******************/
 
@@ -2036,7 +2054,7 @@ a[role=button] {
 				grid-row: 6;
 				margin: unset;
 				height: fit-content;
-      }    
+      		}    
         
 			.testimonials {
 				.card-1,
@@ -2050,15 +2068,88 @@ a[role=button] {
 	
 	/************************ Home Content End ******************/
 
+	/************************ Who We Are Content Start ***********************/
+
+		.services-corporate {
+			grid-template-columns: 1fr 2fr;
+		  }
+		
+		  .services-corporate h3 {
+			grid-row: 1;
+		  }
+		
+		  .corp-flex {
+			grid-row: 2;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		  }
+		
+		  .services-corporate img {
+			grid-column: 1;
+		  }
+		
+		  .corp-text {
+			grid-column: 2;
+			align-self: flex-start;
+			;
+		  }
+		
+	
+	/************************ Who We Are Content End ***********************/
+
 	/********************************** Who We Are Content Start ********************************/
+	.flex-container {
+		width: 100%;
+		display: flex; 
+		flex-direction: column; 
 
-	.column2 {
-		color: white;
-		margin-top: 1rem;
-	}
+		.column1{
+			padding-left: 2rem;
 
-	.column2 p {
-		color: #000000;
+			}
+
+		.column2{
+			background-color: white;
+			margin: 0 2rem 0 0;
+			border-radius: .75rem;
+			p{
+				color: #000;
+			}
+
+		}
+	  
+		h3 {
+		  width: 100%; 
+		  text-align: center; 
+		  margin-bottom: 2rem;
+		}
+	  }
+	  
+	  
+	  .grid-wrapper {  
+		display: grid;
+		grid-template-columns: 1fr 1fr; 
+		width: 100%; 
+		grid-gap: 20px; 
+	  }
+
+	.about-the-team {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		padding: 0 5rem; 
+		width: 100%; 
+	  }
+	  .divider{
+		display: none;
+	  }
+
+	  .meet-donovan-section, .chris-borger-about{
+		h3{
+			padding: 0;
+			margin: 2rem 0;
+			text-align: center;
+		}
 	}
 }
 
@@ -2066,20 +2157,13 @@ a[role=button] {
 
 @media screen and (min-width: 87.5rem) {
 
+	
+
 	/********************************** Who We Are Content Start ********************************/
 
-	.about-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-	}
+	
 
-	.flex-container {
-		flex-direction: row;
-	}
-
+	
 	.column1,
 	.column2 {
 		flex: 1;
@@ -2091,11 +2175,6 @@ a[role=button] {
 	}
 
 	.flex-item {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: #FFFFFF;
 		color: #000000;
 		border-radius: 10px;
 		margin: 1.25rem;
