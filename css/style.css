@@ -789,6 +789,7 @@ h4 {
   padding: 1rem;
   position: relative;
   transition: color 0.3s ease-in-out;
+  font-size: 2rem;
 }
 .menu-menu-1-container a::before {
   content: "";
@@ -1641,6 +1642,37 @@ a[role=button] {
   /************************ Services Content End ******************/
 }
 @media screen and (min-width: 50rem) {
+  /******************* Header Styles Start ******************/
+  .site-header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .site-header h1 {
+    grid-column: 2/span 3;
+  }
+  .site-header .main-navigation {
+    grid-column: span 6/-1;
+    margin-right: 3.25rem;
+  }
+  .site-header .main-navigation .menu-toggle {
+    display: none;
+  }
+  .site-header .main-navigation .menu-menu-1-container {
+    position: unset;
+    background-color: unset;
+    height: unset;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .site-header .main-navigation .menu-menu-1-container ul {
+    height: unset;
+    position: unset;
+    flex-direction: row;
+  }
+  .site-header .main-navigation .menu-menu-1-container ul li {
+    border: none;
+    width: unset;
+  }
   /************************ Home Content Start ******************/
   .home-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
@@ -1727,6 +1759,10 @@ a[role=button] {
     padding: 5rem 0;
     text-shadow: -0.125rem -0.125rem 0 black, 0.125rem -0.125rem 0 black, 0.125rem 0.125rem 0 black, -0.125rem 0.125rem 0 black; /* Bottom left */
     color: white;
+  }
+  /*****************Header Styles************************/
+  .site-header .main-navigation {
+    grid-column: auto/-1;
   }
   /************************ Home Content Start ******************/
   .home-services .home-poy, .home-services .home-santa {

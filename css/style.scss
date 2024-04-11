@@ -831,6 +831,7 @@ h4 {
 		padding: 1rem;
 		position: relative;
 		transition: color 0.3s ease-in-out;
+		font-size: 2rem;
 	}
 
 	a::before {
@@ -1858,6 +1859,43 @@ a[role=button] {
 
 // Media Query for min-width 800px/50rem - small tablets
 @media screen and (min-width:50rem) {
+	/******************* Header Styles Start ******************/
+
+	.site-header {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+
+		h1 {
+			grid-column: 2 / span 3;
+		}
+
+		.main-navigation {
+			grid-column: span 6 / -1;
+			margin-right: 3.25rem;
+
+			.menu-toggle {
+				display: none;
+			}
+
+			.menu-menu-1-container {
+				position: unset;
+				background-color: unset;
+				height: unset;
+				width: max-content;
+				
+				ul {
+					height: unset;
+					position: unset;
+					flex-direction: row;
+
+					li {
+						border: none;
+						width: unset;
+					}
+				}
+			}
+		}
+	}
 
 	/************************ Home Content Start ******************/
 
@@ -1989,6 +2027,12 @@ a[role=button] {
     -0.125rem 0.125rem 0 black;	/* Bottom left */
 	color: white;
 		
+	}
+
+	/*****************Header Styles************************/
+	
+	.site-header .main-navigation {
+		grid-column: auto / -1;
 	}
 
 	/************************ Home Content Start ******************/
