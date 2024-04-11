@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         lastScroll = currentScroll
     })
+
+    // removing style from the youtube player
+    
 })
 
 

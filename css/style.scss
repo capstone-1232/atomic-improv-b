@@ -1026,7 +1026,6 @@ a[role=button]:hover {
 	font-family: $bebas;
 	color: $light;
 	background-color: $dark-blue;
-	position: relative;
 
 	h2 {
 		font-size: $h2clamp;
@@ -1065,6 +1064,7 @@ a[role=button]:hover {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
+		position: relative;
 
 		h3 {
 			color: $dark-blue;
@@ -1970,14 +1970,11 @@ a[role=button] {
 
 	/************************ Home Content Start ******************/
 
-	.home-hero {
-		background-size: 100%;
-	}
-
 	.home-services{
 		.home-poy, .home-santa {
 			display: grid;
-			grid-template-columns: repeat(12, 5rem);
+			grid-template-columns: repeat(12, 1fr);
+			gap: 2rem;
 		}
 
 		.home-poy{
@@ -1996,39 +1993,40 @@ a[role=button] {
 		}
 
 		.home-santa {
-			grid-template-rows: repeat(8, 5.5rem);
+			grid-template-rows: repeat(6, 5.5rem);
 
 			h3 {
 				grid-column: 2 / 13;
 				display: inline-block;
 				margin: unset;
+				margin-top: 1rem;
 			}
       
 			picture, span {
-				grid-column: 9/13;
+				grid-column: 8/12;
 			}
 
 			p {
 				margin: unset;
 				&:nth-of-type(1) {
-					grid-row: 2 / 4;
+					grid-row: 2;
 					grid-column: 2 / 7;
 				}
 
 				&:nth-of-type(2) {
-					grid-row: 4 / 6;
+					grid-row: 3;
 					grid-column: 2 / 7;
 				}
 			}
 
 			.instagram {
-				grid-row: 7;
+				grid-row: 6;
 				text-align: left;
 			}
 
 			a[role=button] {
-				grid-column: 6 / 8;
-				grid-row: 6;
+				grid-column: 5 / 7;
+				grid-row: 4;
 				margin: unset;
 				height: fit-content;
       		}    
@@ -2040,6 +2038,128 @@ a[role=button] {
 						margin-left: 5rem;
 				}
 			}
+		}
+	}
+
+	.home-about {
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		grid-template-rows: repeat(14, 80px);
+		gap: 1rem;
+		margin: auto;
+
+		h2 {
+			grid-column: 1/ -1;
+		}
+
+		.iframe-container {
+			grid-column: 6 / 10;
+			grid-row: 2 / 6;
+			margin-top: 2rem;
+			height: unset;
+		}
+
+		p {
+			grid-column: 2 / 6;
+			grid-row: 2 / 5;
+			padding: unset;
+			margin-left: unset;
+
+			&:first-of-type {
+				padding-top: unset;
+			}
+		}
+
+		a[role=button] {
+			grid-column: 4 / 6;
+			grid-row: 5;
+			margin: unset;
+			height: fit-content;
+		}
+
+		.socials {
+			background-color: $light;
+			grid-row: 8 / 15;
+			grid-column: 1/-1;
+			display: grid;
+			grid-template-columns: repeat(10, 1fr);
+			grid-template-rows: repeat(7, 80px);
+			gap: 1rem;
+			height: unset;
+
+			img {
+				z-index: 2;
+				left: 50%;
+			}
+
+			h3 {
+				grid-column: 9 / 12;
+				grid-row: 2 / 2;
+				margin: unset;
+			}
+
+			.social-links {
+				grid-column: 9;
+				grid-row: 4;
+				margin-top: unset;
+				gap: 3rem;
+				grid-template-columns: repeat(2, 3rem);
+				grid-template-rows: repeat(2, 3rem);
+			}
+		}
+
+		.home-testimonials {
+			grid-column: 1 / 7;
+			grid-row: 8/15;
+			position: relative;
+			z-index: 1;
+			background-color: $light;
+			padding: unset;
+			padding-left: 2rem;
+
+			.md-flex {
+				display: unset;
+			}
+
+			.testimonial-card {
+				border: 1px solid $dark;
+
+				p {
+					padding: unset;
+				}
+			}
+
+			h2, p {
+				color: $dark-blue;
+				grid-row: 1/7;
+			}
+		}
+	}
+
+	.upcoming-events {
+		padding: 2rem 5rem;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		gap: 2rem;
+
+		.event {
+			grid-column: span 5;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			gap: 1rem	;
+		}
+
+		h2 {
+			grid-column: 1 / -1;
+		}
+
+		h2, p, h3 {
+			margin: unset;
+		}
+
+		p {
+			margin-right: 2rem;
 		}
 	}
 	
