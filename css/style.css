@@ -1166,7 +1166,6 @@ footer .footer-socials svg path {
 }
 
 .services-corporate h3 {
-  padding: 0 2rem;
   color: #0e3e66;
 }
 .services-corporate img {
@@ -1360,13 +1359,11 @@ a[role=button] {
   display: flex;
   flex-direction: column;
 }
-
-.column1 {
+.flex-container .column1 {
   background-color: #0E3E66;
   color: white;
 }
-
-.column2 {
+.flex-container .column2 {
   color: #000000;
   display: inline-block;
 }
@@ -1526,7 +1523,7 @@ a[role=button] {
   padding: 0 2rem;
 }
 
-.meet-donovan-section h3, .chris-borger-about h3, .column1 h3, .home-services h3 {
+.meet-donovan-section h3, .chris-borger-about h3, .column1 h3, .home-services h3, .flex-container h3 {
   padding: 0 2rem;
 }
 
@@ -1780,12 +1777,47 @@ a[role=button] {
   }
   /************************ Home Content End ******************/
   /********************************** Who We Are Content Start ********************************/
-  .column2 {
-    color: white;
-    margin-top: 1rem;
+  .flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .column2 p {
-    color: #000000;
+  .flex-container .column1 {
+    padding-left: 2rem;
+  }
+  .flex-container .column2 {
+    background-color: white;
+    margin: 0 2rem 0 0;
+    border-radius: 0.75rem;
+  }
+  .flex-container .column2 p {
+    color: #000;
+  }
+  .flex-container h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .about-the-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 5rem;
+    width: 100%;
+  }
+  .divider {
+    display: none;
+  }
+  .meet-donovan-section h3, .chris-borger-about h3 {
+    padding: 0;
+    margin: 2rem 0;
+    text-align: center;
   }
 }
 @media screen and (min-width: 87.5rem) {
@@ -1797,9 +1829,6 @@ a[role=button] {
     align-items: center;
     margin: 0;
   }
-  .flex-container {
-    flex-direction: row;
-  }
   .column1,
   .column2 {
     flex: 1;
@@ -1809,11 +1838,6 @@ a[role=button] {
     color: #000;
   }
   .flex-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
     color: #000000;
     border-radius: 10px;
     margin: 1.25rem;
