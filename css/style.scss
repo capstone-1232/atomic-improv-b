@@ -1448,8 +1448,7 @@ a[role=button] {
 	border: 2px solid #FFFFFF;
 }
 
-.image-gallery-section h3,
-.contact-heading {
+.image-gallery-section h3{
 	padding-left: 2rem;
 	color: #FFFFFF;
 }
@@ -1664,31 +1663,30 @@ a[role=button] {
 	}
 }
 
-.site-footer{
+.site-footer, .contact-heading{
 	padding: 0 2rem;
 }
 .info-blurb, .home-santa, .home-services, .home-about, .services-corporate, .services-poy, .services-santa, .column2, .column1, .meet-donovan-section, .chris-borger-about, .hire-artist-section {
 
-	p{
+	p, h3, h2{
 	padding: 0 2rem;
-	}	
+	}
+
 }
 
-.home-services, .home-about{
-	h2{
-		padding: 0 2rem;
-	}
-}
-
-.meet-donovan-section, .chris-borger-about, .column1, .home-services, .flex-container{
-	h3{
-		padding: 0 2rem;
-	}
+.contact-heading{
+	color: $dark-blue;
 }
 
 .card-1, .card-2{
 	p{
 		padding: 0;
+	}
+}
+
+.footer-navigation {
+	ul{
+		margin: 0;
 	}
 }
 
@@ -1977,6 +1975,22 @@ a[role=button] {
 // Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
 @media screen and (min-width: 68.75rem) {
 
+	.services-hero, .about-heading {
+		background: linear-gradient(to right, #000000, #808080, #FFFFFF);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 5rem 0;
+				text-shadow: 
+    -0.125rem -0.125rem 0 black,  /* Top left */
+     0.125rem -0.125rem 0 black,  /* Top right */
+     0.125rem 0.125rem 0 black,   /* Bottom right */
+    -0.125rem 0.125rem 0 black;	/* Bottom left */
+	color: white;
+		
+	}
+
 	/************************ Home Content Start ******************/
 
 	.home-hero {
@@ -2054,6 +2068,35 @@ a[role=button] {
 	
 	/************************ Home Content End ******************/
 
+	/************************ Who We Are Content Start ***********************/
+
+		.services-corporate {
+			grid-template-columns: 1fr 2fr;
+		  }
+		
+		  .services-corporate h3 {
+			grid-row: 1;
+		  }
+		
+		  .corp-flex {
+			grid-row: 2;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		  }
+		
+		  .services-corporate img {
+			grid-column: 1;
+		  }
+		
+		  .corp-text {
+			grid-column: 2;
+			align-self: flex-start;
+			;
+		  }
+		
+	
+	/************************ Who We Are Content End ***********************/
+
 	/********************************** Who We Are Content Start ********************************/
 	.flex-container {
 		width: 100%;
@@ -2114,15 +2157,11 @@ a[role=button] {
 
 @media screen and (min-width: 87.5rem) {
 
+	
+
 	/********************************** Who We Are Content Start ********************************/
 
-	.about-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-	}
+	
 
 	
 	.column1,
