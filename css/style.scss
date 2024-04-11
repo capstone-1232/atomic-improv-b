@@ -942,12 +942,11 @@ a[role=button]:hover {
 		font-size: $h2clamp;
 		-webkit-text-stroke: 0.75px $dark;
 		margin-top: unset;
-		margin: 0 2rem;
 	}
 
 	h3 {
 		font-size: $h3clamp;
-		margin: 1rem 2rem;
+		margin-top: 1rem;
 
 	}
 
@@ -1030,7 +1029,7 @@ a[role=button]:hover {
 	h2 {
 		font-size: $h2clamp;
 		font-weight: 400;
-		margin: 0 2rem 2rem;
+		margin-top: 0;
 	}
 
 	iframe {
@@ -1086,6 +1085,9 @@ a[role=button]:hover {
 		svg {
 			width: 4rem;
 		}
+	}
+	p{
+		margin-top: -1rem;
 	}
 }
 
@@ -1671,7 +1673,13 @@ a[role=button] {
 	}	
 }
 
-.meet-donovan-section, .chris-borger-about, .column1{
+.home-services, .home-about{
+	h2{
+		padding: 0 2rem;
+	}
+}
+
+.meet-donovan-section, .chris-borger-about, .column1, .home-services{
 	h3{
 		padding: 0 2rem;
 	}
@@ -1782,6 +1790,7 @@ a[role=button] {
 				width: 4rem;
 			}
 		}
+		
 	}
 
 	.home-testimonials {
@@ -1790,7 +1799,6 @@ a[role=button] {
 			margin-right: 3rem;
 		}
 	}
-
 	.upcoming-events {
 		padding: 2rem 0;
 

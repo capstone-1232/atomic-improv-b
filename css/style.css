@@ -888,11 +888,10 @@ a[role=button]:hover {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   -webkit-text-stroke: 0.75px #000;
   margin-top: unset;
-  margin: 0 2rem;
 }
 .home-services h3 {
   font-size: clamp(2rem, 0.571rem + 3.81vw, 4rem);
-  margin: 1rem 2rem;
+  margin-top: 1rem;
 }
 .home-services p {
   font-family: "Nunito Sans", sans-serif;
@@ -960,7 +959,7 @@ a[role=button]:hover {
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
   font-weight: 400;
-  margin: 0 2rem 2rem;
+  margin-top: 0;
 }
 .home-about iframe {
   margin-bottom: 2rem;
@@ -1007,6 +1006,9 @@ a[role=button]:hover {
 }
 .home-about .social-links svg {
   width: 4rem;
+}
+.home-about p {
+  margin-top: -1rem;
 }
 
 .home-testimonials {
@@ -1520,7 +1522,11 @@ a[role=button] {
   padding: 0 2rem;
 }
 
-.meet-donovan-section h3, .chris-borger-about h3, .column1 h3 {
+.home-services h2, .home-about h2 {
+  padding: 0 2rem;
+}
+
+.meet-donovan-section h3, .chris-borger-about h3, .column1 h3, .home-services h3 {
   padding: 0 2rem;
 }
 
