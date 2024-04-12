@@ -62,23 +62,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastScroll = currentScroll
     })
 
-    // removing style from the youtube player
     
-})
-
-
-
-
-// Gsap
-
-const tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".tagline",
-        start: 'top 20%',
-        end: '70% 20%',
-        scrub: true,
-        // markers: true
-    }
 })
 
 // tl.to('.tagline', { y: 20, opacity: 0 })
@@ -87,6 +71,17 @@ const tl = gsap.timeline({
 
 document.addEventListener('DOMContentLoaded', (event) => {
     
+    // Gsap
+
+    const tl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".tagline",
+        start: 'top 20%',
+        end: '70% 20%',
+        scrub: true,
+        // markers: true
+        }
+    })
 
     // GSAP timelines
     const taglineTl = gsap.timeline({ defaults: { ease: 'expo' } })
@@ -100,6 +95,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
     taglineTl.fromTo('.site-header .site-branding', {x:'-200%'}, {x: 0}, "<")
 
     taglineTl.fromTo('.site-header .menu-toggle', {x:'200%'}, {x: 0}, "<")
+
+    // desktop hero banner animation scroll up
+
+    /* document.addEventListener('resize', ()=> {
+        if ((window.innerWidth || document.documentElement.clientWidth) >= 1100) {
+            const heroBannerTimeline = gsap.timeline({
+                ScrollTrigger: {
+                    trigger: ".light-bg",
+                    start: "top center",
+                    end: "bottom center",
+                    scrub: true,
+                    markers: true,
+                }
+            })
+
+            heroBannerTimeline.to('.tagline *', { y: '-20', opacity: 0.5 })
+        }
+    }) */
 
 })
 

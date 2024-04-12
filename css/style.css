@@ -1540,6 +1540,12 @@ img {
   border-radius: 10px;
 }
 
+@keyframes scroll-up {
+  to {
+    opacity: 0.5;
+    transform: translateY(-20rem);
+  }
+}
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
   /********************************** Home Content Start ********************************/
@@ -1554,6 +1560,10 @@ img {
   }
   .home-hero h2 {
     margin-bottom: 1rem;
+  }
+  .home-hero h2, .home-hero a, .home-hero img {
+    animation: scroll-up linear;
+    animation-timeline: scroll();
   }
   .info-blurb {
     padding: 0 2rem;

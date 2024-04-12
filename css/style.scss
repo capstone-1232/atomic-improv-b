@@ -1705,6 +1705,15 @@ img{
 	border-radius: 10px;
 }
 
+// animations
+
+@keyframes scroll-up {
+	to {
+		opacity: 0.5;
+		transform: translateY(-20rem);
+	}
+}
+
 /******************* Media queries ***************/
 
 
@@ -1727,6 +1736,11 @@ img{
 
 		h2 {
 			margin-bottom: 1rem;
+		}
+
+		h2, a, img {
+			animation: scroll-up linear;
+			animation-timeline: scroll();
 		}
 
 	}
