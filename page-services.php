@@ -10,6 +10,7 @@ get_header();
 <div class="light-bg">
     <div class="services-hero">
         <h2>What do we do?</h2>
+        <img src="<?= get_template_directory_uri() ?>/img/lg/whatdowedo-hero.webp" alt="Chris and Donovan contemplate their funniest moments to tell you about.">
     </div>
 
     <section class="services-corporate">
