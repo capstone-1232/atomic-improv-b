@@ -1793,6 +1793,9 @@ img {
   .home-services .home-santa picture, .home-services .home-santa span {
     grid-column: 8/12;
   }
+  .home-services .home-santa picture {
+    grid-row: 2/5;
+  }
   .home-services .home-santa p {
     margin: unset;
   }

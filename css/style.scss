@@ -2069,6 +2069,10 @@ img{
 				grid-column: 8/12;
 			}
 
+			picture {
+				grid-row: 2 / 5;
+			}
+
 			p {
 				margin: unset;
 				&:nth-of-type(1) {
