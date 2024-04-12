@@ -2199,3 +2199,56 @@ a[role=button] {
 
 	/********************************** Who We Are Content End ********************************/
 }
+@media screen and (min-width: 68.75rem) {
+    #footer-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 2rem);
+        margin: 6rem 12rem 6rem 0;
+        margin-bottom: 4rem;
+    }
+
+    #footer-menu ul {
+        display: grid;
+        gap: 4rem;
+    }
+
+    #footer-menu ul li:first-of-type {
+        grid-column: 1/2;
+    }
+
+    #footer-menu ul li:nth-of-type(2) {
+        grid-column: 2/3;
+    }
+
+    .footer-container .footer-socials {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 2rem);
+        margin: 6rem 6rem 0 0;
+        gap: 6rem;
+        margin-bottom: 4rem;
+        justify-self: end;
+    }
+
+    .footer-container .footer-socials a:first-of-type {
+        grid-column: 1/2;
+    }
+
+    .footer-container .footer-socials a:nth-of-type(2) {
+        grid-column: 2/3;
+    }
+
+    .footer-container .footer-socials a:nth-of-type(3) {
+        grid-column: 3/4;
+    }
+
+    .footer-container .footer-socials a:nth-of-type(4) {
+        grid-column: 4/5;
+    }
+	footer .site-info {
+		margin-top: auto; 
+		text-align: center;
+		padding-right: 35rem;
+	}
+}
