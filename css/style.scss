@@ -761,6 +761,14 @@ h4 {
 			text-decoration: none;
 		}
 	}
+
+	.custom-logo {
+		transition: scale 0.3s ease-in-out;
+	}
+
+	.custom-logo:hover {
+		scale: 1.2;
+	}
 }
 
 .header-scroll {

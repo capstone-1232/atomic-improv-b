@@ -725,6 +725,12 @@ h4 {
 .site-header h1 a {
   text-decoration: none;
 }
+.site-header .custom-logo {
+  transition: scale 0.3s ease-in-out;
+}
+.site-header .custom-logo:hover {
+  scale: 1.2;
+}
 
 .header-scroll {
   transform: translateY(-100%);
@@ -2153,9 +2159,7 @@ img {
   /********************************** Who We Are Content End ********************************/
 }
 @media screen and (min-width: 68.75rem) {
-  
   /********************************** Footer Start ********************************/
-  
   #footer-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -2199,6 +2203,5 @@ img {
     text-align: center;
     padding-right: 35rem;
   }
-
   /********************************** Footer End ********************************/
 }/*# sourceMappingURL=style.css.map */
