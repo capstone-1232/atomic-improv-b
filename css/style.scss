@@ -1079,7 +1079,7 @@ a[role=button]:hover {
 		grid-template-rows: 6rem 3rem;
 		gap: 1rem;
 		margin-right: 2rem;
-		margin-top: 4.5rem;
+		// margin-top: 4.5rem;
 		position: relative;
 		z-index: 2;
 
@@ -1546,25 +1546,24 @@ a[role=button] {
 .contact-styled {
 	background: #0E3E66;
 	/* Background color */
-	padding: 20px;
+	padding: 2rem;
 	/* Padding for the form */
 	border-radius: 10px;
 	/* Border radius for the form */
 	font-family: Arial, Helvetica, sans-serif;
 	color: #FFFFFF;
 	/* Text color */
+	h3 {
+		color: #FFFFFF;
+	}
+	.nf-field-label {
+		color: #FFFFFF;
+		/* Label text color */
+		text-transform: capitalize;
+	}
 }
 
-.contact-styled h3 {
-	color: #FFFFFF;
-	/* Heading text color */
-}
-
-.contact-styled .nf-field-label {
-	color: #FFFFFF;
-	/* Label text color */
-	text-transform: capitalize;
-}
+.contact-styled 
 
 .contact-styled .nf-form-content input[type="text"],
 .contact-styled .nf-form-content input[type="email"],
@@ -1672,7 +1671,6 @@ a[role=button] {
 	p, h3, h2{
 	padding: 0 2rem;
 	}
-
 }
 
 .contact-heading{
@@ -1689,6 +1687,10 @@ a[role=button] {
 	ul{
 		margin: 0;
 	}
+}
+
+img{
+	border-radius: 10px;
 }
 
 /******************* Media queries ***************/
@@ -1819,36 +1821,10 @@ a[role=button] {
 		h3 {
 			padding: 0 3rem;
 		}
-
-
 		p {
 			padding: 0 3rem;
 		}
 	}
-
-	.services-poy {
-		h3 {
-			margin-left: 3rem;
-		}
-
-		p {
-			margin-left: 3rem;
-		}
-
-		.poy-testimonial h4 {
-			margin-left: 3rem;
-		}
-	}
-
-	.services-santa {
-
-		h3,
-		p {
-			margin-left: 3rem;
-			margin-right: 3rem;
-		}
-	}
-
 	/************************ Services Content End ******************/
 }
 
@@ -1988,20 +1964,34 @@ a[role=button] {
 	}
 
 	.services-poy {
-		.poy-part-1 {
+		.poy-part-1, .poy-part-2 {
 			padding: 1rem 2rem;
-		}
-
+			
 		.poy-testimonial {
 			padding: 0 2rem 2rem;
 		}
 
 		.testimonials {
-			.card-1,
-				.card-2 {
+			.card-1, .card-2 {
 					margin-right: 5rem;
 					margin-left: 5rem;
+			}
+		}
+		h3 {
+			margin-left: 3rem;
+		}
+
+		.poy-testimonial h4 {
+			margin-left: 3rem;
+			}
+		
+		.services-santa {
+
+			h3, p {
+				margin-left: 3rem;
+				margin-right: 3rem;
 				}
+			}
 		}
 	}
 }
@@ -2249,7 +2239,9 @@ a[role=button] {
 	
 	/************************ Home Content End ******************/
 
-	/************************ Who We Are Content Start ***********************/
+	/************************ Services/What We Do Start ***********************/
+
+
 
 		.services-corporate {
 			grid-template-columns: 1fr 2fr;
@@ -2273,9 +2265,110 @@ a[role=button] {
 			grid-column: 2;
 			align-self: flex-start; 
 		  }
-		
+
+		  .poy-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+			
+			.poy-grid-content {
+				display: flex;
+				flex-direction: column;
+				grid-column-start: 1;
+				grid-column-end: 3;
+				grid-row: 1;
+				p{
+					margin-top: 0;
+				}
+			}
+
+			picture{
+				grid-column-start: 3;
+				grid-column-end: 5;
+				max-width: 35rem;
+			}
+		}
+
+		.poy-grid-rev {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+			
+			.poy-grid-content-rev {
+				display: flex;
+				flex-direction: column;
+				grid-column-start: 3;
+				grid-column-end: 5;
+				grid-row: 1;
+				p{
+					margin-top: 0;
+				}
+			}
+
+			picture{
+				grid-column-start: 1;
+				grid-column-end: 3;
+				max-width: 35rem;
+			}
+		}
+
+		.services-santa{
+			.poy-grid-rev{
+				margin-left: .75rem;
+				picture{
+					max-width: 31.25rem;
+				}
+			}
+
+			.poy-grid{
+				margin-right: .75rem;
+
+				picture{
+					margin-top: 2rem;
+					max-width: 31.25rem;
+				}
+			}
+			.card-1{
+				min-width: 31.25rem;
+			}
+		}
 	
-	/************************ Who We Are Content End ***********************/
+
+		  .card-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		  
+
+		  .card-1{
+			grid-column-start: 1;
+			grid-column-end: 3;
+			}
+
+			.card-2{
+			grid-column-start: 3;
+			grid-column-end: 5;
+			}
+			  
+		  
+			.card-1, .card-2 {
+				padding: 15px;
+				border: 1px solid #ddd;
+				border-radius: 5px;
+				min-height: 10rem;
+				p {
+						margin-bottom: 10px;
+
+				}
+				span{
+					position: absolute;
+					bottom: 0;
+					right: 2rem;
+				}
+		  
+		}
+	}
+	
+	/************************ Services/What We Do  End ***********************/
 
 	/********************************** Who We Are Content Start ********************************/
 	.flex-container {
@@ -2319,10 +2412,11 @@ a[role=button] {
 		gap: 4rem;
 		padding: 0 5rem; 
 		width: 100%; 
-	  }
+	  
 	  .divider{
 		display: none;
 	  }
+	}
 
 	  .meet-donovan-section, .chris-borger-about{
 		h3{
@@ -2331,8 +2425,24 @@ a[role=button] {
 			text-align: center;
 		}
 	}
+
+
+
+/********************************** Who We Are Content End ********************************/
+
+/********************************** Contact Form Start ********************************/
+
+	.send-message-heading{
+		margin: 0;
+	}
+
+	.contact-styled{
+		width: 80vw;
+		margin-left: 10vw;
+	}
 }
 
+/********************************** Contact Form End ********************************/
 // Media Query for 1400px/87.5rem - Large Desktop
 
 @media screen and (min-width: 87.5rem) {
@@ -2361,11 +2471,6 @@ a[role=button] {
 		width: 100%;
 	}
 
-	.contact-heading {
-		background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-		text-align: center;
-	}
-
 	.chris-borger-about p {
 		color: #000000;
 		background-color: #FFFFFF;
@@ -2378,4 +2483,32 @@ a[role=button] {
 	}
 
 	/********************************** Who We Are Content End ********************************/
+
+
+	/********************************** Footer Start ********************************/
+	.footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .footer-socials {
+        order: 3;
+    }
+ 
+    .footer-nav-container {
+        order: 2;
+        text-align: center;
+    }
+ 
+    .site-info {
+        order: 4;
+        text-align: right;
+    }
+ 
+    .footer-socials, .site-info {
+        margin-top: 20px;
+    }
+	/********************************** Footer End ********************************/
+
 }
