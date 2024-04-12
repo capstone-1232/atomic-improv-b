@@ -699,6 +699,10 @@ h4 {
   font-weight: 400;
 }
 
+a[role=button] {
+  font-size: clamp(1rem, 0.795rem + 1.026vw, 1.5rem);
+}
+
 #wpadminbar {
   display: none;
 }
@@ -850,8 +854,8 @@ a[role=button] {
   font-family: "Bebas Neue", sans-serif;
   color: #000;
   display: block;
+  font-size: clamp(1rem, 0.795rem + 1.026vw, 1.5rem);
   border-radius: 0.5rem;
-  font-size: 1rem;
   width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
@@ -874,22 +878,6 @@ a[role=button]:hover {
 }
 .tagline h2 {
   line-height: 1.5;
-}
-
-a[role=button] {
-  background-color: #9eb7e5;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  color: #000;
-  display: block;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-left: auto;
-  filter: drop-shadow(7px 7px #000);
-  transition: all 0.2s ease-in-out;
 }
 
 a[role=button]:active,
@@ -1827,6 +1815,9 @@ img {
   }
 }
 @media screen and (min-width: 68.75rem) {
+  a[role=button] {
+    padding: 0.5rem 3rem;
+  }
   .services-hero,
   .about-heading {
     background: #212121;
