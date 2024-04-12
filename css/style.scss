@@ -9,6 +9,8 @@ $bebas: "Bebas Neue", sans-serif;
 $nunito: "Nunito Sans", sans-serif;
 // Paragraph text
 $pclamp: clamp(1rem, 0.852rem + 0.741vw, 1.5rem);
+// Clamp for links, scales up until 1100 px
+$aclamp: clamp(1rem, 0.795rem + 1.026vw, 1.5rem);
 $h2clamp: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
 $h3clamp: clamp(2rem, 0.571rem + 3.81vw, 4rem);
 $h4clamp: clamp(1.5rem, 1.056rem + 2.222vw, 3rem);
@@ -735,6 +737,10 @@ h4 {
   font-weight: 400;
 }
 
+a[role="button"] {
+  font-size: $aclamp;
+}
+
 #wpadminbar {
   display: none;
 }
@@ -907,8 +913,8 @@ a[role="button"] {
   font-family: $bebas;
   color: $dark;
   display: block;
+  font-size: $aclamp;
   border-radius: 0.5rem;
-  font-size: 1rem;
   width: fit-content;
   margin-left: auto;
   filter: drop-shadow(7px 7px $dark);
@@ -934,21 +940,6 @@ a[role="button"]:hover {
   h2 {
     line-height: 1.5;
   }
-}
-
-a[role="button"] {
-  background-color: $light-blue;
-  padding: 0.5rem 2rem;
-  text-decoration: none;
-  font-family: $bebas;
-  color: $dark;
-  display: block;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  width: fit-content;
-  margin-left: auto;
-  filter: drop-shadow(7px 7px $dark);
-  transition: all 0.2s ease-in-out;
 }
 
 a[role="button"]:active,
@@ -2039,6 +2030,10 @@ img {
 
 // Media Query for min-width for 1100px/68.75rem - Horizontal tablets, small laptop/desktop screens
 @media screen and (min-width: 68.75rem) {
+  a[role="button"] {
+    padding: 0.5rem 3rem;
+  }
+
   .services-hero,
   .about-heading {
     background: $grey;
