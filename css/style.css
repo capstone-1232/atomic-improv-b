@@ -319,7 +319,7 @@ table {
 a:hover,
 a:focus,
 a:active {
-  color: #9EB7E5;
+  color: #9eb7e5;
 }
 
 a:hover,
@@ -719,7 +719,7 @@ h4 {
 }
 .site-header h1 {
   font-size: 2rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0 2rem;
   font-weight: 400;
 }
 .site-header h1 a {
@@ -789,6 +789,7 @@ h4 {
   padding: 1rem;
   position: relative;
   transition: color 0.3s ease-in-out;
+  font-size: 2rem;
 }
 .menu-menu-1-container a::before {
   content: "";
@@ -832,6 +833,9 @@ h4 {
   display: inline-flex;
   overflow: hidden;
 }
+.home-hero .lg-show {
+  display: none;
+}
 .home-hero .tagline a {
   margin-bottom: 1rem;
 }
@@ -840,7 +844,7 @@ h4 {
 }
 
 a[role=button] {
-  background-color: #9EB7E5;
+  background-color: #9eb7e5;
   padding: 0.5rem 2rem;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
@@ -852,7 +856,40 @@ a[role=button] {
   width: fit-content;
   margin-left: auto;
   filter: drop-shadow(7px 7px #000);
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a[role=button]:active,
+a[role=button]:focus {
+  filter: unset;
+  transform: translate(7px, 7px);
+}
+
+a[role=button]:hover {
+  background-color: #70ee9c;
+}
+
+.tagline a {
+  margin-bottom: 1rem;
+}
+.tagline h2 {
+  line-height: 1.5;
+}
+
+a[role=button] {
+  background-color: #9eb7e5;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  color: #000;
+  display: block;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  filter: drop-shadow(7px 7px #000);
+  transition: all 0.2s ease-in-out;
 }
 
 a[role=button]:active,
@@ -955,7 +992,6 @@ a[role=button]:hover {
   font-family: "Bebas Neue", sans-serif;
   color: #fff;
   background-color: #0e3e66;
-  position: relative;
 }
 .home-about h2 {
   font-size: clamp(2.5rem, 1.735rem + 3.824vw, 5rem);
@@ -989,6 +1025,7 @@ a[role=button]:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: relative;
 }
 .home-about .socials h3 {
   color: #0e3e66;
@@ -1000,7 +1037,6 @@ a[role=button]:hover {
   grid-template-rows: 6rem 3rem;
   gap: 1rem;
   margin-right: 2rem;
-  margin-top: 4.5rem;
   position: relative;
   z-index: 2;
 }
@@ -1273,12 +1309,12 @@ a[role=button] {
 .about-heading {
   padding: 2rem 0;
   padding-left: 2rem;
-  color: #0E3E66;
+  color: #0e3e66;
 }
 
 .flex-container {
-  background-color: #0E3E66;
-  color: #FFFFFF;
+  background-color: #0e3e66;
+  color: #ffffff;
 }
 
 .flex-item h2 {
@@ -1293,7 +1329,7 @@ a[role=button] {
 .flex-item .image-about {
   margin: 0 auto 1rem;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .flex-item .image-about img {
   display: block;
@@ -1304,16 +1340,16 @@ a[role=button] {
 .flex-item .image-about {
   margin: 0 auto 1rem;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
 .image-gallery-section h3 {
   padding-left: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .meet-donovan-section h2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .meet-donovan-section .divider {
   background-color: #000;
@@ -1329,7 +1365,7 @@ a[role=button] {
   margin: 0 auto 1rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .image-wrapper img {
   display: block;
@@ -1341,7 +1377,7 @@ a[role=button] {
   margin: 0 auto 1rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .image-about img {
   display: block;
@@ -1359,7 +1395,7 @@ a[role=button] {
   flex-direction: column;
 }
 .flex-container .column1 {
-  background-color: #0E3E66;
+  background-color: #0e3e66;
   color: white;
 }
 .flex-container .column2 {
@@ -1376,43 +1412,40 @@ a[role=button] {
 }
 
 .image-gallery-section {
-  background-color: #0E3E66;
+  background-color: #0e3e66;
 }
 
 .image-gallery-section h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .send-message-heading {
   text-align: center;
   padding: 2rem 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact-styled {
-  background: #0E3E66;
+  background: #0e3e66;
   /* Background color */
-  padding: 20px;
+  padding: 2rem;
   /* Padding for the form */
   border-radius: 10px;
   /* Border radius for the form */
   font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   /* Text color */
 }
-
 .contact-styled h3 {
-  color: #FFFFFF;
-  /* Heading text color */
+  color: #ffffff;
 }
-
 .contact-styled .nf-field-label {
-  color: #FFFFFF;
+  color: #ffffff;
   /* Label text color */
   text-transform: capitalize;
 }
 
-.contact-styled .nf-form-content input[type=text],
+.contact-styled .contact-styled .nf-form-content input[type=text],
 .contact-styled .nf-form-content input[type=email],
 .contact-styled .nf-form-content input[type=date],
 .contact-styled .nf-form-content textarea {
@@ -1420,7 +1453,7 @@ a[role=button] {
   /* Text color for input fields */
   border-radius: 5px;
   /* Border radius for input fields */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* Background color for input fields */
   border: 1px solid #000000;
   /* Black border for input fields */
@@ -1446,7 +1479,7 @@ a[role=button] {
   /* Ensure button takes full width */
   margin: 0 auto;
   /* Center the button horizontally */
-  background: #9EB7E5;
+  background: #9eb7e5;
   /* Button background color */
   color: #000000;
   /* Button text color */
@@ -1465,7 +1498,7 @@ a[role=button] {
 }
 
 .contact-styled .nf-form-content input[type=submit]:hover {
-  background: #70EE9C;
+  background: #70ee9c;
   /* Button background color on hover */
   color: #000000;
   /* Button text color on hover */
@@ -1502,7 +1535,8 @@ a[role=button] {
   color: #000000;
 }
 
-.meet-donovan-section img, .chris-borger-about img {
+.meet-donovan-section img,
+.chris-borger-about img {
   border-radius: 0.25rem;
 }
 
@@ -1510,11 +1544,47 @@ a[role=button] {
   color: white;
 }
 
-.site-footer, .contact-heading {
+.site-footer,
+.contact-heading {
   padding: 0 2rem;
 }
 
-.info-blurb p, .info-blurb h3, .info-blurb h2, .home-santa p, .home-santa h3, .home-santa h2, .home-services p, .home-services h3, .home-services h2, .home-about p, .home-about h3, .home-about h2, .services-corporate p, .services-corporate h3, .services-corporate h2, .services-poy p, .services-poy h3, .services-poy h2, .services-santa p, .services-santa h3, .services-santa h2, .column2 p, .column2 h3, .column2 h2, .column1 p, .column1 h3, .column1 h2, .meet-donovan-section p, .meet-donovan-section h3, .meet-donovan-section h2, .chris-borger-about p, .chris-borger-about h3, .chris-borger-about h2, .hire-artist-section p, .hire-artist-section h3, .hire-artist-section h2 {
+.info-blurb p,
+.info-blurb h3,
+.info-blurb h2,
+.home-santa p,
+.home-santa h3,
+.home-santa h2,
+.home-services p,
+.home-services h3,
+.home-services h2,
+.home-about p,
+.home-about h3,
+.home-about h2,
+.services-corporate p,
+.services-corporate h3,
+.services-corporate h2,
+.services-poy p,
+.services-poy h3,
+.services-poy h2,
+.services-santa p,
+.services-santa h3,
+.services-santa h2,
+.column2 p,
+.column2 h3,
+.column2 h2,
+.column1 p,
+.column1 h3,
+.column1 h2,
+.meet-donovan-section p,
+.meet-donovan-section h3,
+.meet-donovan-section h2,
+.chris-borger-about p,
+.chris-borger-about h3,
+.chris-borger-about h2,
+.hire-artist-section p,
+.hire-artist-section h3,
+.hire-artist-section h2 {
   padding: 0 2rem;
 }
 
@@ -1522,12 +1592,17 @@ a[role=button] {
   color: #0e3e66;
 }
 
-.card-1 p, .card-2 p {
+.card-1 p,
+.card-2 p {
   padding: 0;
 }
 
 .footer-navigation ul {
   margin: 0;
+}
+
+img {
+  border-radius: 10px;
 }
 
 /******************* Media queries ***************/
@@ -1605,13 +1680,10 @@ a[role=button] {
     margin-right: 3rem;
   }
   .upcoming-events {
-    padding: 2rem 0;
+    padding: 5rem;
   }
-  .upcoming-events h2,
-  .upcoming-events h3,
-  .upcoming-events p {
-    margin-left: 3rem;
-    margin-right: 3rem;
+  .upcoming-events .event:not(:nth-of-type(1)) {
+    padding-top: 3rem;
   }
   /********************************** Home Content End ********************************/
   /************************ Services Content Start ******************/
@@ -1624,23 +1696,40 @@ a[role=button] {
   .services-corporate p {
     padding: 0 3rem;
   }
-  .services-poy h3 {
-    margin-left: 3rem;
-  }
-  .services-poy p {
-    margin-left: 3rem;
-  }
-  .services-poy .poy-testimonial h4 {
-    margin-left: 3rem;
-  }
-  .services-santa h3,
-  .services-santa p {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
   /************************ Services Content End ******************/
 }
 @media screen and (min-width: 50rem) {
+  /******************* Header Styles Start ******************/
+  .site-header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .site-header h1 {
+    grid-column: 2/span 3;
+  }
+  .site-header .main-navigation {
+    grid-column: span 6/-1;
+    margin-right: 3.25rem;
+  }
+  .site-header .main-navigation .menu-toggle {
+    display: none;
+  }
+  .site-header .main-navigation .menu-menu-1-container {
+    position: unset;
+    background-color: unset;
+    height: unset;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .site-header .main-navigation .menu-menu-1-container ul {
+    height: unset;
+    position: unset;
+    flex-direction: row;
+  }
+  .site-header .main-navigation .menu-menu-1-container ul li {
+    border: none;
+    width: unset;
+  }
   /************************ Home Content Start ******************/
   .home-hero {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("../img/md/whoweare1md.webp") top/100% no-repeat;
@@ -1655,7 +1744,8 @@ a[role=button] {
     display: flex;
     justify-content: center;
   }
-  .home-about .iframe-container h2, .home-about .iframe-container p {
+  .home-about .iframe-container h2,
+  .home-about .iframe-container p {
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -1705,21 +1795,41 @@ a[role=button] {
   .services-corporate {
     padding: 0 2rem 1rem;
   }
-  .services-poy .poy-part-1 {
+  .services-poy .poy-part-1,
+  .services-poy .poy-part-2 {
     padding: 1rem 2rem;
   }
-  .services-poy .poy-testimonial {
+  .services-poy .poy-part-1 .poy-testimonial,
+  .services-poy .poy-part-2 .poy-testimonial {
     padding: 0 2rem 2rem;
   }
-  .services-poy .testimonials .card-1,
-  .services-poy .testimonials .card-2 {
+  .services-poy .poy-part-1 .testimonials .card-1,
+  .services-poy .poy-part-1 .testimonials .card-2,
+  .services-poy .poy-part-2 .testimonials .card-1,
+  .services-poy .poy-part-2 .testimonials .card-2 {
     margin-right: 5rem;
     margin-left: 5rem;
   }
+  .services-poy .poy-part-1 h3,
+  .services-poy .poy-part-2 h3 {
+    margin-left: 3rem;
+  }
+  .services-poy .poy-part-1 .poy-testimonial h4,
+  .services-poy .poy-part-2 .poy-testimonial h4 {
+    margin-left: 3rem;
+  }
+  .services-poy .poy-part-1 .services-santa h3,
+  .services-poy .poy-part-1 .services-santa p,
+  .services-poy .poy-part-2 .services-santa h3,
+  .services-poy .poy-part-2 .services-santa p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 @media screen and (min-width: 68.75rem) {
-  .services-hero, .about-heading {
-    background: linear-gradient(to right, #000000, #808080, #FFFFFF);
+  .services-hero,
+  .about-heading {
+    background: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1728,16 +1838,413 @@ a[role=button] {
     text-shadow: -0.125rem -0.125rem 0 black, 0.125rem -0.125rem 0 black, 0.125rem 0.125rem 0 black, -0.125rem 0.125rem 0 black; /* Bottom left */
     color: white;
   }
-  /************************ Home Content Start ******************/
-  .home-hero {
-    background-size: 100%;
-  }
-  .home-services .home-poy, .home-services .home-santa {
+  .services-hero {
     display: grid;
-    grid-template-columns: repeat(12, 5rem);
+    grid-template-columns: 50vw 40vw 1fr;
+    align-content: center;
+    justify-items: center;
+    padding: 0;
+    /*****************Header Styles************************/
+    /************************ Home Content Start ******************/
+    /************************ Home Content End ******************/
+    /************************ Services/What We Do Start ***********************/
+    /************************ Services/What We Do  End ***********************/
+    /********************************** Who We Are Content Start ********************************/
+    /********************************** Who We Are Content End ********************************/
+    /********************************** Contact Form Start ********************************/
+  }
+  .services-hero img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .services-hero .site-header .main-navigation {
+    grid-column: auto/-1;
+  }
+  .services-hero .home-hero {
+    background: unset;
+    background-color: #212121;
+    padding-bottom: 0;
+  }
+  .services-hero .home-hero .tagline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .services-hero .home-hero .lg-show {
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+    grid-column: 1/span 2;
+    grid-row: 1/-1;
+  }
+  .services-hero .home-hero h2 {
+    margin: unset;
+    grid-row: 2/4;
+    grid-column: 3/span 2;
+    align-self: end;
+  }
+  .services-hero .home-hero a[role=button] {
+    grid-column: span 1/-1;
+    grid-row: 4/-1;
+    align-self: center;
+  }
+  .services-hero .home-services .home-poy,
+  .services-hero .home-services .home-santa {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 2rem;
+  }
+  .services-hero .home-services h2 {
+    margin-bottom: unset;
+  }
+  .services-hero .home-services .home-poy {
+    padding-bottom: 2rem;
+  }
+  .services-hero .home-services .home-poy h3 {
+    grid-column: 1/-1;
+    margin-bottom: unset;
+  }
+  .services-hero .home-services .home-poy picture {
+    grid-column: 2/8;
+  }
+  .services-hero .home-services .home-poy p {
+    grid-column: 9/13;
+    margin: unset;
+    padding: unset;
+  }
+  .services-hero .home-services .home-santa {
+    grid-template-rows: repeat(9, 3rem);
+  }
+  .services-hero .home-services .home-santa h3 {
+    grid-column: 3/13;
+    grid-row: 1/span 2;
+    display: inline-block;
+    margin: unset;
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+  .services-hero .home-services .home-santa picture {
+    grid-row: 3/span 6;
+    grid-column: 8/span 4;
+    max-width: 20.8rem;
+  }
+  .services-hero .home-services .home-santa p {
+    margin: unset;
+    padding-left: 0;
+    grid-column: 3/7;
+  }
+  .services-hero .home-services .home-santa p:nth-of-type(1) {
+    grid-row: 3/span 2;
+  }
+  .services-hero .home-services .home-santa p:nth-of-type(2) {
+    grid-row: 5/span 2;
+  }
+  .services-hero .home-services .home-santa .instagram {
+    grid-row: 5;
+    text-align: left;
+    margin-top: 3.25rem;
+    grid-column: 8/span 4;
+    grid-row: 8/span 1;
+  }
+  .services-hero .home-services .home-santa a[role=button] {
+    grid-column: 5/7;
+    grid-row: 7/span 1;
+    margin: unset;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-hero .home-services .home-santa .testimonials .card-1,
+  .services-hero .home-services .home-santa .testimonials .card-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .services-hero .home-about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 80px);
+    gap: 2rem;
+    margin: auto;
+  }
+  .services-hero .home-about h2 {
+    grid-column: 1/-1;
+    margin-bottom: unset;
+  }
+  .services-hero .home-about .iframe-container {
+    grid-column: 6/10;
+    grid-row: 2/6;
+    margin-top: 2rem;
+    height: unset;
+  }
+  .services-hero .home-about p {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    padding: unset;
+    margin: unset;
+    margin-top: 2rem;
+  }
+  .services-hero .home-about p:first-of-type {
+    padding-top: unset;
+  }
+  .services-hero .home-about a[role=button] {
+    grid-column: 4/6;
+    grid-row: 5;
+    margin: unset;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .services-hero .home-about .socials {
+    background-color: #fff;
+    grid-row: 7/14;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    gap: 2rem;
+    height: unset;
+  }
+  .services-hero .home-about .socials img {
+    z-index: 2;
+    left: 50%;
+  }
+  .services-hero .home-about .socials h3 {
+    grid-column: 8/12;
+    grid-row: 2;
+    margin: unset;
+  }
+  .services-hero .home-about .socials .social-links {
+    grid-column: 9;
+    grid-row: 4;
+    margin: unset;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 3rem);
+    grid-template-rows: repeat(2, 3rem);
+  }
+  .services-hero .home-about .home-testimonials {
+    grid-column: 2/7;
+    grid-row: 7/14;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: unset;
+    padding-top: 2rem;
+  }
+  .services-hero .home-about .home-testimonials h2 {
+    padding: unset;
+  }
+  .services-hero .home-about .home-testimonials .md-flex {
+    display: unset;
+  }
+  .services-hero .home-about .home-testimonials .testimonial-card {
+    border: 1px solid #000;
+  }
+  .services-hero .home-about .home-testimonials .testimonial-card p {
+    padding: unset;
+  }
+  .services-hero .home-about .home-testimonials h2,
+  .services-hero .home-about .home-testimonials p {
+    color: #0e3e66;
+    grid-row: 1/7;
+  }
+  .services-hero .upcoming-events {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+  }
+  .services-hero .upcoming-events .event {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .services-hero .upcoming-events .event:not(:nth-of-type(1)) {
+    padding-top: unset;
+  }
+  .services-hero .upcoming-events h2 {
+    grid-column: 1/-1;
+  }
+  .services-hero .upcoming-events h2,
+  .services-hero .upcoming-events p,
+  .services-hero .upcoming-events h3 {
+    margin: unset;
+  }
+  .services-hero .upcoming-events p {
+    margin-right: 2rem;
+  }
+  .services-hero .services-corporate {
+    grid-template-columns: 1fr 2fr;
+  }
+  .services-hero .services-corporate h3 {
+    grid-row: 1;
+  }
+  .services-hero .corp-flex {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .services-hero .services-corporate img {
+    grid-column: 1;
+  }
+  .services-hero .corp-text {
+    grid-column: 2;
+    align-self: flex-start;
+  }
+  .services-hero .poy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .services-hero .poy-grid .poy-grid-content {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+  }
+  .services-hero .poy-grid .poy-grid-content p {
+    margin-top: 0;
+  }
+  .services-hero .poy-grid picture {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    max-width: 35rem;
+  }
+  .services-hero .poy-grid-rev {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .services-hero .poy-grid-rev .poy-grid-content-rev {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+  }
+  .services-hero .poy-grid-rev .poy-grid-content-rev p {
+    margin-top: 0;
+  }
+  .services-hero .poy-grid-rev picture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 35rem;
+  }
+  .services-hero .services-santa .poy-grid-rev {
+    margin-left: 0.75rem;
+  }
+  .services-hero .services-santa .poy-grid-rev picture {
+    max-width: 31.25rem;
+  }
+  .services-hero .services-santa .poy-grid {
+    margin-right: 0.75rem;
+  }
+  .services-hero .services-santa .poy-grid picture {
+    margin-top: 2rem;
+    max-width: 31.25rem;
+  }
+  .services-hero .services-santa .card-1 {
+    min-width: 31.25rem;
+  }
+  .services-hero .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .services-hero .card-grid .card-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .services-hero .card-grid .card-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .services-hero .card-grid .card-1,
+  .services-hero .card-grid .card-2 {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 10rem;
+  }
+  .services-hero .card-grid .card-1 p,
+  .services-hero .card-grid .card-2 p {
+    margin-bottom: 10px;
+  }
+  .services-hero .card-grid .card-1 span,
+  .services-hero .card-grid .card-2 span {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+  }
+  .services-hero .flex-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .services-hero .flex-container .column1 {
+    padding-left: 2rem;
+  }
+  .services-hero .flex-container .column2 {
+    background-color: white;
+    margin: 0 2rem 0 0;
+    border-radius: 0.75rem;
+  }
+  .services-hero .flex-container .column2 p {
+    color: #000;
+  }
+  .services-hero .flex-container h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .services-hero .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .services-hero .about-the-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0 5rem;
+    width: 100%;
+  }
+  .services-hero .about-the-team .divider {
+    display: none;
+  }
+  .services-hero .meet-donovan-section h3,
+  .services-hero .chris-borger-about h3 {
+    padding: 0;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .services-hero .send-message-heading {
+    margin: 0;
+  }
+  .services-hero .contact-styled {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  /*****************Header Styles************************/
+  .site-header .main-navigation {
+    grid-column: auto/-1;
+  }
+  /************************ Home Content Start ******************/
+  .home-services .home-poy,
+  .home-services .home-santa {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 2rem;
+  }
+  .home-services h2 {
+    margin-bottom: unset;
+  }
+  .home-services .home-poy {
+    padding-bottom: 2rem;
   }
   .home-services .home-poy h3 {
     grid-column: 1/-1;
+    margin-bottom: unset;
   }
   .home-services .home-poy picture {
     grid-column: 2/8;
@@ -1745,36 +2252,41 @@ a[role=button] {
   .home-services .home-poy p {
     grid-column: 9/13;
     margin: unset;
+    padding: unset;
   }
   .home-services .home-santa {
-    grid-template-rows: repeat(8, 5.5rem);
+    grid-template-rows: repeat(6, 5.5rem);
+    padding-bottom: unset;
   }
   .home-services .home-santa h3 {
     grid-column: 2/13;
     display: inline-block;
     margin: unset;
+    margin-top: 1rem;
   }
-  .home-services .home-santa picture, .home-services .home-santa span {
-    grid-column: 9/13;
+  .home-services .home-santa picture,
+  .home-services .home-santa span {
+    grid-column: 8/12;
   }
   .home-services .home-santa p {
     margin: unset;
   }
   .home-services .home-santa p:nth-of-type(1) {
-    grid-row: 2/4;
+    grid-row: 2;
     grid-column: 2/7;
   }
   .home-services .home-santa p:nth-of-type(2) {
-    grid-row: 4/6;
+    grid-row: 3;
     grid-column: 2/7;
   }
   .home-services .home-santa .instagram {
-    grid-row: 7;
+    grid-row: 5;
     text-align: left;
+    margin-top: 3.25rem;
   }
   .home-services .home-santa a[role=button] {
-    grid-column: 6/8;
-    grid-row: 6;
+    grid-column: 5/7;
+    grid-row: 4;
     margin: unset;
     height: -moz-fit-content;
     height: fit-content;
@@ -1784,8 +2296,122 @@ a[role=button] {
     margin-right: 5rem;
     margin-left: 5rem;
   }
+  .home-about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 80px);
+    gap: 2rem;
+    margin: auto;
+  }
+  .home-about h2 {
+    grid-column: 1/-1;
+    margin-bottom: unset;
+  }
+  .home-about .iframe-container {
+    grid-column: 6/10;
+    grid-row: 2/6;
+    margin-top: 2rem;
+    height: unset;
+  }
+  .home-about p {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    padding: unset;
+    margin: unset;
+    margin-top: 2rem;
+  }
+  .home-about p:first-of-type {
+    padding-top: unset;
+  }
+  .home-about a[role=button] {
+    grid-column: 4/6;
+    grid-row: 5;
+    margin: unset;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .home-about .socials {
+    background-color: #fff;
+    grid-row: 7/14;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 80px);
+    gap: 2rem;
+    height: unset;
+  }
+  .home-about .socials img {
+    z-index: 2;
+    left: 50%;
+  }
+  .home-about .socials h3 {
+    grid-column: 8/12;
+    grid-row: 2;
+    margin: unset;
+  }
+  .home-about .socials .social-links {
+    grid-column: 9;
+    grid-row: 4;
+    margin: unset;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 3rem);
+    grid-template-rows: repeat(2, 3rem);
+  }
+  .home-about .home-testimonials {
+    grid-column: 2/7;
+    grid-row: 7/14;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: unset;
+    padding-top: 2rem;
+  }
+  .home-about .home-testimonials h2 {
+    padding: unset;
+  }
+  .home-about .home-testimonials .md-flex {
+    display: unset;
+  }
+  .home-about .home-testimonials .testimonial-card {
+    border: 1px solid #000;
+  }
+  .home-about .home-testimonials .testimonial-card p {
+    padding: unset;
+  }
+  .home-about .home-testimonials h2,
+  .home-about .home-testimonials p {
+    color: #0e3e66;
+    grid-row: 1/7;
+  }
+  .upcoming-events {
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+  }
+  .upcoming-events .event {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .upcoming-events .event:not(:nth-of-type(1)) {
+    padding-top: unset;
+  }
+  .upcoming-events h2 {
+    grid-column: 1/-1;
+  }
+  .upcoming-events h2,
+  .upcoming-events p,
+  .upcoming-events h3 {
+    margin: unset;
+  }
+  .upcoming-events p {
+    margin-right: 2rem;
+  }
   /************************ Home Content End ******************/
-  /************************ Who We Are Content Start ***********************/
+  /************************ Services/What We Do Start ***********************/
   .services-corporate {
     grid-template-columns: 1fr 2fr;
   }
@@ -1804,7 +2430,93 @@ a[role=button] {
     grid-column: 2;
     align-self: flex-start;
   }
-  /************************ Who We Are Content End ***********************/
+  .poy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .poy-grid .poy-grid-content {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+  }
+  .poy-grid .poy-grid-content p {
+    margin-top: 0;
+  }
+  .poy-grid picture {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    max-width: 35rem;
+  }
+  .poy-grid-rev {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .poy-grid-rev .poy-grid-content-rev {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+  }
+  .poy-grid-rev .poy-grid-content-rev p {
+    margin-top: 0;
+  }
+  .poy-grid-rev picture {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 35rem;
+  }
+  .services-santa .poy-grid-rev {
+    margin-left: 0.75rem;
+  }
+  .services-santa .poy-grid-rev picture {
+    max-width: 31.25rem;
+  }
+  .services-santa .poy-grid {
+    margin-right: 0.75rem;
+  }
+  .services-santa .poy-grid picture {
+    margin-top: 2rem;
+    max-width: 31.25rem;
+  }
+  .services-santa .card-1 {
+    min-width: 31.25rem;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
+  }
+  .card-grid .card-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .card-grid .card-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .card-grid .card-1,
+  .card-grid .card-2 {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 15rem;
+  }
+  .card-grid .card-1 p,
+  .card-grid .card-2 p {
+    margin-bottom: 10px;
+  }
+  .card-grid .card-1 span,
+  .card-grid .card-2 span {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+  }
+  /************************ Services/What We Do  End ***********************/
   /********************************** Who We Are Content Start ********************************/
   .flex-container {
     width: 100%;
@@ -1840,15 +2552,26 @@ a[role=button] {
     padding: 0 5rem;
     width: 100%;
   }
-  .divider {
+  .about-the-team .divider {
     display: none;
   }
-  .meet-donovan-section h3, .chris-borger-about h3 {
+  .meet-donovan-section h3,
+  .chris-borger-about h3 {
     padding: 0;
     margin: 2rem 0;
     text-align: center;
   }
+  /********************************** Who We Are Content End ********************************/
+  /********************************** Contact Form Start ********************************/
+  .send-message-heading {
+    margin: 0;
+  }
+  .contact-styled {
+    width: 80vw;
+    margin-left: 10vw;
+  }
 }
+/********************************** Contact Form End ********************************/
 @media screen and (min-width: 87.5rem) {
   /********************************** Who We Are Content Start ********************************/
   .column1,
@@ -1856,7 +2579,7 @@ a[role=button] {
     flex: 1;
   }
   .column2 p {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #000;
   }
   .flex-item {
@@ -1865,13 +2588,9 @@ a[role=button] {
     margin: 1.25rem;
     width: 100%;
   }
-  .contact-heading {
-    background: linear-gradient(to bottom, #000000, #808080, #FFFFFF);
-    text-align: center;
-  }
   .chris-borger-about p {
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
   }
@@ -1881,6 +2600,7 @@ a[role=button] {
   /********************************** Who We Are Content End ********************************/
 }
 @media screen and (min-width: 68.75rem) {
+  /********************************** Footer Start ********************************/
   #footer-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -1927,4 +2647,5 @@ a[role=button] {
     padding-right: 35rem;
     padding-bottom: 8rem;
   }
+  /********************************** Footer End ********************************/
 }/*# sourceMappingURL=style.css.map */

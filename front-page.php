@@ -10,6 +10,7 @@ get_header();
 
 <section class="home-hero">
     <div class="tagline">
+        <img class="lg-show" src="<?= get_template_directory_uri() ?>/img/lg/desktophomehero.webp" alt="Chris bogger cracking a joke in Donovan Workun's ear, making him laugh.">
         <h2>
             <span class="tagline-part-1">
                 <span>
@@ -119,9 +120,12 @@ get_header();
             <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Get to know more about Atomic Improv" role="button">Get to know
                 more</a>
     
-        <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
-    
         <div class="socials">
+            <picture>
+                <source srcset="<?= get_template_directory_uri()?>/img/lg/donovansmdesktop.webp" media="(min-width: 1100px)"> 
+                <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
+            </picture>
+
             <h3>Check out the Social Media!</h3>
     
             <div class="social-links">
@@ -159,9 +163,8 @@ get_header();
                 </a>
             </div>
         </div>
-    </section>
-    
-    <section class="home-testimonials">
+
+        <div class="home-testimonials">
         <h2>What do people say about us?</h2>
         <div class="md-flex">
             <div class="testimonial-card">
@@ -175,14 +178,17 @@ get_header();
                 The Reviews Hub</span>
             </div>
         </div>
+    </div>
+    
     </section>
+    
     
     <section class="upcoming-events">
         <h2>Catch Atomic Improv at:</h2>
         <?php
         $args = array(
             'post_type' => 'upcoming_events',
-            'posts_per_page' => 1,
+            'posts_per_page' => 4,
         );
     
         $upcoming_events = new WP_Query($args);
@@ -202,35 +208,38 @@ get_header();
                 $size = 'full';
     
                 ?>
-                        <?php if ($image) {
-                            echo wp_get_attachment_image($image, $size);
-                        }
-                        ; ?>
-                        <h3>
-                            <?= $event_name ?>
-                </h3>
-                <p>
-                    <?= $event_description ?>
-                </p>
-                <div class="event-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                        <path
-                            d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
-                    </svg>
+                <div class="event">
+                <?php if ($image) {
+                    echo wp_get_attachment_image($image, $size);
+                }
+                ; ?>
+                
+                    <h3>
+                        <?= $event_name ?>
+                    </h3>
                     <p>
-                        <?= $event_date_time ?>
+                        <?= $event_description ?>
                     </p>
+                    <div class="event-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z" />
+                        </svg>
+                        <p>
+                            <?= $event_date_time ?>
+                        </p>
+                    </div>
+                    <div class="event-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                            <path
+                                d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
+                        </svg>
+                        <p>
+                            <?= $event_location ?>
+                        </p>
+                    </div>
+                    <a href="<?= $event_ticket_link ?> " target="_blank" aria-label="Get Tickets" role="button">Get Tickets</a>
                 </div>
-                <div class="event-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                        <path
-                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
-                    </svg>
-                    <p>
-                        <?= $event_location ?>
-                    </p>
-                </div>
-                <a href="<?= $event_ticket_link ?> " target="_blank" aria-label="Get Tickets" role="button">Get Tickets</a>
     
     
                 <?php
