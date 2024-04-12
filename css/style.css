@@ -319,7 +319,7 @@ table {
 a:hover,
 a:focus,
 a:active {
-  color: #9EB7E5;
+  color: #9eb7e5;
 }
 
 a:hover,
@@ -841,7 +841,7 @@ h4 {
 }
 
 a[role=button] {
-  background-color: #9EB7E5;
+  background-color: #9eb7e5;
   padding: 0.5rem 2rem;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
@@ -1273,12 +1273,12 @@ a[role=button] {
 .about-heading {
   padding: 2rem 0;
   padding-left: 2rem;
-  color: #0E3E66;
+  color: #0e3e66;
 }
 
 .flex-container {
-  background-color: #0E3E66;
-  color: #FFFFFF;
+  background-color: #0e3e66;
+  color: #ffffff;
 }
 
 .flex-item h2 {
@@ -1293,7 +1293,7 @@ a[role=button] {
 .flex-item .image-about {
   margin: 0 auto 1rem;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .flex-item .image-about img {
   display: block;
@@ -1304,16 +1304,16 @@ a[role=button] {
 .flex-item .image-about {
   margin: 0 auto 1rem;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
 .image-gallery-section h3 {
   padding-left: 2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .meet-donovan-section h2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .meet-donovan-section .divider {
   background-color: #000;
@@ -1329,7 +1329,7 @@ a[role=button] {
   margin: 0 auto 1rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .image-wrapper img {
   display: block;
@@ -1341,7 +1341,7 @@ a[role=button] {
   margin: 0 auto 1rem;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 .image-about img {
   display: block;
@@ -1359,7 +1359,7 @@ a[role=button] {
   flex-direction: column;
 }
 .flex-container .column1 {
-  background-color: #0E3E66;
+  background-color: #0e3e66;
   color: white;
 }
 .flex-container .column2 {
@@ -1376,35 +1376,35 @@ a[role=button] {
 }
 
 .image-gallery-section {
-  background-color: #0E3E66;
+  background-color: #0e3e66;
 }
 
 .image-gallery-section h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .send-message-heading {
   text-align: center;
   padding: 2rem 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact-styled {
-  background: #0E3E66;
+  background: #0e3e66;
   /* Background color */
   padding: 2rem;
   /* Padding for the form */
   border-radius: 10px;
   /* Border radius for the form */
   font-family: Arial, Helvetica, sans-serif;
-  color: #FFFFFF;
+  color: #ffffff;
   /* Text color */
 }
 .contact-styled h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .contact-styled .nf-field-label {
-  color: #FFFFFF;
+  color: #ffffff;
   /* Label text color */
   text-transform: capitalize;
 }
@@ -1417,7 +1417,7 @@ a[role=button] {
   /* Text color for input fields */
   border-radius: 5px;
   /* Border radius for input fields */
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   /* Background color for input fields */
   border: 1px solid #000000;
   /* Black border for input fields */
@@ -1443,7 +1443,7 @@ a[role=button] {
   /* Ensure button takes full width */
   margin: 0 auto;
   /* Center the button horizontally */
-  background: #9EB7E5;
+  background: #9eb7e5;
   /* Button background color */
   color: #000000;
   /* Button text color */
@@ -1462,7 +1462,7 @@ a[role=button] {
 }
 
 .contact-styled .nf-form-content input[type=submit]:hover {
-  background: #70EE9C;
+  background: #70ee9c;
   /* Button background color on hover */
   color: #000000;
   /* Button text color on hover */
@@ -1499,7 +1499,8 @@ a[role=button] {
   color: #000000;
 }
 
-.meet-donovan-section img, .chris-borger-about img {
+.meet-donovan-section img,
+.chris-borger-about img {
   border-radius: 0.25rem;
 }
 
@@ -1507,11 +1508,47 @@ a[role=button] {
   color: white;
 }
 
-.site-footer, .contact-heading {
+.site-footer,
+.contact-heading {
   padding: 0 2rem;
 }
 
-.info-blurb p, .info-blurb h3, .info-blurb h2, .home-santa p, .home-santa h3, .home-santa h2, .home-services p, .home-services h3, .home-services h2, .home-about p, .home-about h3, .home-about h2, .services-corporate p, .services-corporate h3, .services-corporate h2, .services-poy p, .services-poy h3, .services-poy h2, .services-santa p, .services-santa h3, .services-santa h2, .column2 p, .column2 h3, .column2 h2, .column1 p, .column1 h3, .column1 h2, .meet-donovan-section p, .meet-donovan-section h3, .meet-donovan-section h2, .chris-borger-about p, .chris-borger-about h3, .chris-borger-about h2, .hire-artist-section p, .hire-artist-section h3, .hire-artist-section h2 {
+.info-blurb p,
+.info-blurb h3,
+.info-blurb h2,
+.home-santa p,
+.home-santa h3,
+.home-santa h2,
+.home-services p,
+.home-services h3,
+.home-services h2,
+.home-about p,
+.home-about h3,
+.home-about h2,
+.services-corporate p,
+.services-corporate h3,
+.services-corporate h2,
+.services-poy p,
+.services-poy h3,
+.services-poy h2,
+.services-santa p,
+.services-santa h3,
+.services-santa h2,
+.column2 p,
+.column2 h3,
+.column2 h2,
+.column1 p,
+.column1 h3,
+.column1 h2,
+.meet-donovan-section p,
+.meet-donovan-section h3,
+.meet-donovan-section h2,
+.chris-borger-about p,
+.chris-borger-about h3,
+.chris-borger-about h2,
+.hire-artist-section p,
+.hire-artist-section h3,
+.hire-artist-section h2 {
   padding: 0 2rem;
 }
 
@@ -1519,7 +1556,8 @@ a[role=button] {
   color: #0e3e66;
 }
 
-.card-1 p, .card-2 p {
+.card-1 p,
+.card-2 p {
   padding: 0;
 }
 
@@ -1670,7 +1708,8 @@ img {
     display: flex;
     justify-content: center;
   }
-  .home-about .iframe-container h2, .home-about .iframe-container p {
+  .home-about .iframe-container h2,
+  .home-about .iframe-container p {
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -1720,30 +1759,41 @@ img {
   .services-corporate {
     padding: 0 2rem 1rem;
   }
-  .services-poy .poy-part-1, .services-poy .poy-part-2 {
+  .services-poy .poy-part-1,
+  .services-poy .poy-part-2 {
     padding: 1rem 2rem;
   }
-  .services-poy .poy-part-1 .poy-testimonial, .services-poy .poy-part-2 .poy-testimonial {
+  .services-poy .poy-part-1 .poy-testimonial,
+  .services-poy .poy-part-2 .poy-testimonial {
     padding: 0 2rem 2rem;
   }
-  .services-poy .poy-part-1 .testimonials .card-1, .services-poy .poy-part-1 .testimonials .card-2, .services-poy .poy-part-2 .testimonials .card-1, .services-poy .poy-part-2 .testimonials .card-2 {
+  .services-poy .poy-part-1 .testimonials .card-1,
+  .services-poy .poy-part-1 .testimonials .card-2,
+  .services-poy .poy-part-2 .testimonials .card-1,
+  .services-poy .poy-part-2 .testimonials .card-2 {
     margin-right: 5rem;
     margin-left: 5rem;
   }
-  .services-poy .poy-part-1 h3, .services-poy .poy-part-2 h3 {
+  .services-poy .poy-part-1 h3,
+  .services-poy .poy-part-2 h3 {
     margin-left: 3rem;
   }
-  .services-poy .poy-part-1 .poy-testimonial h4, .services-poy .poy-part-2 .poy-testimonial h4 {
+  .services-poy .poy-part-1 .poy-testimonial h4,
+  .services-poy .poy-part-2 .poy-testimonial h4 {
     margin-left: 3rem;
   }
-  .services-poy .poy-part-1 .services-santa h3, .services-poy .poy-part-1 .services-santa p, .services-poy .poy-part-2 .services-santa h3, .services-poy .poy-part-2 .services-santa p {
+  .services-poy .poy-part-1 .services-santa h3,
+  .services-poy .poy-part-1 .services-santa p,
+  .services-poy .poy-part-2 .services-santa h3,
+  .services-poy .poy-part-2 .services-santa p {
     margin-left: 3rem;
     margin-right: 3rem;
   }
 }
 @media screen and (min-width: 68.75rem) {
-  .services-hero, .about-heading {
-    background: linear-gradient(to right, #000000, #808080, #FFFFFF);
+  .services-hero,
+  .about-heading {
+    background: #212121;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1752,12 +1802,27 @@ img {
     text-shadow: -0.125rem -0.125rem 0 black, 0.125rem -0.125rem 0 black, 0.125rem 0.125rem 0 black, -0.125rem 0.125rem 0 black; /* Bottom left */
     color: white;
   }
+  .services-hero {
+    display: grid;
+    grid-template-columns: 50vw 40vw 1fr;
+    align-content: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .services-hero img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .services-hero h2 {
+    grid-column: 2;
+  }
   /*****************Header Styles************************/
   .site-header .main-navigation {
     grid-column: auto/-1;
   }
   /************************ Home Content Start ******************/
-  .home-services .home-poy, .home-services .home-santa {
+  .home-services .home-poy,
+  .home-services .home-santa {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     gap: 2rem;
@@ -1790,7 +1855,8 @@ img {
     margin: unset;
     margin-top: 1rem;
   }
-  .home-services .home-santa picture, .home-services .home-santa span {
+  .home-services .home-santa picture,
+  .home-services .home-santa span {
     grid-column: 8/12;
   }
   .home-services .home-santa p {
@@ -1903,7 +1969,8 @@ img {
   .home-about .home-testimonials .testimonial-card p {
     padding: unset;
   }
-  .home-about .home-testimonials h2, .home-about .home-testimonials p {
+  .home-about .home-testimonials h2,
+  .home-about .home-testimonials p {
     color: #0e3e66;
     grid-row: 1/7;
   }
@@ -1926,7 +1993,9 @@ img {
   .upcoming-events h2 {
     grid-column: 1/-1;
   }
-  .upcoming-events h2, .upcoming-events p, .upcoming-events h3 {
+  .upcoming-events h2,
+  .upcoming-events p,
+  .upcoming-events h3 {
     margin: unset;
   }
   .upcoming-events p {
@@ -2011,6 +2080,7 @@ img {
   .card-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-color: #fff;
   }
   .card-grid .card-1 {
     grid-column-start: 1;
@@ -2020,16 +2090,19 @@ img {
     grid-column-start: 3;
     grid-column-end: 5;
   }
-  .card-grid .card-1, .card-grid .card-2 {
+  .card-grid .card-1,
+  .card-grid .card-2 {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    min-height: 10rem;
+    min-height: 15rem;
   }
-  .card-grid .card-1 p, .card-grid .card-2 p {
+  .card-grid .card-1 p,
+  .card-grid .card-2 p {
     margin-bottom: 10px;
   }
-  .card-grid .card-1 span, .card-grid .card-2 span {
+  .card-grid .card-1 span,
+  .card-grid .card-2 span {
     position: absolute;
     bottom: 0;
     right: 2rem;
@@ -2073,7 +2146,8 @@ img {
   .about-the-team .divider {
     display: none;
   }
-  .meet-donovan-section h3, .chris-borger-about h3 {
+  .meet-donovan-section h3,
+  .chris-borger-about h3 {
     padding: 0;
     margin: 2rem 0;
     text-align: center;
@@ -2096,7 +2170,7 @@ img {
     flex: 1;
   }
   .column2 p {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #000;
   }
   .flex-item {
@@ -2107,7 +2181,7 @@ img {
   }
   .chris-borger-about p {
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 8px;
   }
@@ -2117,9 +2191,7 @@ img {
   /********************************** Who We Are Content End ********************************/
 }
 @media screen and (min-width: 68.75rem) {
-  
   /********************************** Footer Start ********************************/
-  
   #footer-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -2163,6 +2235,5 @@ img {
     text-align: center;
     padding-right: 35rem;
   }
-
   /********************************** Footer End ********************************/
 }/*# sourceMappingURL=style.css.map */
