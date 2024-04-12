@@ -10,6 +10,7 @@ get_header();
 
 <section class="home-hero">
     <div class="tagline">
+        <img class="lg-show" src="<?= get_template_directory_uri() ?>/img/lg/desktophomehero.webp" alt="Chris bogger cracking a joke in Donovan Workun's ear, making him laugh.">
         <h2>
             <span class="tagline-part-1">
                 <span>
