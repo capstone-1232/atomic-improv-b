@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     taglineTl.fromTo('.tagline-part-2>span>span', { visibility: 'hidden', y: '100%' }, { visibility: 'visible', y: 0, stagger: 0.03 }, "<")
 
-    taglineTl.fromTo('.tagline>a', { opacity: 0, y: '100%' }, { opacity: 1, y: 0 })
+    taglineTl.fromTo('.tagline>a', { opacity: 0, y: '100%' }, { opacity: 1, y: 'unset' })
 
     taglineTl.fromTo('.site-header .site-branding', {x:'-200%'}, {x: 0}, "<")
 

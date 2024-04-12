@@ -125,8 +125,6 @@ get_header();
                 <img src="<?= get_template_directory_uri() ?>/img/sm/socialmedialookin.webp" alt="Donovan wants you to check out the Social Media.">
             </picture>
 
-           
-
             <h3>Check out the Social Media!</h3>
     
             <div class="social-links">

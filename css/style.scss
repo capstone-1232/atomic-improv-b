@@ -754,7 +754,7 @@ h4 {
 
 	h1 {
 		font-size: 2rem;
-		margin: 0.5rem 0;
+		margin: 0.5rem 0 0 2rem;
 		font-weight: 400;
 
 		a {
@@ -907,7 +907,7 @@ a[role=button] {
 	width: fit-content;
 	margin-left: auto;
 	filter: drop-shadow(7px 7px $dark);
-	transition: background-color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 a[role=button]:active,
@@ -1800,13 +1800,10 @@ a[role=button] {
 		}
 	}
 	.upcoming-events {
-		padding: 2rem 0;
+		padding: 5rem;
 
-		h2,
-		h3,
-		p {
-			margin-left: 3rem;
-			margin-right: 3rem;
+		.event:not(:nth-of-type(1)) {
+			padding-top: 3rem;
 		}
 	}
 
@@ -2040,13 +2037,20 @@ a[role=button] {
 	.home-services{
 		.home-poy, .home-santa {
 			display: grid;
-			grid-template-columns: repeat(12, 1fr);
+			grid-template-columns: repeat(13, 1fr);
 			gap: 2rem;
 		}
 
+		h2 {
+			margin-bottom: unset;
+		}
+
 		.home-poy{
+
+			padding-bottom: 2rem;
 			h3 {
 				grid-column: 1 / -1;
+				margin-bottom: unset;
 			}
 		
 			picture {
@@ -2056,11 +2060,13 @@ a[role=button] {
 			p {
 				grid-column: 9 / 13;
 				margin: unset;
+				padding: unset;
 			}
 		}
 
 		.home-santa {
 			grid-template-rows: repeat(6, 5.5rem);
+			padding-bottom: unset;
 
 			h3 {
 				grid-column: 2 / 13;
@@ -2087,8 +2093,9 @@ a[role=button] {
 			}
 
 			.instagram {
-				grid-row: 6;
+				grid-row: 5;
 				text-align: left;
+				margin-top: 3.25rem;
 			}
 
 			a[role=button] {
@@ -2111,12 +2118,13 @@ a[role=button] {
 	.home-about {
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
-		grid-template-rows: repeat(14, 80px);
-		gap: 1rem;
+		grid-template-rows: repeat(12, 80px);
+		gap: 2rem;
 		margin: auto;
 
 		h2 {
 			grid-column: 1/ -1;
+			margin-bottom: unset;
 		}
 
 		.iframe-container {
@@ -2127,10 +2135,11 @@ a[role=button] {
 		}
 
 		p {
-			grid-column: 2 / 6;
+			grid-column: 2 / 5;
 			grid-row: 2 / 5;
 			padding: unset;
-			margin-left: unset;
+			margin: unset;
+			margin-top: 2rem;
 
 			&:first-of-type {
 				padding-top: unset;
@@ -2146,12 +2155,12 @@ a[role=button] {
 
 		.socials {
 			background-color: $light;
-			grid-row: 8 / 15;
+			grid-row: 7 / 14;
 			grid-column: 1/-1;
 			display: grid;
 			grid-template-columns: repeat(10, 1fr);
-			grid-template-rows: repeat(7, 80px);
-			gap: 1rem;
+			grid-template-rows: repeat(6, 80px);
+			gap: 2rem;
 			height: unset;
 
 			img {
@@ -2160,15 +2169,15 @@ a[role=button] {
 			}
 
 			h3 {
-				grid-column: 9 / 12;
-				grid-row: 2 / 2;
+				grid-column: 8 / 12;
+				grid-row: 2;
 				margin: unset;
 			}
 
 			.social-links {
 				grid-column: 9;
 				grid-row: 4;
-				margin-top: unset;
+				margin: unset;
 				gap: 3rem;
 				grid-template-columns: repeat(2, 3rem);
 				grid-template-rows: repeat(2, 3rem);
@@ -2176,13 +2185,17 @@ a[role=button] {
 		}
 
 		.home-testimonials {
-			grid-column: 1 / 7;
-			grid-row: 8/15;
+			grid-column: 2 / 7;
+			grid-row: 7 / 14;
 			position: relative;
 			z-index: 1;
 			background-color: $light;
 			padding: unset;
-			padding-left: 2rem;
+			padding-top: 2rem;
+
+			h2 {
+				padding: unset;
+			}
 
 			.md-flex {
 				display: unset;
@@ -2214,7 +2227,11 @@ a[role=button] {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
-			gap: 1rem	;
+			gap: 1rem;
+
+			&:not(:nth-of-type(1)) {
+				padding-top: unset;
+			}
 		}
 
 		h2 {
@@ -2254,8 +2271,7 @@ a[role=button] {
 		
 		  .corp-text {
 			grid-column: 2;
-			align-self: flex-start;
-			;
+			align-self: flex-start; 
 		  }
 		
 	
