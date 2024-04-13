@@ -1709,7 +1709,6 @@ img{
 
 @keyframes scroll-up {
 	to {
-		opacity: 0.5;
 		transform: translateY(-20rem);
 	}
 }
@@ -2149,6 +2148,7 @@ img{
 				margin-top: 3.25rem;
 				grid-column: 8 / span 4;
 				grid-row: 8 / span 1;
+				justify-self: center;
 			}
 
 			a[role=button] {
@@ -2215,6 +2215,7 @@ img{
 			grid-template-rows: repeat(6, 80px);
 			gap: 2rem;
 			height: unset;
+			padding-top: 2rem;
 
 			img {
 				z-index: 2;
@@ -2223,7 +2224,7 @@ img{
 
 			h3 {
 				grid-column: 8 / 12;
-				grid-row: 2;
+				grid-row: 1 / span 2;
 				margin: unset;
 			}
 

@@ -1542,7 +1542,6 @@ img {
 
 @keyframes scroll-up {
   to {
-    opacity: 0.5;
     transform: translateY(-20rem);
   }
 }
@@ -1860,6 +1859,7 @@ img {
     margin-top: 3.25rem;
     grid-column: 8/span 4;
     grid-row: 8/span 1;
+    justify-self: center;
   }
   .home-services .home-santa a[role=button] {
     grid-column: 5/7;
@@ -1916,6 +1916,7 @@ img {
     grid-template-rows: repeat(6, 80px);
     gap: 2rem;
     height: unset;
+    padding-top: 2rem;
   }
   .home-about .socials img {
     z-index: 2;
@@ -1923,7 +1924,7 @@ img {
   }
   .home-about .socials h3 {
     grid-column: 8/12;
-    grid-row: 2;
+    grid-row: 1/span 2;
     margin: unset;
   }
   .home-about .socials .social-links {
