@@ -729,6 +729,12 @@ a[role=button] {
 .site-header h1 a {
   text-decoration: none;
 }
+.site-header .custom-logo {
+  transition: scale 0.3s ease-in-out;
+}
+.site-header .custom-logo:hover {
+  scale: 1.2;
+}
 
 .header-scroll {
   transform: translateY(-100%);
@@ -1637,6 +1643,11 @@ img {
   border-radius: 10px;
 }
 
+@keyframes scroll-up {
+  to {
+    transform: translateY(-20rem);
+  }
+}
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
   /********************************** Home Content Start ********************************/
@@ -1651,6 +1662,10 @@ img {
   }
   .home-hero h2 {
     margin-bottom: 1rem;
+  }
+  .home-hero h2, .home-hero a, .home-hero img {
+    animation: scroll-up linear;
+    animation-timeline: scroll();
   }
   .info-blurb {
     padding: 0 2rem;
@@ -1990,6 +2005,7 @@ img {
     margin-top: 3.25rem;
     grid-column: 8/span 4;
     grid-row: 8/span 1;
+    justify-self: center;
   }
   .home-services .home-santa a[role=button] {
     grid-column: 5/7;
@@ -2046,6 +2062,7 @@ img {
     grid-template-rows: repeat(6, 80px);
     gap: 2rem;
     height: unset;
+    padding-top: 2rem;
   }
   .home-about .socials img {
     z-index: 2;
@@ -2053,7 +2070,7 @@ img {
   }
   .home-about .socials h3 {
     grid-column: 8/12;
-    grid-row: 2;
+    grid-row: 1/span 2;
     margin: unset;
   }
   .home-about .socials .social-links {
@@ -2607,6 +2624,9 @@ img {
     text-align: center;
   }
   /********************************** Who We Are Content End ********************************/
+}
+@media screen and (min-width: 68.75rem) {
+
   /********************************** Contact Form Start ********************************/
   .send-message-heading {
     margin: 0;
@@ -2616,6 +2636,8 @@ img {
     margin-left: 10vw;
   }
   /********************************** Contact Form End ********************************/
+  
+  /********************************** Footer Start ********************************/
   #footer-menu {
     display: grid;
     grid-template-columns: 1fr;
