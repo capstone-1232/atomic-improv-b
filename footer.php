@@ -56,7 +56,7 @@
 			</div>
 
 			<div class="site-info">
-				<span>&copy; <?= date('Y');?> Atomic Improv</span>
+				<span>&copy; <?= date('Y');?> Atomic Improv | Privacy Policy | Sitemap</span>
 				<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'atomic-improv' ) ); ?>"> -->
 					<?php
 					/* translators: %s: CMS name, i.e. WordPress. */

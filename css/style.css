@@ -2660,6 +2660,7 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 2rem);
     gap: 6rem;
+    margin-bottom: 6rem;
     margin-bottom: 4rem;
     justify-self: end;
   }
@@ -2676,9 +2677,11 @@ img {
     grid-column: 4/5;
   }
   footer .site-info {
+    color: #9EB7E5;
     margin-top: auto;
     text-align: center;
     padding-right: 35rem;
+    padding-bottom: 8rem;
   }
   /********************************** Footer End ********************************/
 }
