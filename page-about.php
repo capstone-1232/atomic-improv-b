@@ -4,7 +4,11 @@
 get_header();
 ?>
 
-<h2 class="about-heading">WHO WE ARE</h2>
+<div class="about-hero">
+    <h2 class="about-heading">WHO WE ARE</h2>
+    <img src="<?= get_template_directory_uri() ?>/img/lg/whoweare-dsktp.webp" alt="Chris and Donovan contemplate their funniest moments to tell you about.">
+</div>
+
 
 <section class="flex-container">
     <h3>We're improv at it's finest!</h3>
@@ -12,12 +16,9 @@ get_header();
         <div class="column1">
             <div class="image-about">
                 <picture>
-                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/whoweare1.webp"
-                        media="(max-width: 500px)">
-                    <source srcset="<?= get_template_directory_uri() ?>/img/md/whoweare1md.webp"
-                        media="(max-width: 800px)">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/lg/whoweare1lg.webp"
-                        alt="Donovan Workun and Chris Borger posing together in matching attires">
+                    <source srcset="<?= get_template_directory_uri() ?>/img/sm/whoweare1.webp" media="(max-width: 500px)">
+                    <source srcset="<?= get_template_directory_uri() ?>/img/md/whoweare1md.webp" media="(max-width: 800px)">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/lg/whoweare1lg.webp" alt="Donovan Workun and Chris Borger posing together in matching attires">
                 </picture>
             </div>
         </div>
@@ -34,8 +35,7 @@ get_header();
 
 <section class="flex-container">
     <div class="flex-item">
-        <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button"
-            class="about-book-button">Book a Show!</a>
+        <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button" class="about-book-button">Book a Show!</a>
     </div>
 </section>
 
@@ -47,8 +47,7 @@ get_header();
 
             <source srcset="<?= get_template_directory_uri() ?>/img/md/meetdonovanmd.webp" media="(max-width: 800px)">
 
-            <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetdonovanlg.webp"
-                alt="Donovan Workun being a goofball and having a fun time.">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetdonovanlg.webp" alt="Donovan Workun being a goofball and having a fun time.">
         </picture>
         <p>Donovan has performed thousands of shows and has worked with stars such as: Wayne Brady, Colin Mochrie, Mike
             Myers, and two people whom he’s always greatly looked up to and respected - Dave Thomas and Joe Flaherty.
@@ -72,8 +71,7 @@ get_header();
 
             <source srcset="<?= get_template_directory_uri() ?>/img/md/meetchrismd.webp" media="(max-width: 800px)">
 
-            <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetchrislg.webp"
-                alt="Chris Borger showing off his funny face while looking into the camera">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/lg/meetchrislg.webp" alt="Chris Borger showing off his funny face while looking into the camera">
         </picture>
 
         <p>Chris Borger has worked as a professional improviser since 2011. He has produced online video content for CBC

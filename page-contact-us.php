@@ -4,8 +4,11 @@
 get_header();
 ?>
 
-<h2 class="contact-heading">Hire us!</h2>
+<div class="contact-hero">
+    <h2 class="contact-heading">Hire us!</h2>
+    <img src="<?= get_template_directory_uri() ?>/img/lg/hireus-dsktp.webp" alt="Chris and Donovan contemplate their funniest moments to tell you about.">
 
+</div>
 <section class="hire-artist-section">
     <div class="hire-artist-content">
         <p class="hire-artist-paragraph">Fill out the form below, and you can hash out the details of your next event with them!</p>
