@@ -35,7 +35,7 @@ get_header();
 
 <section class="flex-container">
     <div class="flex-item">
-        <a href="<?= esc_url(get_permalink(12)); ?>" aria-label="Book a Show" role="button" class="about-book-button">Book a Show!</a>
+        <a href="<?= site_url(); ?>/contact-us" aria-label="Book a Show" role="button" class="about-book-button">Book a Show!</a>
     </div>
 </section>
 

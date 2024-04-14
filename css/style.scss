@@ -1214,6 +1214,10 @@ a[role="button"]:hover {
   color: $dark-blue;
   padding: 2rem 1.5rem;
 
+  .event img {
+	max-width: 20rem;
+  } 
+
   h2 {
     font-size: $h2clamp;
     font-weight: 400;
@@ -2517,6 +2521,10 @@ img {
 
 			&:not(:nth-of-type(1)) {
 				padding-top: unset;
+			}
+
+			img {
+				align-self: center;
 			}
 		}
 

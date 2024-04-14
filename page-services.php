@@ -38,7 +38,7 @@ get_header();
                 </picture>
                 <div class="poy-grid-content">
                     <p>Power of Yes! is a corporate workshop hosted by Graham Neil and Donovan Workun that teaches you active listening, positivity and empathy in collaboration all through fun and simple improv techniques that will move your business forward.</p>
-                    <a href="#" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>
+                    <a href="<?= site_url();?>/contact-us" aria-label="Book Power of Yes" role="button">Book Power of Yes</a>
                 </div>
             </div>
 
