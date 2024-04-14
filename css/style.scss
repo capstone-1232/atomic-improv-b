@@ -771,6 +771,9 @@ a[role="button"] {
 
 	.custom-logo {
 		transition: scale 0.3s ease-in-out;
+		transform: translateX(-200%);
+		animation: slide-in 0.3s ease-in-out forwards;
+		animation-delay: 0.5s;
 	}
 
 	.custom-logo:hover {
@@ -787,14 +790,17 @@ a[role="button"] {
 }
 
 .menu-toggle {
-  border-radius: 9999px;
-  height: 2.5rem;
-  width: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
+	border-radius: 9999px;
+	height: 2.5rem;
+	width: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1rem;
+	transform: translateX(200%);
+	animation: slide-in 0.3s ease-in-out forwards;
+	animation-delay: 0.5s;
 
   span {
     width: 1.5rem;
@@ -906,11 +912,21 @@ a[role="button"] {
     a {
       margin-bottom: 1rem;
       // margin-top: 1rem;
+	  transform: translateY(100%);
+	  opacity: 0;
+	  animation: slide-up 0.3s ease-in-out forwards;
+	  animation-delay: 0.5s;
     }
 
     h2 {
       line-height: 1.5;
     }
+
+	.tagline-part-1 span, .tagline-part-2 span {
+		transform: translateY(100%);
+		opacity: 0;
+		animation: heading-pop-up 0.2s ease-in-out forwards;
+	}
   }
 }
 
@@ -1799,6 +1815,26 @@ img {
 	}
 }
 
+@keyframes heading-pop-up {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-in {
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-up {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
 /******************* Media queries ***************/
 
 //  media query for screen min width of 31.25rem/500px - Horizontal phone view
@@ -2287,11 +2323,8 @@ img {
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-rows: repeat(4, 1fr);
-
-			h2,a,img {
-				animation: scroll-up linear;
-				animation-timeline: scroll();
-			}
+			animation: scroll-up linear;
+			animation-timeline: scroll();
 		}
 
 		.lg-show {

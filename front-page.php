@@ -13,56 +13,42 @@ get_header();
         <img class="lg-show" src="<?= get_template_directory_uri() ?>/img/lg/desktophomehero.webp" alt="Chris bogger cracking a joke in Donovan Workun's ear, making him laugh.">
         <h2>
             <span class="tagline-part-1">
-                <span>
-                    <span>"</span>
-                    <span>w</span>
-                    <span>e</span>
-                </span>
+                <span>"</span>
+                <span>w</span>
+                <span>e</span>
                 <span>&nbsp;</span>
-                <span>
-                    <span>m</span>
-                    <span>a</span>
-                    <span>k</span>
-                    <span>e</span>
-                </span>
+                <span>m</span>
+                <span>a</span>
+                <span>k</span>
+                <span>e</span>
                 <span>&nbsp;</span>
-                <span>
-                    <span>t</span>
-                    <span>h</span>
-                    <span>e</span>
-                </span>
+                <span>t</span>
+                <span>h</span>
+                <span>e</span>
                 <span>&nbsp;</span>
-                <span>
-                    <span>e</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>n</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>g</span>
-                </span>
+                <span>e</span>
+                <span>v</span>
+                <span>e</span>
+                <span>n</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
             </span>
             <span class="tagline-part-2">
-                <span>
-                    <span>a</span>
-                    <span>l</span>
-                    <span>l</span>
-                </span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
                 <span>&nbsp;</span>
-                <span>
-                    <span>a</span>
-                    <span>b</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>t</span>
-                </span>
+                <span>a</span>
+                <span>b</span>
+                <span>o</span>
+                <span>u</span>
+                <span>t</span>
                 <span>&nbsp;</span>
-                <span>
-                    <span>y</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>"</span>
-                </span>
+                <span>y</span>
+                <span>o</span>
+                <span>u</span>
+                <span>"</span>
             </span>
         </h2>
         <a href="<?= site_url(); ?>/contact-us" aria-label="Book a Show" role="button">Book a Show!</a>

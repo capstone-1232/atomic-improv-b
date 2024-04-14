@@ -731,6 +731,9 @@ a[role=button] {
 }
 .site-header .custom-logo {
   transition: scale 0.3s ease-in-out;
+  transform: translateX(-200%);
+  animation: slide-in 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 .site-header .custom-logo:hover {
   scale: 1.2;
@@ -753,6 +756,9 @@ a[role=button] {
   justify-content: center;
   align-items: center;
   margin-right: 1rem;
+  transform: translateX(200%);
+  animation: slide-in 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 .menu-toggle span {
   width: 1.5rem;
@@ -848,9 +854,18 @@ a[role=button] {
 }
 .home-hero .tagline a {
   margin-bottom: 1rem;
+  transform: translateY(100%);
+  opacity: 0;
+  animation: slide-up 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
 }
 .home-hero .tagline h2 {
   line-height: 1.5;
+}
+.home-hero .tagline .tagline-part-1 span, .home-hero .tagline .tagline-part-2 span {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: heading-pop-up 0.2s ease-in-out forwards;
 }
 
 a[role=button] {
@@ -1651,6 +1666,23 @@ img {
     transform: translateY(-20rem);
   }
 }
+@keyframes heading-pop-up {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-up {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /******************* Media queries ***************/
 @media screen and (min-width: 31.25rem) {
   /********************************** Home Content Start ********************************/
@@ -2002,8 +2034,6 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-  }
-  .home-hero .tagline h2, .home-hero .tagline a, .home-hero .tagline img {
     animation: scroll-up linear;
     animation-timeline: scroll();
   }

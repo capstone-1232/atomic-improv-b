@@ -62,7 +62,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
         lastScroll = currentScroll
     })
 
-    
+    // animation delay for the heading
+
+    const taglinePart1 = document.querySelectorAll('.tagline-part-1>span')
+    const taglinePart2 = document.querySelectorAll('.tagline-part-2>span')
+
+    taglinePart1.forEach((letter, index) => {
+        letter.style.animationDelay = `${index * 0.02}s`
+    })
+
+    taglinePart2.forEach((letter, index) => {
+        letter.style.animationDelay = `${index * 0.02}s`
+    })
+
+    // lenis smooth scroll
+
+    const lenis = new Lenis()
+
+    lenis.on('scroll', (e) => {
+        // console.log(e)
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
 })
 
 // tl.to('.tagline', { y: 20, opacity: 0 })
@@ -73,7 +100,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     // Gsap
 
-    const tl = gsap.timeline({
+    /* const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".tagline",
         start: 'top 20%',
@@ -94,7 +121,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     taglineTl.fromTo('.site-header .site-branding', {x:'-200%'}, {x: 0}, "<")
 
-    taglineTl.fromTo('.site-header .menu-toggle', {x:'200%'}, {x: 0}, "<")
+    taglineTl.fromTo('.site-header .menu-toggle', {x:'200%'}, {x: 0}, "<") */
 
     // desktop hero banner animation scroll up
 
@@ -115,33 +142,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }) */
 
 })
-
-
-
-// Lenis smooth scroll
-/* const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-    console.log(e)
-})
-
-lenis.on('scroll', scrollTrigger.update)
-
-gsap.ticker.add((time) => {
-    lenis.raf(time * 1000)
-})
-
-gsap.ticker.lagSmoothing(0) */
-
-const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-    // console.log(e)
-})
-
-function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
